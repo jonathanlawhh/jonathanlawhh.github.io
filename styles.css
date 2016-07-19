@@ -243,6 +243,12 @@ html, body {
 	margin-left: 38px;
 }
 
+.buttonrow02{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	text-align: left;
+}
+
 .btn{
 	margin-left: 5px;
 }
