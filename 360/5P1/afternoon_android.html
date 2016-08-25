@@ -217,7 +217,7 @@
         c0.727-0.021,2.156,0.858,0.88,2.397c0,0-1.822,1.828-3.405,3.398C3.628,21.414,9.8,20.834,13.839,16.8
         C16.404,14.24,17.555,10.813,17.342,7.46z"/>    
     </svg>
-    </div>
+    </div> 
     <svg id="zoom-icon" class="icon metro" onclick="zoom()" ontouchstart="zoom();return false;" draggable="false" viewBox="0 0 23 23">
     <g fill="white">
     <path id="icon-zoomin" d="M16.116,11h-4.117V6.884c0-0.276-0.224-0.5-0.5-0.5s-0.5,0.224-0.5,0.5V11H6.884c-0.276,0-0.5,0.224-0.5,0.5
@@ -344,12 +344,12 @@
     });
   };
 
-if (!q.mono && !q.url) q.mono = "image";
+if (!q.mono && !q.url) q.mono = "imageafternoon";
 
   if (q.mono) {
     loadStereoTexture(q.mono+"_th.jpg");
-	setTimeout(function(){
-      loadStereoTexture(q.mono+".jpg");      
+    setTimeout(function(){
+      loadStereoTexture(q.mono+"_android.jpg");      
     },1000)
   } else {
     loadStereoTexture(q.url+".jpg", q.url);

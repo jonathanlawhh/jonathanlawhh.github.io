@@ -29,30 +29,20 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-pink.min.css">
 	<link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
   </head>
 
   <body>
 	<div id="loader-wrapper">
 		<header>
-			<div class="row">
-			<center>
-				<div class="mdl-cell mdl-cell--12-col mdl-color-text--white">
-					<h3>Loading page :D</h3>
-					Loading approx 800kb of data
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+				<div class="col s12 center-align mdl-color-text--white">
+					<h3 class="flow-text">Hello :D<br>Loading approx 800kb of data</h3>
 				</div>
-			</center>
-			</div>
 		</header>
 		<div id="loader"></div>
 	</div>
@@ -81,7 +71,6 @@
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item" disabled>Low Quality</li>
               <li><a class="mdl-menu__item" target="_blank" href="http://pano.autodesk.com/">Web VR</a></li>
               <li><a class="mdl-menu__item" target="_blank" href="https://gallery.autodesk.com/a360rendering/projects/5p1">Source</a></li>
             </ul>
@@ -95,9 +84,17 @@
 				If you are using Chrome for Android, please use another browser to continue viewing the 360 pano.
               </div>
               <div class="buttonrow">
-				<a href="360/5P1/morning.html" target="_blank" class="waves-effect waves-light btn pink darken-1">Morning</a>
-				<a href="360/5P1/afternoon.html" target="_blank" class="waves-effect waves-light btn pink darken-1">Afternoon</a>
-              </div>
+				<a class="waves-effect waves-light btn pink darken-1" id="morningbtn">Morning</a>
+					<ul class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="morningbtn">
+						<li><a class="mdl-menu__item" href="360/5P1/morning_android.html" target="_blank">Using Android Chrome</a></li>
+						<li><a class="mdl-menu__item" href="360/5P1/morning.html" target="_blank">Using others</a></li>
+					</ul>
+				<a class="waves-effect waves-light btn pink darken-1" id="afternoonbtn">Afternoon</a>
+					<ul class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="afternoonbtn">
+						<li><a class="mdl-menu__item" href="360/5P1/afternoon_android.html" target="_blank">Using Android Chrome</a></li>
+						<li><a class="mdl-menu__item" href="360/5P1/afternoon.html" target="_blank">Using others</a></li>
+					</ul>
+			  </div>
             </div>
           </section>
 		  
@@ -121,7 +118,6 @@
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1.1">
-              <li class="mdl-menu__item" disabled>Low Quality</li>
               <li><a class="mdl-menu__item" target="_blank" href="http://pano.autodesk.com/">Web VR</a></li>
               <li><a class="mdl-menu__item" target="_blank" href="https://gallery.autodesk.com/a360rendering/projects/house-mockup">Source</a></li>
             </ul>
@@ -132,8 +128,8 @@
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Problems on Chrome for Android</h5>
-                  Try using another browser to view it or choose low quality in the menu.
+                  <h5>Chrome on Android</h5>
+                  Choose the option <b>Using Android Chrome</b>.
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5>So blurry :(</h5>
@@ -316,7 +312,7 @@
           </section>
 		 </div>
 
-		<div class="topmargin"/>
+		<div class="topmargin"></div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
@@ -330,9 +326,10 @@
             </ul>
           </div>
         </footer>
+	</main>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<script src="js/loading.js"></script>
 	<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/loading.js"></script>
   </body>
 </html>
