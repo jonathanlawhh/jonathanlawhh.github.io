@@ -1,0 +1,432 @@
+<!doctype html>
+<!-- By Jonathan Law -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Gallery of 3DS Max renders.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#4A148C">
+    <title>jon</title>
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      .btnrow{
+        margin: 6px;
+      }
+    </style>
+	  <script>
+  	  function changepurple(){
+  	  document.getElementById("headercolor").className = "nav-extended deep-purple darken-3";
+      var metaThemeColor = document.querySelector("meta[name=theme-color]");
+      metaThemeColor.setAttribute("content", "#4A148C");
+  	  }
+  	  function changeteal(){
+  	  document.getElementById("headercolor").className = "nav-extended teal darken-3";
+      var metaThemeColor = document.querySelector("meta[name=theme-color]");
+      metaThemeColor.setAttribute("content", "#004d40");
+  	  }
+  	  function changegrey(){
+  	  document.getElementById("headercolor").className = "nav-extended grey darken-4";
+      var metaThemeColor = document.querySelector("meta[name=theme-color]");
+      metaThemeColor.setAttribute("content", "#000000");
+  	  }
+  	  function changeorange(){
+  	  document.getElementById("headercolor").className = "nav-extended deep-orange darken-3";
+      var metaThemeColor = document.querySelector("meta[name=theme-color]");
+      metaThemeColor.setAttribute("content", "#bf360c");
+  	  }
+	  </script>
+</head>
+<body>
+  <nav id="headercolor" class="nav-extended deep-purple darken-3" style="margin-bottom:10px;">
+    <div class="container">
+        <span class="nav-title">Some random stuff</span>
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab" onclick="changepurple()"><a class="active" href="#pano">360 PANO</a></li>
+          <li class="tab" onclick="changeteal()"><a href="#gallery">Gallery</a></li>
+          <li class="tab" onclick="changegrey()"><a href="#video">Videos</a></li>
+          <li class="tab" onclick="changeorange()"><a href="#source">Sources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pano -->
+  <div id="pano" class="container">
+    <div class="col s12 m7 section">
+      <div class="card horizontal z-depth-2">
+        <div class="card-image" style="width: 20%;height: 20%">
+          <img src="images/5P1.jpg" >
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3>5P1</h3><p>Created and rendered with Autodesk 3DS Max</p>
+            <a class='btnrow dropdown-button waves-effect waves-light btn pink' href='#' data-activates='morningdrop'>Morning</a>
+            <ul id='morningdrop' class='dropdown-content'>
+              <li><a href="360/5P1/morning_android.html" target="_blank">Using Android Chrome</a></li>
+              <li><a href="360/5P1/morning.html" target="_blank">Using others</a></li>
+            </ul>
+            <a class='btnrow dropdown-button waves-effect waves-light btn pink' href='#' data-activates='afternoondrop'>Afternoon</a>
+            <ul id='afternoondrop' class='dropdown-content'>
+              <li><a href="360/5P1/afternoon_android.html" target="_blank">Using Android Chrome</a></li>
+              <li><a href="360/5P1/afternoon.html" target="_blank">Using others</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m7 section">
+      <div class="card horizontal z-depth-2">
+        <div class="card-image" style="width: 20%;max-height: 20%">
+          <img src="images/house.jpg" >
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3>House mockup</h3><p>Created and rendered with Autodesk 3DS Max</p>
+            <a class='btnrow waves-effect waves-light btn pink' href="360/room/sittingroom.html">Sitting Room</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Some notice -->
+    <div class="col s12 m7 section">
+      <div class="card horizontal z-depth-2">
+        <div class="card-stacked">
+          <div class="card-content">
+            <div class="sections"><h4>Loading</h4><p>Pano takes some time to load before becoming HD</p></div><br>
+            <div class="divider"></div>
+            <div class="sections"><h4>Android users</h4><p>Select Android Chrome for Android users. Iphone or desktop users can choose others.</p></div><br>
+            <div class="divider"></div>
+            <div class="sections"><h4>Data Usage</h4><p>Around 3MB will be used for one pano</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Gallery -->
+  <div id="gallery" class="container">
+  <script>
+  $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+  <div class="row section">
+    <div style="right:5%; position:fixed;" class="col hide-on-small-only m3 l2">
+      <ul class="table-of-contents" >
+        <li><a href="#faber">Faber 3rd Floor</a></li>
+        <li><a href="#fuock-bar">The Fuock [ Bar ]</a></li>
+        <li><a href="#fuock-bedroom">The Fuock [ Bedroom ]</a></li>
+        <li><a href="#fuock-sitting">The Fuock [ Sitting Room ]</a></li>
+        <li><a href="#fuock">The Fuock Clock</a></li>
+        <li><a href="#box">Box</a></li>
+        <li><a href="#5P1afternoon">5P1 in the afternoon</a></li>
+        <li><a href="#keychain">Keychain</a></li>
+      </ul>
+    </div>
+
+    <div class="col s12 m12 l8 offset-l2">
+      <div id="faber" class="card hoverable scrollspy">
+        <!-- Prepare loading from Google Drive -->
+        <center><div id="loader01" class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-green-only">
+            <div class="circle-clipper left"><div class="circle"></div></div>
+            <div class="gap-patch"><div class="circle"></div></div>
+            <div class="circle-clipper right"><div class="circle"></div></div>
+        </div>
+        </div></center>
+          <script>
+          function loadImage(){
+            var elem = document.getElementById("loader01");
+            elem.parentNode.removeChild(elem);
+          }
+          </script>
+          <div class="card-image waves-effect waves-block waves-light">
+              <img onload="loadImage()" class="activator" src="https://drive.google.com/uc?export=view&id=0B7-CewT_nfXvdG9Xa1dKRjlQUGc">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">Faber 3rd floor [WIP]</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Faber [WIP]<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Google Drive</p>
+              <a href="" target="_blank" class="waves-effect waves-light btn pink darken-1 disabled">Click me</a>
+          </div>
+      </div>
+
+      <div id="fuock-bar" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/tf_bar_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">The Fuock [ Bar ]</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">The Fuock [ Bar ] UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/tf_bar.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+
+      <div id="fuock-bedroom" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/tf_bedroom_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">The Fuock [ Bedroom ]</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">The Fuock [ Bedroom ] UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/tf_bedroom.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+
+      <div id="fuock-sitting" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/tf_sittingroom_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">The Fuock [ Sitting Room ]</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">The Fuock [ Sitting Room ] UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/tf_sittingroom.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+
+      <div id="fuock" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/tf_clock.jpg">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">The Fuock Clock</span>
+          </div>
+      </div>
+
+      <div id="box" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/box_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">Box</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Box UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/box.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+
+      <div id="5P1afternoon" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/5P1_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">5P1 in the afternoon</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">5P1 UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/5P1.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+
+      <div id="keychain" style="margin-bottom:5%;" class="card hoverable scrollspy">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="gallery/keychain_low.jpg">
+          </div>
+          <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4">Keychain</span>
+              <p>Click to view UHD</p>
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Keychain UHD<i class="material-icons right">close</i></span>
+              <p>This image is hosted on Github</p>
+              <a href="gallery/keychain.png" target="_blank" class="btnrow waves-effect waves-light btn">Click me</a>
+          </div>
+      </div>
+      <p class="center-align scroll"><a href="#faber"><i class="material-icons">arrow_upward</i>Jump back up</a></p>
+    </div>
+  </div>
+  <div style="bottom: 24px; right: 24px;" class="fixed-action-btn hide-on-med-and-up">
+      <a href="#faber" class="btn-floating btn-large yellow darken-4">
+          <i class="large material-icons">arrow_upward</i>
+      </a>
+  </div>
+  </div>
+
+  <!--Videos -->
+  <div id="video" class="container">
+    <div class="row section">
+        <div class="col s12 m12 l8 offset-l2">
+            <div class="section">
+                <div class="video-container z-depth-2">
+                    <iframe class="card-image" src="https://www.youtube.com/embed/VU_Y-kp1JhI?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <ul class="collapsible" data-collapsible="accordion"><li>
+                        <div class="collapsible-header"><i class="material-icons">fast_rewind</i>Faber older videos [ Click me ]</div>
+                        <div class="collapsible-body"><span>Faber Updated 27.06.2017</span>
+                            <ul class="browser-default"><a href="https://youtu.be/SPMz_IwaoO8" target="_blank">https://youtu.be/SPMz_IwaoO8</a></ul>
+                        </div>
+                        <div class="collapsible-body"><span>Faber Updated 02.06.2017</span>
+                            <ul class="browser-default"><a href="https://youtu.be/USuUsPO7UaU" target="_blank">https://youtu.be/USuUsPO7UaU</a></ul>
+                        </div>
+                        <div class="collapsible-body"><span>Faber Updated v2</span>
+                            <ul class="browser-default"><a href="https://youtu.be/DQuCyDNhr8M" target="_blank">https://youtu.be/DQuCyDNhr8M</a></ul>
+                        </div>
+                        <div class="collapsible-body"><span>Faber Initial</span>
+                            <ul class="browser-default"><a href="https://youtu.be/_WdULHXgwPM" target="_blank">https://youtu.be/_WdULHXgwPM</a></ul>
+                        </div>
+                  </li></ul>
+            </div>
+            <div class="section">
+                <div class="video-container z-depth-2">
+                    <iframe class="card-image" src="https://www.youtube.com/embed/0XBgs2X5itE?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sources -->
+<div id="source" class="container">
+  <div class="row section">
+    <div class="col s12 m12 l8 offset-l2">
+      <div class="section">
+        <div class="card horizontal z-depth-2 hoverable">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Sources</h4><br>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="80%" height="80%" type="image/svg+xml" src="http://materializecss.com/res/materialize.svg" class="circle responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Materialize CSS<br> This website framework is based on Materialize CSS
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img class="circle responsive-img">
+                  <svg aria-hidden="true" width="70%" height="70%" version="1.1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                  </svg></img>
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Github.io<br> This website is hosted on Github.io
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="95%" height="95%" src="images/web.png" class="circle responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Files<br> 3DS project files <a target="_blank" href="https://drive.google.com/folderview?id=0B7-CewT_nfXvTTFOVFYzRFpIQTA&usp=sharing">here</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img src="https://avatars2.githubusercontent.com/u/8215712?v=3&s=140" class="circle responsive-img" width="70%" height="70%">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Website source<br> Source code for this website <a target="_blank" href="https://github.com/jonathanlawhh/jonathanlawhh.github.io">here</a> on Github
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacts-->
+      <div class="section">
+        <div class="card horizontal z-depth-2 hoverable">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Contact</h4><br>
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="60%" height="60%" src="images/fb.png" class="responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Facebook<br> Click <a target="_blank" href="https://www.facebook.com/jonathanlawhh">here</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="60%" height="60%" src="images/yt.png" class="responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    YouTube<br> Click <a target="_blank" href="https://www.youtube.com/channel/UCQ2d9BUPhq1AG9UKJSExRXg">here</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="60%" height="60%" src="images/insta.png" class="responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Instagram<br> Click <a target="_blank" href="https://www.instagram.com/jonathanlawhh">here</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img width="60%" height="60%" src="images/email.png" class="responsive-img">
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Email<br> jon_law98@hotmail.com
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer grey darken-2">
+ <div class="footer-copyright grey darken-3">
+   <div class="container">© Jonathan Law</div>
+ </div>
+</footer>
+</body>
