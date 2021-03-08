@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://jonathanlawhh.github.io/</loc>
-        <lastmod>2021-03-06</lastmod>
+        <lastmod>2021-03-08</lastmod>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://jonathanlawhh.github.io/img/me.webp</image:loc>
@@ -11,10 +11,10 @@
     </url>
     <url>
         <loc>https://jonathanlawhh.github.io/background</loc>
-        <lastmod>2021-03-06</lastmod>
+        <lastmod>2021-03-08</lastmod>
     </url>
     <url>
         <loc>https://jonathanlawhh.github.io/works</loc>
-        <lastmod>2021-03-06</lastmod>
+        <lastmod>2021-03-08</lastmod>
     </url>
 </urlset>
