@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/Works", {data:[{}],fetch:{"App:0":{sheet:false,pages:{"/":0,"/background":1,"/works":2},navigation_routes:[{title:"HOME",route:"\u002F"},{title:"MY BACKGROUND",route:"\u002Fbackground"},{title:"WORKS",route:"\u002Fworks"}],last_update:"May 2021",seo:{title:"Works",description:"My portfolio of projects that I worked on"}}},mutations:void 0});
