@@ -40,7 +40,11 @@
         <v-card-text
           ><p>
             I write stuff at
-            <a href="https://dev.to/jonathanlawhh" target="_blank">
+            <a
+              href="https://dev.to/jonathanlawhh"
+              rel="noopener"
+              target="_blank"
+            >
               <img
                 src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
                 alt="Jonathan Law's DEV Community Profile"
