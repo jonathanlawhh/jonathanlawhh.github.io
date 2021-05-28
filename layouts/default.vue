@@ -101,8 +101,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content:
-            this.seo.image || 'https://jonathanlawhh.github.io/img/me.webp',
+          content: this.seo.image || 'https://jonathanlawhh.com/img/me.webp',
         },
         {
           hid: 'og:title',
@@ -117,8 +116,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content:
-            this.seo.image || 'https://jonathanlawhh.github.io/img/me.webp',
+          content: this.seo.image || 'https://jonathanlawhh.com/img/me.webp',
         },
       ],
     }

@@ -1,4 +1,4 @@
-const SITE_URL = 'https://jonathanlawhh.github.io'
+const SITE_URL = 'https://jonathanlawhh.com'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -7,7 +7,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     titleTemplate: '%s | Jonathan Law',
     title: '',
