@@ -61,6 +61,7 @@ export default {
       description: '',
       image: '',
     },
+    canonical: '/',
   }),
   async fetch() {
     this.seo_update()
@@ -82,6 +83,13 @@ export default {
     return {
       title: this.seo.title,
       description: this.seo.description,
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://jonathanlawhh.com' + this.canonical,
+        },
+      ],
       meta: [
         {
           hid: 'description',
@@ -128,6 +136,7 @@ export default {
     seo_update() {
       this.$nuxt.$on('seo_update', (s) => {
         this.seo = s
+        this.canonical = this.$nuxt.$route.path
       })
     },
   },

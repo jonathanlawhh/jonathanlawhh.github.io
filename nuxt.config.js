@@ -27,7 +27,7 @@ export default {
     ],
     link: [
       { rel: 'icon', href: SITE_URL + '/favicon.webp' },
-      { rel: 'canonical', href: SITE_URL },
+      { hid: 'canonical', rel: 'canonical', href: SITE_URL },
     ],
     script: [
       {
