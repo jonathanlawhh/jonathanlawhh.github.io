@@ -19,6 +19,36 @@
       </v-col>
     </v-row>
 
+    <v-row class="mb-8">
+      <v-col cols="12">
+        <h2>Published paper</h2>
+        <p>Thanks to my lecturer</p>
+      </v-col>
+
+      <v-col cols="12" md="8" lg="5">
+        <DisplayCard
+          title="Sitting Posture Identifier to Overcome Health Issues"
+          subtitle="Jonathan Law Hui Hao, Rajasvaran Logeswaran, Hema Latha Krishna Nair"
+          body="Introduction: Bad sitting posture habits cause health issues such as headaches or discomfort in the back and can lead to expensive medical expenditure for correction or cure."
+          action-text="VIEW JOURNAL"
+          action-url="https://www.ijcrr.com/abstract.php?article_id=3771#/"
+        >
+          <p class="mt-4">
+            <span class="font-weight-bold">Published at: </span>
+            International Journal of Current Research and Review
+            <br />
+            <span class="font-weight-bold">DOI URL: </span>
+            <a
+              href="http://dx.doi.org/10.31782/IJCRR.2021.131123"
+              rel="noopener"
+              target="_blank"
+              >http://dx.doi.org/10.31782/IJCRR.2021.131123</a
+            >
+          </p>
+        </DisplayCard>
+      </v-col>
+    </v-row>
+
     <CommunityEngagement filter="machinelearning"></CommunityEngagement>
   </div>
 </template>
@@ -30,6 +60,7 @@ export default {
     LandingComponent: () => import('@/components/LandingComponent'),
     GalleryImage: () => import('@/components/GalleryImageComponent'),
     CommunityEngagement: () => import('@/components/CommunityEngagement'),
+    DisplayCard: () => import('@/components/DisplayCard'),
   },
   data() {
     return {
