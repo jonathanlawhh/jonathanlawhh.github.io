@@ -1,3 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 $body-font-family: 'Rubik';
+
+$custom-pink: #ff7582;
+$custom-green: #00a56a;
+
+/* Code for Firefox */
+::-moz-selection {
+  color: #ffffff;
+  background-color: $custom-pink;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: $custom-pink;
+}

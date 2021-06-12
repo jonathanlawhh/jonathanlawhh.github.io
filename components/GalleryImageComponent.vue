@@ -30,11 +30,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .img_container {
   width: 250px;
   height: 250px;
 
+  background-color: #424242;
   background-size: cover;
   background-position: center;
   transition: ease-in-out 0.3s;
@@ -64,7 +65,7 @@ export default {
 }
 
 .hl-text:after {
-  background: #00a56a;
+  background: $custom-green;
   content: '';
   display: block;
   left: 0;
@@ -93,7 +94,7 @@ export default {
   height: 40%;
   top: 12px;
   background: transparent;
-  border-bottom: 8px solid #ff7582;
+  border-bottom: 8px solid $custom-pink;
   border-right: 8px solid transparent;
 
   transition: left 0.6s ease-in-out;
@@ -108,7 +109,7 @@ export default {
   border-right: 12px solid transparent;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-left: 12px solid #ff7582;
+  border-left: 12px solid $custom-pink;
 
   animation: border-expand 0.6s ease-in-out;
 }
@@ -116,13 +117,13 @@ export default {
 @keyframes border-expand {
   0% {
     left: 0;
-    border-bottom: 8px solid #ff7582;
+    border-bottom: 8px solid $custom-pink;
     border-right: 8px solid transparent;
   }
 
   10% {
     left: 0;
-    border-bottom: 2px solid #ff7582;
+    border-bottom: 2px solid $custom-pink;
     border-right: 2px solid transparent;
   }
 
@@ -131,7 +132,7 @@ export default {
     border-right: 2px solid transparent;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    border-left: 2px solid #ff7582;
+    border-left: 2px solid $custom-pink;
   }
 
   100% {
@@ -139,7 +140,7 @@ export default {
     border-right: 12px solid transparent;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 12px solid #ff7582;
+    border-left: 12px solid $custom-pink;
   }
 }
 

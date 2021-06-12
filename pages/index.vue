@@ -14,9 +14,8 @@
         <p class="display-1">Hi there !</p>
         <p>
           I am
-          <span style="color: #00a56a; font-size: 110%" class="font-weight-bold"
-            >Jonathan Law</span
-          >, a full stack developer based in Malaysia. I work with tech stuff
+          <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>, a
+          full stack developer based in Malaysia. I work with tech stuff
           including but not limited to software's, hardware's and
           infrastructures.<br /><br />
           Tbh I am not sure what people write on their personal website, so I
@@ -99,6 +98,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.my_name {
+  color: $custom-green;
+  font-size: 110%;
+}
+</style>
 
 <style scoped>
 .whack_intro {
