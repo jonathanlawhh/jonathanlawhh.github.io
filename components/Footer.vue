@@ -16,7 +16,7 @@
 
     <v-row>
       <v-col cols="12" md="8">
-        <a class="link-social-media" @click="createChat">
+        <a class="link-social-media ml-4" @click="createChat">
           <svg
             x="0px"
             y="0px"
@@ -219,13 +219,5 @@ export default {
 .link-social-media:hover::before {
   width: 100%;
   border-bottom: 2px $custom-pink solid;
-}
-
-@media only screen and (max-width: 600px) {
-  .link-social-media > img,
-  .link-social-media > svg {
-    width: 30px;
-    height: 30px;
-  }
 }
 </style>

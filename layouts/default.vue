@@ -162,9 +162,25 @@ export default {
   opacity: 0 !important;
 }
 
-.v-btn--active {
+.v-btn--active::after {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
   border-bottom: white solid 1px;
   border-radius: 0 !important;
+  animation: btnSelected 0.25s ease-out;
+}
+
+@keyframes btnSelected {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .v-btn::before {

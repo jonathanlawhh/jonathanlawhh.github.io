@@ -8,9 +8,14 @@
     </v-card-text>
     <v-card-actions v-if="actionUrl">
       <v-spacer></v-spacer>
-      <v-btn text :href="actionUrl" target="_blank" rel="noopener">{{
-        actionText
-      }}</v-btn>
+      <v-btn
+        class="custom-card-btn"
+        text
+        :href="actionUrl"
+        target="_blank"
+        rel="noopener"
+        >{{ actionText }}</v-btn
+      >
     </v-card-actions>
   </v-card>
 </template>
@@ -50,6 +55,8 @@ export default {
 }
 .v-card {
   min-height: 160px;
+  transition: all 0.15s ease;
+  z-index: 2;
 }
 
 .v-card:before {
@@ -62,6 +69,8 @@ export default {
   border-bottom: #d4d4d4 solid 8px;
   border-radius: 4px;
   content: '';
+  transition: all 0.15s ease-in;
+  z-index: -1;
 }
 
 .v-card:hover {
@@ -73,5 +82,15 @@ export default {
   left: 12px;
   border-right: #d4d4d4 solid 12px;
   border-bottom: #d4d4d4 solid 12px;
+}
+
+.custom-card-btn {
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.custom-card-btn:hover {
+  opacity: 1;
+  transform: translateY(-4px);
 }
 </style>

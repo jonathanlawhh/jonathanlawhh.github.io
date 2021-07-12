@@ -85,6 +85,14 @@ export default {
 </script>
 
 <style>
+.v-expansion-panels {
+  animation: transform 0.25s ease-in;
+}
+
+.v-expansion-panels:hover {
+  transform: translateY(-4px);
+}
+
 .v-expansion-panel-header__icon > .v-icon {
   animation: pulse 2s ease-out;
   animation-iteration-count: infinite;

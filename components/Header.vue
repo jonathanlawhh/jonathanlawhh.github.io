@@ -44,3 +44,18 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.v-toolbar__items > .v-btn {
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+
+.v-toolbar__items > .v-btn:hover {
+  opacity: 1;
+}
+
+.v-toolbar__items > .v-btn.v-btn--active {
+  opacity: 1;
+}
+</style>
