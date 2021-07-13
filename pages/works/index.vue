@@ -10,17 +10,30 @@
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col v-for="(w, i) in works" :key="i" xl="3" lg="4" md="6" sm="12">
-        <v-card :to="w.url" class="rounded-0" style="min-width: 100%">
-          <v-img :src="w.image" height="200">
-            <div class="mt-12 ml-4">
-              <p class="font-weight-bold" style="font-size: 140%">
-                {{ w.title }}
-              </p>
+    <v-row class="mt-8">
+      <v-col v-for="(w, i) in works" :key="i" cols="12" md="4" class="mb-8">
+        <v-card
+          :to="w.url"
+          class="hover-motion"
+          style="
+            position: relative;
+            background-color: #424242;
+            border: 1px solid white;
+            max-width: 480px;
+          "
+        >
+          <v-img
+            style="opacity: 0.75"
+            width="100%"
+            height="200"
+            :src="w.image"
+          ></v-img>
+          <div class="custom-card-overlay hover-motion">
+            <v-card class="custom-card-overlay-card" elevation="12" light>
+              <h3 style="font-size: 140%">{{ w.title }}</h3>
               <p>{{ w.desc }}</p>
-            </div>
-          </v-img>
+            </v-card>
+          </div>
         </v-card>
       </v-col>
     </v-row>
@@ -66,24 +79,28 @@ export default {
 </script>
 
 <style scoped>
-.v-card {
-  background-color: black;
-  border-left: 4px white solid;
-  content: '';
+.custom-card-overlay {
+  position: absolute;
+  bottom: -32px;
+  right: 12px;
+  max-width: 320px;
 }
 
-.v-card:hover {
-  font-size: 110%;
-  transition: font-size 0.2s ease-out;
+.custom-card-overlay-card {
+  padding: 12px 18px;
 }
 
-.theme--dark.v-sheet {
-  border-color: #ffffff;
+@media only screen and (max-width: 1256px) {
+  .custom-card-overlay {
+    max-width: 240px;
+  }
 }
-</style>
 
-<style>
-.v-image__image {
-  opacity: 0.3 !important;
+@media only screen and (max-width: 960px) {
+  .custom-card-overlay {
+    right: unset;
+    left: 8px;
+    max-width: 95%;
+  }
 }
 </style>
