@@ -15,7 +15,7 @@
       class="hidden-sm-and-down"
     >
       <v-divider v-if="i !== 0" inset vertical></v-divider>
-      <v-btn text :to="nr.route">{{ nr.title }}</v-btn>
+      <v-btn class="hover-fade-in" text :to="nr.route">{{ nr.title }}</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -44,18 +44,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.v-toolbar__items > .v-btn {
-  opacity: 0.8;
-  transition: all 0.2s ease-in;
-}
-
-.v-toolbar__items > .v-btn:hover {
-  opacity: 1;
-}
-
-.v-toolbar__items > .v-btn.v-btn--active {
-  opacity: 1;
-}
-</style>

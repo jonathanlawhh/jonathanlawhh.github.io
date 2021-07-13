@@ -9,7 +9,7 @@
     <v-card-actions v-if="actionUrl">
       <v-spacer></v-spacer>
       <v-btn
-        class="custom-card-btn"
+        class="hover-fade-in hover-motion"
         text
         :href="actionUrl"
         target="_blank"
@@ -82,15 +82,5 @@ export default {
   left: 12px;
   border-right: #d4d4d4 solid 12px;
   border-bottom: #d4d4d4 solid 12px;
-}
-
-.custom-card-btn {
-  opacity: 0.7;
-  transition: all 0.25s ease-in;
-}
-
-.custom-card-btn:hover {
-  opacity: 1;
-  transform: translateY(-4px);
 }
 </style>

@@ -14,6 +14,7 @@
               :ripple="false"
               text
               :to="nr.route"
+              class="hover-fade-in"
               @click="closeSheet(0)"
               v-text="nr.title"
             ></v-btn>

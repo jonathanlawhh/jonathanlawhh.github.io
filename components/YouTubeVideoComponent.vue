@@ -6,6 +6,8 @@
           <v-img
             :src="`https://img.youtube.com/vi/${selected_vid.id}/mqdefault.jpg`"
             contain
+            class="hover-motion"
+            style="cursor: pointer"
             @click="clicked = true"
           >
             <div
@@ -40,6 +42,7 @@
             v-for="(v, i) in vidObj.playlist"
             :key="i"
             class="ma-2"
+            :class="!(selected_vid === v) && 'hover-fade-in'"
             rounded
             :outlined="!(selected_vid === v)"
             @click="selected_vid = v"
