@@ -51,19 +51,19 @@ export default {
     works: [
       {
         title: 'AI/ML/RPA',
-        url: '/works/ai',
+        url: '/works/ai/',
         image: '/img/logo_w_AI.webp',
         desc: 'Computer Vision, Machine Learning, Automations',
       },
       {
         title: 'Websites and Stuff',
-        url: '/works/websites',
+        url: '/works/websites/',
         image: '/img/logo_w_websites.webp',
         desc: 'Production and random sites, some random programs',
       },
       {
         title: 'Graphics',
-        url: '/works/graphics',
+        url: '/works/graphics/',
         image: '/img/logo_w_graphics.webp',
         desc: '3DS Max, Unreal Engine, Adobe stuffs',
       },

@@ -52,8 +52,8 @@ export default {
     pages: { '/': 0, '/background': 1, '/works': 2 },
     navigation_routes: [
       { title: 'HOME', route: '/' },
-      { title: 'MY BACKGROUND', route: '/background' },
-      { title: 'WORKS', route: '/works' },
+      { title: 'MY BACKGROUND', route: '/background/' },
+      { title: 'WORKS', route: '/works/' },
     ],
     last_update: '',
     seo: {

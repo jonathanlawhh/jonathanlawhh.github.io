@@ -31,6 +31,7 @@ export default {
     ],
     script: [
       {
+        hid: 'ldjson',
         type: 'application/ld+json',
         json: {
           '@context': 'https://schema.org',
@@ -41,6 +42,7 @@ export default {
           logo: SITE_URL + '/img/me.webp',
           sameAs: [
             'https://www.facebook.com/jonathanlawhh/',
+            'https://jonathanlawhh.medium.com/',
             'https://twitter.com/jonathanlawhh',
             'https://my.linkedin.com/in/jonathanlawhh',
             'https://dev.to/jonathanlawhh',
@@ -85,6 +87,7 @@ export default {
       changefreq: 'monthly',
       lastmod: new Date(),
     },
+    trailingSlash: true,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
