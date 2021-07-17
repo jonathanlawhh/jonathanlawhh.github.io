@@ -126,6 +126,11 @@ export default {
           property: 'og:image',
           content: this.seo.image || 'https://jonathanlawhh.com/img/me.webp',
         },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://jonathanlawhh.com' + this.canonical,
+        },
       ],
     }
   },
