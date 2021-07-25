@@ -26,7 +26,36 @@ export default {
       { property: 'og:type', hid: 'og:type', content: 'website' },
     ],
     link: [
-      { rel: 'icon', href: SITE_URL + '/favicon.webp' },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '196x196',
+        href: SITE_URL + '/favicon-196.png',
+      },
+      {
+        rel: 'shortcut icon',
+        type: 'image/png',
+        sizes: '196x196',
+        href: SITE_URL + '/favicon-196.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '64x64',
+        href: SITE_URL + '/favicon-64.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '48x48',
+        href: SITE_URL + '/favicon-48.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16 32x32',
+        href: SITE_URL + '/favicon-32.png',
+      },
       { hid: 'canonical', rel: 'canonical', href: SITE_URL },
     ],
     script: [
