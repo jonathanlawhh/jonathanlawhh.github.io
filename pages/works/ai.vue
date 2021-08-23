@@ -72,6 +72,14 @@ export default {
       },
       projects: [
         {
+          title: 'Reviewnator',
+          description:
+            'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
+          src: 'https://reviewnator.jonathanlawhh.com/icon.svg',
+          view: 'https://reviewnator.jonathanlawhh.com/',
+          view_text: 'Click here to try it',
+        },
+        {
           title: 'Emoji Pixelator',
           description:
             'Sliding window implementation to pixelate emoji/s from screen record',
