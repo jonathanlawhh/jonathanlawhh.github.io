@@ -54,6 +54,7 @@ export default {
       { title: 'HOME', route: '/' },
       { title: 'MY BACKGROUND', route: '/background/' },
       { title: 'WORKS', route: '/works/' },
+      { title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/' },
     ],
     last_update: '',
     seo: {

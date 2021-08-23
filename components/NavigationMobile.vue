@@ -11,9 +11,20 @@
           <v-col cols="12"><h3>NAVIGATION</h3></v-col>
           <v-col v-for="(nr, i) in navigationRoutes" :key="i" cols="12">
             <v-btn
+              v-if="nr.route"
               :ripple="false"
               text
               :to="nr.route"
+              class="hover-fade-in"
+              @click="closeSheet(0)"
+              v-text="nr.title"
+            ></v-btn>
+            <v-btn
+              v-else-if="nr.href"
+              :ripple="false"
+              text
+              :href="nr.href"
+              target="_blank"
               class="hover-fade-in"
               @click="closeSheet(0)"
               v-text="nr.title"

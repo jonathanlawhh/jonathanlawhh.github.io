@@ -15,7 +15,17 @@
       class="hidden-sm-and-down"
     >
       <v-divider v-if="i !== 0" inset vertical></v-divider>
-      <v-btn class="hover-fade-in" text :to="nr.route">{{ nr.title }}</v-btn>
+      <v-btn v-if="nr.route" class="hover-fade-in" text :to="nr.route">{{
+        nr.title
+      }}</v-btn>
+      <v-btn
+        v-else-if="nr.href"
+        target="_blank"
+        class="hover-fade-in"
+        text
+        :href="nr.href"
+        >{{ nr.title }}</v-btn
+      >
     </v-toolbar-items>
   </v-toolbar>
 </template>
