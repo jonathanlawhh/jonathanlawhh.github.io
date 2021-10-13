@@ -38,16 +38,18 @@
           <p v-html="vidObj.description"></p>
           <br />
           <p v-if="vidObj.playlist.length > 1">Progression journey:</p>
-          <v-btn
-            v-for="(v, i) in vidObj.playlist"
-            :key="i"
-            class="ma-2"
-            :class="!(selected_vid === v) && 'hover-fade-in'"
-            rounded
-            :outlined="!(selected_vid === v)"
-            @click="selected_vid = v"
-            >{{ v.title }}</v-btn
-          >
+          <div v-if="vidObj.playlist.length > 1">
+            <v-btn
+              v-for="(v, i) in vidObj.playlist"
+              :key="i"
+              class="ma-2"
+              :class="!(selected_vid === v) && 'hover-fade-in'"
+              rounded
+              :outlined="!(selected_vid === v)"
+              @click="selected_vid = v"
+              >{{ v.title }}</v-btn
+            >
+          </div>
         </v-col>
       </v-row>
     </v-card-text>

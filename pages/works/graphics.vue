@@ -73,39 +73,52 @@ export default {
         'Projects relating to media such as Adobe Photoshop, Adobe After Effects or 3DS Max created by Jonathan Law',
     },
     yt_videos: [
+      // {
+      //   title: 'Faber Project',
+      //   description:
+      //     'Rendered cinematic using Unreal Engine 4.2 and model with 3DS Max, post processed with After Effects.<br>' +
+      //     'The environment is based on the floor (Faber Towers, Taman Desa) where I used to work as a child care part timer.\n' +
+      //     'The whole idea is to project a disoriented person who is isolated/trapped in this "dead zone" with no way out.',
+      //   playlist: [
+      //     {
+      //       id: '1xavkofiUlw',
+      //       title: '27.09.2019',
+      //     },
+      //     {
+      //       id: 'VU_Y-kp1JhI',
+      //       title: '18.08.2017',
+      //     },
+      //     {
+      //       id: 'SPMz_IwaoO8',
+      //       title: '27.06.2017',
+      //     },
+      //     {
+      //       id: 'USuUsPO7UaU',
+      //       title: '02.06.2017',
+      //     },
+      //   ],
+      // },
       {
-        title: 'Faber Project',
+        title: 'The Fuock',
         description:
-          'Rendered cinematic using Unreal Engine 4.2 and model with 3DS Max, post processed with After Effects.<br>' +
-          'The environment is based on the floor (Faber Towers, Taman Desa) where I used to work as a child care part timer.\n' +
-          'The whole idea is to project a disoriented person who is isolated/trapped in this "dead zone" with no way out.',
+          '06.05.2017<br>' +
+          'The future clock that is still a physical clock you can hang at your sitting room, yet synchronized to your digital clocks.<br><br>' +
+          'Created with Adobe After Effects, images rendered with 3DS Max.',
         playlist: [
           {
-            id: '1xavkofiUlw',
-            title: '27.09.2019',
-          },
-          {
-            id: 'VU_Y-kp1JhI',
-            title: '18.08.2017',
-          },
-          {
-            id: 'SPMz_IwaoO8',
-            title: '27.06.2017',
-          },
-          {
-            id: 'USuUsPO7UaU',
-            title: '02.06.2017',
+            id: 'JAZYjGOxuvo',
           },
         ],
       },
       {
-        title: 'The Fuock',
+        title: '[POPTHOR] Merdeka 58 Short Video',
         description:
-          'Trying to achieve a simple motion graphic animation using After Effects.',
+          '13.07.2015<br>' +
+          '2nd Runner Up for IACT Merdeka 58 Short Video competition! #IniAdalahCaraTanahairku<br><br>' +
+          'Original post:<br>https://www.facebook.com/watch/?v=10153159477924143',
         playlist: [
           {
-            id: '0XBgs2X5itE',
-            title: 'Initial',
+            id: '9t_scMTLr9g',
           },
         ],
       },
