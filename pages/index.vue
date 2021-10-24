@@ -24,9 +24,7 @@
           <span style="font-size: 80%"
             >( Also to increase your duration on this site so my demographics
             looks nice :p )</span
-          ><br /><br />
-          This website is still being built as we are speaking, so few pages
-          will be missing some contents :(
+          ><br />
         </p>
         <p id="whack_intro_block" class="mt-8 font-weight-bold whack_intro"></p>
         <p class="mt-10 text-right font-weight-light">
