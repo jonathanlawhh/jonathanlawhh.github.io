@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row v-once>
-      <v-col cols="12">
+      <v-col cols="12" class="text-center">
         <h2>Things that I do</h2>
         <p>And always excited to learn more</p>
       </v-col>

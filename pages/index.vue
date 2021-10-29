@@ -33,7 +33,9 @@
       </v-col>
     </v-row>
 
-    <CommunityEngagement class="mb-8"></CommunityEngagement>
+    <Activities class="mb-16"></Activities>
+
+    <!--    <CommunityEngagement class="mb-8"></CommunityEngagement>-->
 
     <Skills class="mb-8"></Skills>
   </div>
@@ -43,7 +45,7 @@
 export default {
   name: 'Home',
   components: {
-    CommunityEngagement: () => import('@/components/CommunityEngagement'),
+    // CommunityEngagement: () => import('@/components/CommunityEngagement'),
     Skills: () => import('@/components/Skills'),
     ImageFrame: () => import('@/components/ImageFrame'),
   },
