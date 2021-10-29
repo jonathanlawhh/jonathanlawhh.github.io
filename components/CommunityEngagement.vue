@@ -6,11 +6,11 @@
         Posts by me on
         <a href="https://dev.to/jonathanlawhh" rel="noopener" target="_blank">
           <img
-            src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-            alt="Jonathan Law's DEV Community Profile"
-            height="30"
-            width="30"
-            style="filter: invert(95%); vertical-align: middle"
+              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+              alt="Jonathan Law's DEV Community Profile"
+              height="30"
+              width="30"
+              style="filter: invert(95%); vertical-align: middle"
           />
         </a>
       </p>
@@ -18,11 +18,11 @@
 
     <v-col v-for="(dp, i) in dev_posts" :key="i" cols="12" md="4" lg="3">
       <DisplayCard
-        :title="dp.title"
-        :subtitle="getTimestamp(dp.published_at)"
-        :body="dp.description"
-        action-text="READ MORE"
-        :action-url="dp.url"
+          :title="dp.title"
+          :subtitle="getTimestamp(dp.published_at)"
+          :body="dp.description"
+          action-text="READ MORE"
+          :action-url="dp.url"
       ></DisplayCard>
     </v-col>
 
@@ -32,11 +32,11 @@
           I write stuff at
           <a href="https://dev.to/jonathanlawhh" rel="noopener" target="_blank">
             <img
-              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-              alt="Jonathan Law's DEV Community Profile"
-              height="30"
-              width="30"
-              style="filter: invert(95%); vertical-align: middle"
+                src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+                alt="Jonathan Law's DEV Community Profile"
+                height="30"
+                width="30"
+                style="filter: invert(95%); vertical-align: middle"
             />
           </a>
         </p>
@@ -62,26 +62,26 @@ export default {
   }),
   mounted() {
     fetch('https://dev.to/api/articles?username=jonathanlawhh')
-      .then((r) => r.json())
-      .then((r) => {
-        if (this.filter) {
-          r = r.filter((item) => item.tag_list.includes(this.filter))
-        } else {
-          r.length = 3
-        }
+        .then((r) => r.json())
+        .then((r) => {
+          if (this.filter) {
+            r = r.filter((item) => item.tag_list.includes(this.filter))
+          } else {
+            r.length = 3
+          }
 
-        this.dev_posts = r
-      })
+          this.dev_posts = r
+        })
   },
   methods: {
     getTimestamp(inputDate) {
       return inputDate
-        ? `${inputDate.split('T')[0].toString()} ${inputDate
-            .split('T')[1]
-            .split('.')[0]
-            .substr(0, 5)
-            .toString()}`
-        : null
+          ? `${inputDate.split('T')[0].toString()} ${inputDate
+              .split('T')[1]
+              .split('.')[0]
+              .substr(0, 5)
+              .toString()}`
+          : null
     },
   },
 }

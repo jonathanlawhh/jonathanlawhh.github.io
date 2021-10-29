@@ -2,18 +2,14 @@
   <div>
     <v-row style="position: sticky; top: 72px; z-index: 6">
       <v-col cols="12">
-        <v-btn outlined text to="/works/" exact large
-          ><v-icon>chevron_left</v-icon>BACK TO WORKS</v-btn
-        >
+        <v-btn outlined text to="/works/" exact large>
+          <v-icon>chevron_left</v-icon>
+          BACK TO WORKS
+        </v-btn>
       </v-col>
     </v-row>
 
-    <v-row
-      v-if="!activated"
-      style="height: 70vh"
-      align="center"
-      class="text-center"
-    >
+    <v-row v-if="!activated" style="height: 70vh" align="center" class="text-center">
       <v-col cols="12">
         <h3 class="display-3 font-weight-bold">{{ title }}</h3>
         <p class="font-weight-thin">

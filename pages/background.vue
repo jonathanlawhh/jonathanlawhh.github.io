@@ -5,7 +5,7 @@
         <h2>Extra courses</h2>
         <p>
           Online courses that I took when they were free (It's expensive ok).
-          <br />
+          <br/>
           Can't share my YouTube history sooo 😏
         </p>
       </v-col>
@@ -16,12 +16,9 @@
             <v-card outlined style="background-color: transparent">
               <v-card-text>
                 <p>Courses related to BigQuery and Machine Learning</p>
-                <v-btn
-                  color="brown"
-                  target="_blank"
-                  href="https://app.pluralsight.com/profile/jonathanlawhh"
-                  >Pluralsight</v-btn
-                >
+                <v-btn color="brown" target="_blank" href="https://app.pluralsight.com/profile/jonathanlawhh">
+                  Pluralsight
+                </v-btn>
               </v-card-text>
             </v-card>
           </v-col>
@@ -30,12 +27,10 @@
             <v-card outlined style="background-color: transparent">
               <v-card-text>
                 <p>Courses related to Google Cloud Infrastructure</p>
-                <v-btn
-                  color="blue"
-                  target="_blank"
-                  href="https://www.qwiklabs.com/public_profiles/80fd39b3-19aa-47bf-9681-d17be9468f9e"
-                  >Qwiklabs</v-btn
-                >
+                <v-btn color="blue" target="_blank"
+                       href="https://www.qwiklabs.com/public_profiles/80fd39b3-19aa-47bf-9681-d17be9468f9e">
+                  wiklabs
+                </v-btn>
               </v-card-text>
             </v-card>
           </v-col>
@@ -51,52 +46,32 @@
     </v-row>
 
     <v-timeline :dense="$vuetify.breakpoint.mdAndDown">
-      <v-timeline-item
-        v-for="(info, i) in infos"
-        v-once
-        :key="i"
-        :color="`${info.theme_color} lighten-1`"
-        :right="info.direction === 'r'"
-        :left="info.direction === 'l'"
-      >
+      <v-timeline-item v-for="(info, i) in infos" v-once :key="i" :color="`${info.theme_color} lighten-1`"
+                       :right="info.direction === 'r'" :left="info.direction === 'l'">
         <template v-if="!$vuetify.breakpoint.smAndDown" #opposite>
-          <span
-            :class="`headline font-weight-bold ${info.theme_color}--text`"
-            v-text="info.duration"
-          ></span>
+          <span :class="`headline font-weight-bold ${info.theme_color}--text`" v-text="info.duration"></span>
         </template>
 
-        <v-lazy
-          v-model="info.act"
-          :options="{ threshold: 0.5 }"
-          min-height="200"
-          transition="fade-transition"
-        >
+        <v-lazy v-model="info.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
           <v-card>
             <v-card-title :class="`${info.theme_color} lighten-1`">
               <v-icon dark size="32" class="mr-4">{{ info.icon }}</v-icon>
               <h3 class="white--text font-weight-light">{{ info.title }}</h3>
-              <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">{{
-                info.duration
-              }}</v-card-subtitle>
+              <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">
+                {{ info.duration }}
+              </v-card-subtitle>
             </v-card-title>
             <v-container>
               <v-row>
                 <v-col cols="12">{{ info.desc }}</v-col>
 
-                <template
-                  v-if="info.title === 'Bsc Hons in Intelligent Systems'"
-                >
-                  <img
-                    src="/img/graduation_me.webp"
-                    style="width: 100%"
-                    alt="Jonathan's graduation slide"
-                  />
+                <template v-if="info.title === 'Bsc Hons in Intelligent Systems'">
+                  <img src="/img/graduation_me.webp" style="width: 100%" alt="Jonathan's graduation slide"/>
                 </template>
 
                 <template v-if="info.title === 'Technical Assistant'">
                   <v-col cols="12" md="6">
-                    <b>2019 - Promoted to Lab Chief</b><br />
+                    <b>2019 - Promoted to Lab Chief</b><br/>
                     <span class="text--secondary">
                       Managing servers, coordinating the Technical Assistants
                       team, setting up and enforcing SOPs for APU
@@ -104,7 +79,7 @@
                   </v-col>
 
                   <v-col cols="12" md="6">
-                    <b>2018 - Promoted to Head of Software Department</b><br />
+                    <b>2018 - Promoted to Head of Software Department</b><br/>
                     <span class="text--secondary">
                       Managing and planning maintenance on campus, setting up
                       servers and coordinating the Software Department
@@ -112,7 +87,7 @@
                   </v-col>
 
                   <v-col cols="12" md="6">
-                    <b>2017 - Promoted to Software Department</b><br />
+                    <b>2017 - Promoted to Software Department</b><br/>
                     <span class="text--secondary">
                       Creating images, automating labs administration
                     </span>

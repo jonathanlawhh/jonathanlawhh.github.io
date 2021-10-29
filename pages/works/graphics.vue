@@ -6,13 +6,7 @@
       <v-col cols="12">
         <h2>YouTube vids</h2>
       </v-col>
-      <v-col
-        v-for="(vid, i) in yt_videos"
-        :key="i"
-        cols="12"
-        xl="10"
-        offset-xl="1"
-      >
+      <v-col v-for="(vid, i) in yt_videos" :key="i" cols="12" xl="10" offset-xl="1">
         <YTComponent :vid-obj="vid"></YTComponent>
         <v-divider></v-divider>
       </v-col>
@@ -28,12 +22,7 @@
       </v-col>
 
       <v-col v-for="(sp, k) in stereo_panos" :key="k" cols="12" md="6" lg="4">
-        <v-lazy
-          v-model="sp.act"
-          :options="{ threshold: 0.5 }"
-          min-height="200"
-          transition="fade-transition"
-        >
+        <v-lazy v-model="sp.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
           <GalleryImage :img-obj="sp"></GalleryImage>
         </v-lazy>
       </v-col>
@@ -45,12 +34,7 @@
         <p>Hover over to know more!</p>
       </v-col>
       <v-col v-for="(g, j) in gallery" :key="j" cols="12" md="6" lg="4">
-        <v-lazy
-          v-model="g.act"
-          :options="{ threshold: 0.5 }"
-          min-height="200"
-          transition="fade-transition"
-        >
+        <v-lazy v-model="g.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
           <GalleryImage :img-obj="g"></GalleryImage>
         </v-lazy>
       </v-col>
@@ -73,31 +57,6 @@ export default {
         'Projects relating to media such as Adobe Photoshop, Adobe After Effects or 3DS Max created by Jonathan Law',
     },
     yt_videos: [
-      // {
-      //   title: 'Faber Project',
-      //   description:
-      //     'Rendered cinematic using Unreal Engine 4.2 and model with 3DS Max, post processed with After Effects.<br>' +
-      //     'The environment is based on the floor (Faber Towers, Taman Desa) where I used to work as a child care part timer.\n' +
-      //     'The whole idea is to project a disoriented person who is isolated/trapped in this "dead zone" with no way out.',
-      //   playlist: [
-      //     {
-      //       id: '1xavkofiUlw',
-      //       title: '27.09.2019',
-      //     },
-      //     {
-      //       id: 'VU_Y-kp1JhI',
-      //       title: '18.08.2017',
-      //     },
-      //     {
-      //       id: 'SPMz_IwaoO8',
-      //       title: '27.06.2017',
-      //     },
-      //     {
-      //       id: 'USuUsPO7UaU',
-      //       title: '02.06.2017',
-      //     },
-      //   ],
-      // },
       {
         title: 'The Fuock',
         description:

@@ -1,19 +1,13 @@
 <template>
   <div class="d-flex flex-row justify-center" style="flex-shrink: 1">
-    <div
-      class="img_container d-flex flex-column align-center justify-center"
-      :style="'background-image:url(' + imgObj.src + ')'"
-    >
+    <div class="img_container d-flex flex-column align-center justify-center"
+         :style="'background-image:url(' + imgObj.src + ')'">
       <h3 class="hl-text title" v-text="imgObj.title"></h3>
       <p class="hl-text desc" v-text="imgObj.description"></p>
-      <a
-        v-if="imgObj.view"
-        class="hl-text link mt-12 white--text text-decoration-none"
-        :href="imgObj.view"
-        target="_blank"
-        rel="noreferrer"
-        >{{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}</a
-      >
+      <a v-if="imgObj.view" class="hl-text link mt-12 white--text text-decoration-none" :href="imgObj.view"
+         target="_blank" rel="noreferrer">
+        {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}
+      </a>
     </div>
   </div>
 </template>
@@ -153,9 +147,11 @@ export default {
   opacity: 1;
   transform: translate3d(50%, 0px, 0px);
 }
+
 .img_container:hover > .desc {
   transition-delay: 0.15s;
 }
+
 .img_container:hover > .link {
   transition-delay: 0.25s;
 }

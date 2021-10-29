@@ -1,21 +1,7 @@
 <template>
   <div
-    style="
-      position: relative;
-      max-width: 320px;
-      max-height: 320px;
-      min-width: 320px;
-      min-height: 320px;
-      background-color: #424242;
-    "
-  >
-    <img
-      :src="imageUrl"
-      :alt="altText"
-      height="100%"
-      class="img"
-      loading="lazy"
-    />
+    style="position: relative; max-width: 320px; max-height: 320px; min-width: 320px; min-height: 320px; background-color: #424242;">
+    <img :src="imageUrl" :alt="altText" height="100%" class="img" loading="lazy"/>
     <div class="f-frame" style="--frame-color: #fff"></div>
   </div>
 </template>

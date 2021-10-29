@@ -2,12 +2,8 @@
   <div>
     <v-row class="mb-8">
       <v-col xl="3" lg="4" md="6" sm="12">
-        <ImageFrame
-          image-url="/img/me.webp"
-          style="width: 100%; height: 100%"
-          class="ma-2"
-          alt-text="An image of Jonathan Law on a yacht"
-        ></ImageFrame>
+        <ImageFrame image-url="/img/me.webp" style="width: 100%; height: 100%" class="ma-2"
+                    alt-text="An image of Jonathan Law on a yacht"></ImageFrame>
       </v-col>
 
       <v-col xl="9" lg="8" md="6" sm="12">
@@ -17,25 +13,24 @@
           <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>, a
           full stack developer based in Malaysia. I work with tech stuff
           including but not limited to software's, hardware's and
-          infrastructures.<br /><br />
+          infrastructures.<br/><br/>
           Tbh I am not sure what people write on their personal website, so I
           will end it here. Feel free to browse around this site and hopefully
-          there are contents that made your visit un-wasted!<br />
+          there are contents that made your visit un-wasted!<br/>
           <span style="font-size: 80%"
-            >( Also to increase your duration on this site so my demographics
+          >( Also to increase your duration on this site so my demographics
             looks nice :p )</span
-          ><br />
+          ><br/>
         </p>
         <p id="whack_intro_block" class="mt-8 font-weight-bold whack_intro"></p>
         <p class="mt-10 text-right font-weight-light">
-          {{ cat_fact }}<br />(catfact.ninja, 2021)
+          {{ cat_fact }}<br/>
+          (catfact.ninja, 2021)
         </p>
       </v-col>
     </v-row>
 
     <Activities class="mb-16"></Activities>
-
-    <!--    <CommunityEngagement class="mb-8"></CommunityEngagement>-->
 
     <Skills class="mb-8"></Skills>
   </div>
@@ -45,7 +40,7 @@
 export default {
   name: 'Home',
   components: {
-    // CommunityEngagement: () => import('@/components/CommunityEngagement'),
+    Activities: () => import('@/components/Activities'),
     Skills: () => import('@/components/Skills'),
     ImageFrame: () => import('@/components/ImageFrame'),
   },

@@ -8,14 +8,9 @@
     </v-card-text>
     <v-card-actions v-if="actionUrl">
       <v-spacer></v-spacer>
-      <v-btn
-        class="hover-fade-in hover-motion"
-        text
-        :href="actionUrl"
-        target="_blank"
-        rel="noopener"
-        >{{ actionText }}</v-btn
-      >
+      <v-btn class="hover-fade-in hover-motion" text :href="actionUrl" target="_blank" rel="noopener">
+        {{ actionText }}
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -53,6 +48,7 @@ export default {
   border-color: #d4d4d4;
   border-style: solid;
 }
+
 .v-card {
   min-height: 160px;
   transition: all 0.15s ease;

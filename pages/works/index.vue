@@ -12,22 +12,13 @@
 
     <v-row class="mt-8">
       <v-col v-for="(w, i) in works" :key="i" cols="12" md="4" class="mb-8">
-        <v-card
-          :to="w.url"
-          class="hover-motion"
-          style="
+        <v-card :to="w.url" class="hover-motion" style="
             position: relative;
             background-color: #424242;
             border: 1px solid white;
             max-width: 480px;
-          "
-        >
-          <v-img
-            style="opacity: 0.75"
-            width="100%"
-            height="200"
-            :src="w.image"
-          ></v-img>
+          ">
+          <v-img style="opacity: 0.75" width="100%" height="200" :src="w.image"></v-img>
           <div class="custom-card-overlay hover-motion">
             <v-card class="custom-card-overlay-card" elevation="12" light>
               <h3 style="font-size: 140%">{{ w.title }}</h3>

@@ -8,12 +8,7 @@
         <p>Hover over to know more!</p>
       </v-col>
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" lg="4" xl="3">
-        <v-lazy
-          v-model="p.act"
-          :options="{ threshold: 0.5 }"
-          min-height="200"
-          transition="fade-transition"
-        >
+        <v-lazy v-model="p.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
           <GalleryImage :img-obj="p"></GalleryImage>
         </v-lazy>
       </v-col>
@@ -36,15 +31,12 @@
           <p class="mt-4">
             <span class="font-weight-bold">Published at: </span>
             International Journal of Current Research and Review
-            <br />
+            <br/>
             <span class="font-weight-bold">DOI URL: </span>
-            <a
-              href="http://dx.doi.org/10.31782/IJCRR.2021.131123"
-              rel="noopener"
-              target="_blank"
-              class="a-custom-button white--text"
-              >http://dx.doi.org/10.31782/IJCRR.2021.131123</a
-            >
+            <a href="http://dx.doi.org/10.31782/IJCRR.2021.131123" rel="noopener" target="_blank"
+               class="a-custom-button white--text">
+              http://dx.doi.org/10.31782/IJCRR.2021.131123
+            </a>
           </p>
         </DisplayCard>
       </v-col>

@@ -7,23 +7,13 @@
           <v-icon small>arrow_upward</v-icon>
         </p>
       </v-col>
-      <v-col
-        cols="5"
-        offset="7"
-        style="border-bottom: aliceblue 1px solid; width: 100%"
-      ></v-col>
+      <v-col cols="5" offset="7" style="border-bottom: aliceblue 1px solid; width: 100%"></v-col>
     </v-row>
 
     <v-row>
       <v-col cols="12" md="8">
         <a class="link-social-media ml-4" @click="createChat">
-          <svg
-            x="0px"
-            y="0px"
-            viewBox="0 0 512 512"
-            xml:space="preserve"
-            fill="white"
-          >
+          <svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white">
             <g>
               <path
                 :class="chat_loading_class"
@@ -35,20 +25,9 @@
           </svg>
         </a>
 
-        <a
-          v-for="(c, i) in contact"
-          :key="i"
-          :href="c.url"
-          target="_blank"
-          rel="noopener"
-          class="ml-8 link-social-media"
-        >
-          <img
-            class="mt-1"
-            :src="'/icons/' + c.icon"
-            :alt="c.media"
-            loading="lazy"
-          />
+        <a v-for="(c, i) in contact" :key="i" :href="c.url" target="_blank" rel="noopener"
+           class="ml-8 link-social-media">
+          <img class="mt-1" :src="'/icons/' + c.icon" :alt="c.media" loading="lazy"/>
         </a>
       </v-col>
 
@@ -63,15 +42,15 @@
 
         <p>
           It seems like there is an ad blocker stopping Messenger from popping
-          out!<br />
+          out!<br/>
           This is completely normal as ad blockers generally treat Facebook
           domains on other sites "trackers"
         </p>
 
         <p>
           Do not worry as Messenger on this site does not load until you choose
-          to chat me!<br />
-          You can go ahead and disable your ad blocker for this site,<br />
+          to chat me!<br/>
+          You can go ahead and disable your ad blocker for this site,<br/>
           or reach me via jon_law98@hotmail.com
         </p>
 

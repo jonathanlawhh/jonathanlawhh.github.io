@@ -8,18 +8,8 @@
     </v-row>
 
     <v-row>
-      <v-col
-        v-for="(s, i) in skills"
-        :key="i"
-        cols="12"
-        md="6"
-        lg="3"
-        class="mb-8"
-      >
-        <v-card
-          class="hover-motion"
-          style="position: relative; border: 1px solid white"
-        >
+      <v-col v-for="(s, i) in skills" :key="i" cols="12" md="6" lg="3" class="mb-8">
+        <v-card class="hover-motion" style="position: relative; border: 1px solid white">
           <div class="custom-card-overlay hover-motion">
             <v-card class="custom-card-overlay-card" elevation="12" light>
               <h3 style="font-size: 140%">{{ s.title }}</h3>

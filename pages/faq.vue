@@ -4,7 +4,7 @@
       <v-col cols="12">
         <h2>Frequently Asked Questions</h2>
         <p>
-          Not really.<br />
+          Not really.<br/>
           This page exists as a shameless plug to just try how structured data
           helps in getting Google Assistant to recognize this page.
         </p>
@@ -16,9 +16,9 @@
         <v-col cols="12" md="4">
           <h3 class="font-weight-bold display-1">{{ f.q }}</h3>
         </v-col>
-        <v-col cols="1" style="max-width: 4px"
-          ><div class="v-divider--vertical"></div
-        ></v-col>
+        <v-col cols="1" style="max-width: 4px">
+          <div class="v-divider--vertical"></div>
+        </v-col>
         <v-col cols="11" md="7">
           {{ f.a }}
         </v-col>
