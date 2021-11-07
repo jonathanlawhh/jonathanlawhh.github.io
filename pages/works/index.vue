@@ -57,6 +57,11 @@ export default {
         url: '/works/graphics/',
         image: '/img/logo_w_graphics.webp',
         desc: '3DS Max, Unreal Engine, Adobe stuffs',
+      },{
+        title: 'NFT',
+        url: '/works/nft/',
+        image: '/gallery/nft/art-20211107150655.svg',
+        desc: 'Word cloud art created using data from YouTube captions',
       },
     ],
   }),

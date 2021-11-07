@@ -36,7 +36,7 @@
       <v-card class="pa-8" elevation="16">
         <h3 class="text-center">Using data to make NFT art!</h3>
         <p class="text-center mt-4">
-          <a class="a-custom-button white--text text-decoration-none" disabled>WIP (COMING SOON)</a>
+          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">[WIP] here</nuxt-link>
         </p>
       </v-card>
     </v-col>
