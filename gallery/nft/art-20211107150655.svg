@@ -1,0 +1,504 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"  style="opacity: 0.2">
+<style>@font-face{font-family:'Roboto';font-weight:normal;font-style:normal;src:url("data:application/font-woff;charset=utf-8;base64,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")format("woff");}</style>
+<style>text{font-family:'Roboto';font-weight:normal;font-style:normal;}</style>
+<text transform="translate(2516,542)" font-size="626" style="fill:rgb(68, 63, 59)">title</text>
+<text transform="translate(3,1939)" font-size="507" style="fill:rgb(28, 27, 25)">col col</text>
+<text transform="translate(146,730)" font-size="457" style="fill:rgb(185, 183, 180)">class</text>
+<text transform="translate(2413,2064)" font-size="401" style="fill:rgb(15, 15, 15)">card</text>
+<text transform="translate(2357,754)" font-size="274" style="fill:rgb(81, 71, 70)">description</text>
+<text transform="translate(350,307)" font-size="274" style="fill:rgb(96, 90, 84)">text</text>
+<text transform="translate(3120,1015)" font-size="270" style="fill:rgb(137, 134, 132)">style</text>
+<text transform="translate(2339,1714)" font-size="262" style="fill:rgb(16, 15, 15)">icon</text>
+<text transform="translate(1991,1104)" font-size="231" style="fill:rgb(69, 63, 60)">width</text>
+<text transform="translate(642,1581)" font-size="231" style="fill:rgb(33, 22, 22)">col row</text>
+<text transform="translate(541,2110)" font-size="226" style="fill:rgb(14, 14, 13)">btn</text>
+<text transform="translate(2113,1906)" font-size="226" style="fill:rgb(13, 12, 12)">div</text>
+<text transform="translate(3342,2023)" font-size="211" style="fill:rgb(22, 21, 20)">work</text>
+<text transform="translate(1966,1638)" font-size="200" style="fill:rgb(16, 15, 14)">img</text>
+<text transform="translate(2577,968)" font-size="200" style="fill:rgb(149, 144, 142)">height</text>
+<text transform="translate(855,842)" font-size="200" style="fill:rgb(167, 163, 159)">span</text>
+<text transform="translate(2539,1110)" font-size="122" style="fill:rgb(107, 92, 94)">template script</text>
+<text transform="translate(465,421)" font-size="122" style="fill:rgb(125, 121, 116)">script export</text>
+<text transform="translate(113,792) rotate(-90)" font-size="122" style="fill:rgb(97, 91, 86)">export default</text>
+<text transform="translate(152,96)" font-size="122" style="fill:rgb(95, 89, 84)">default name</text>
+<text transform="translate(626,878)" font-size="118" style="fill:rgb(147, 143, 139)">info</text>
+<text transform="translate(3321,1850)" font-size="114" style="fill:rgb(19, 18, 17)">url</text>
+<text transform="translate(2964,1670)" font-size="114" style="fill:rgb(25, 24, 24)">border</text>
+<text transform="translate(3436,1119)" font-size="114" style="fill:rgb(108, 104, 100)">top</text>
+<text transform="translate(869,2113)" font-size="114" style="fill:rgb(23, 23, 22)">span class</text>
+<text transform="translate(3518,127)" font-size="110" style="fill:rgb(68, 63, 59)">href</text>
+<text transform="translate(1890,1429)" font-size="110" style="fill:rgb(34, 33, 31)">https</text>
+<text transform="translate(1429,1328)" font-size="110" style="fill:rgb(70, 56, 54)">desc</text>
+<text transform="translate(2402,1818)" font-size="110" style="fill:rgb(20, 20, 20)">Jonathan Law</text>
+<text transform="translate(3785,1122) rotate(-90)" font-size="110" style="fill:rgb(68, 64, 59)">import components</text>
+<text transform="translate(59,1641)" font-size="110" style="fill:rgb(24, 23, 21)">class text</text>
+<text transform="translate(3180,2121)" font-size="110" style="fill:rgb(15, 15, 15)">class custom</text>
+<text transform="translate(908,948)" font-size="86" style="fill:rgb(188, 177, 176)">solid transparent</text>
+<text transform="translate(2009,841)" font-size="86" style="fill:rgb(57, 49, 45)">nuxt emit</text>
+<text transform="translate(2132,1491)" font-size="84" style="fill:rgb(14, 14, 13)">emit seo_update'</text>
+<text transform="translate(842,240)" font-size="81" style="fill:rgb(120, 113, 105)">row</text>
+<text transform="translate(1242,1412)" font-size="81" style="fill:rgb(51, 39, 36)">created</text>
+<text transform="translate(41,2114)" font-size="81" style="fill:rgb(14, 14, 14)">row col</text>
+<text transform="translate(95,2013)" font-size="81" style="fill:rgb(14, 14, 13)">template div</text>
+<text transform="translate(2040,2123)" font-size="81" style="fill:rgb(16, 15, 15)">div template</text>
+<text transform="translate(2482,2127)" font-size="79" style="fill:rgb(13, 13, 13)">transparent border</text>
+<text transform="translate(1134,1648)" font-size="76" style="fill:rgb(29, 27, 25)">website</text>
+<text transform="translate(696,1642)" font-size="76" style="fill:rgb(19, 19, 16)">max width</text>
+<text transform="translate(2209,744)" font-size="73" style="fill:rgb(58, 51, 49)">filter</text>
+<text transform="translate(3536,531)" font-size="73" style="fill:rgb(77, 70, 64)">color</text>
+<text transform="translate(2182,2016)" font-size="73" style="fill:rgb(9, 9, 9)">center</text>
+<text transform="translate(890,323)" font-size="73" style="fill:rgb(125, 118, 111)">image</text>
+<text transform="translate(1952,1286) rotate(-90)" font-size="73" style="fill:rgb(57, 47, 42)">type String</text>
+<text transform="translate(148,791)" font-size="73" style="fill:rgb(225, 224, 223)">String default</text>
+<text transform="translate(2560,67)" font-size="73" style="fill:rgb(51, 47, 43)">border bottom</text>
+<text transform="translate(3445,1785)" font-size="73" style="fill:rgb(31, 30, 28)">font weight</text>
+<text transform="translate(2020,904)" font-size="73" style="fill:rgb(58, 49, 45)">font size</text>
+<text transform="translate(2915,1728)" font-size="70" style="fill:rgb(20, 20, 19)">jonathanlawhh</text>
+<text transform="translate(2658,821)" font-size="70" style="fill:rgb(99, 93, 85)">8px</text>
+<text transform="translate(3565,815)" font-size="70" style="fill:rgb(81, 77, 73)">click</text>
+<text transform="translate(1971,960)" font-size="70" style="fill:rgb(31, 25, 22)">media</text>
+<text transform="translate(1981,1757)" font-size="70" style="fill:rgb(10, 10, 9)">false</text>
+<text transform="translate(1069,1998)" font-size="70" style="fill:rgb(21, 20, 18)">target _blank</text>
+<text transform="translate(3244,185)" font-size="70" style="fill:rgb(68, 63, 59)">view_text Click</text>
+<text transform="translate(1205,1019)" font-size="70" style="fill:rgb(182, 180, 178)">custom card</text>
+<text transform="translate(2420,585) rotate(-90)" font-size="70" style="fill:rgb(43, 40, 36)">card overlay</text>
+<text transform="translate(3201,70)" font-size="70" style="fill:rgb(64, 60, 57)">view https</text>
+<text transform="translate(2074,1958)" font-size="66" style="fill:rgb(12, 12, 12)">subtitle</text>
+<text transform="translate(2204,544)" font-size="66" style="fill:rgb(46, 41, 38)">props</text>
+<text transform="translate(2180,1372)" font-size="66" style="fill:rgb(41, 20, 20)">hover</text>
+<text transform="translate(134,443)" font-size="66" style="fill:rgb(87, 82, 77)">transition</text>
+<text transform="translate(2147,602)" font-size="66" style="fill:rgb(55, 49, 46)">ease</text>
+<text transform="translate(1401,1483)" font-size="66" style="fill:rgb(50, 39, 36)">content</text>
+<text transform="translate(164,166)" font-size="66" style="fill:rgb(101, 96, 90)">12px</text>
+<text transform="translate(2412,1549)" font-size="55" style="fill:rgb(14, 14, 14)">LandingComponent</text>
+<text transform="translate(3672,1157)" font-size="55" style="fill:rgb(173, 169, 165)">webp'</text>
+<text transform="translate(3155,799)" font-size="55" style="fill:rgb(73, 68, 65)">theme_color</text>
+<text transform="translate(3462,1863)" font-size="55" style="fill:rgb(27, 26, 25)">duration</text>
+<text transform="translate(2485,350) rotate(-90)" font-size="55" style="fill:rgb(46, 43, 39)">key cols</text>
+<text transform="translate(1490,1922) rotate(-90)" font-size="55" style="fill:rgb(161, 159, 158)">script template</text>
+<text transform="translate(3420,437)" font-size="55" style="fill:rgb(72, 65, 61)">default null</text>
+<text transform="translate(290,1541)" font-size="52" style="fill:rgb(44, 42, 39)">DisplayCard</text>
+<text transform="translate(547,136)" font-size="52" style="fill:rgb(91, 86, 80)">sheet</text>
+<text transform="translate(423,1892) rotate(-90)" font-size="52" style="fill:rgb(38, 34, 31)">index</text>
+<text transform="translate(816,152)" font-size="52" style="fill:rgb(119, 112, 104)">white</text>
+<text transform="translate(1437,1524)" font-size="52" style="fill:rgb(47, 37, 34)">imgObj</text>
+<text transform="translate(1301,878)" font-size="52" style="fill:rgb(118, 113, 108)">view</text>
+<text transform="translate(338,2124)" font-size="52" style="fill:rgb(17, 17, 17)">project</text>
+<text transform="translate(1284,717) rotate(-90)" font-size="52" style="fill:rgb(216, 214, 212)">src https</text>
+<text transform="translate(2339,1423)" font-size="52" style="fill:rgb(53, 19, 21)">script style</text>
+<text transform="translate(140,353)" font-size="52" style="fill:rgb(82, 76, 71)">link social</text>
+<text transform="translate(2102,1146)" font-size="52" style="fill:rgb(109, 106, 104)">social media</text>
+<text transform="translate(3226,601) rotate(-90)" font-size="52" style="fill:rgb(70, 65, 61)">background color</text>
+<text transform="translate(956,1424)" font-size="52" style="fill:rgb(62, 42, 40)">12px solid</text>
+<text transform="translate(2880,474) rotate(-90)" font-size="52" style="fill:rgb(57, 53, 50)">2px solid</text>
+<text transform="translate(1871,1324)" font-size="52" style="fill:rgb(55, 52, 49)">custom mini</text>
+<text transform="translate(2892,115)" font-size="52" style="fill:rgb(48, 44, 42)">mini text</text>
+<text transform="translate(2523,520) rotate(-90)" font-size="49" style="fill:rgb(82, 77, 75)">dev</text>
+<text transform="translate(2380,865)" font-size="49" style="fill:rgb(10, 10, 8)">type</text>
+<text transform="translate(1171,1337)" font-size="49" style="fill:rgb(71, 44, 42)">display</text>
+<text transform="translate(2589,1010)" font-size="49" style="fill:rgb(72, 67, 65)">github</text>
+<text transform="translate(2692,583)" font-size="49" style="fill:rgb(86, 80, 74)">selected_vid</text>
+<text transform="translate(335,829)" font-size="49" style="fill:rgb(218, 217, 215)">GalleryImage</text>
+<text transform="translate(987,231)" font-size="49" style="fill:rgb(140, 133, 125)">gallery</text>
+<text transform="translate(2741,505) rotate(-90)" font-size="49" style="fill:rgb(47, 43, 41)">position absolute</text>
+<text transform="translate(3403,591)" font-size="49" style="fill:rgb(81, 74, 69)">eslint disable</text>
+<text transform="translate(2794,796)" font-size="49" style="fill:rgb(88, 81, 75)">width height</text>
+<text transform="translate(1932,1682)" font-size="49" style="fill:rgb(80, 80, 79)">custom pink</text>
+<text transform="translate(2788,1142)" font-size="41" style="fill:rgb(230, 225, 226)">img_container hover</text>
+<text transform="translate(980,455)" font-size="41" style="fill:rgb(119, 112, 103)">weight bold</text>
+<text transform="translate(2099,653)" font-size="41" style="fill:rgb(54, 48, 46)">sitting posture</text>
+<text transform="translate(2211,1715)" font-size="41" style="fill:rgb(24, 24, 23)">seo title</text>
+<text transform="translate(178,279)" font-size="41" style="fill:rgb(93, 88, 83)">src img</text>
+<text transform="translate(2526,112)" font-size="41" style="fill:rgb(49, 45, 41)">src gallery</text>
+<text transform="translate(1452,1070)" font-size="41" style="fill:rgb(196, 194, 193)">webp' view</text>
+<text transform="translate(3668,348)" font-size="38" style="fill:rgb(67, 62, 58)">alt</text>
+<text transform="translate(584,1717) rotate(-90)" font-size="38" style="fill:rgb(26, 24, 21)">action</text>
+<text transform="translate(1144,1799)" font-size="38" style="fill:rgb(24, 23, 20)">item</text>
+<text transform="translate(3332,126)" font-size="38" style="fill:rgb(77, 72, 69)">methods</text>
+<text transform="translate(1989,1822)" font-size="38" style="fill:rgb(9, 9, 9)">lazy</text>
+<text transform="translate(952,1815)" font-size="38" style="fill:rgb(19, 18, 16)">overlay</text>
+<text transform="translate(374,2057)" font-size="38" style="fill:rgb(16, 16, 16)">facebook</text>
+<text transform="translate(906,56)" font-size="38" style="fill:rgb(147, 139, 131)">site</text>
+<text transform="translate(484,869)" font-size="38" style="fill:rgb(192, 190, 187)">youtube</text>
+<text transform="translate(3238,1925) rotate(-90)" font-size="38" style="fill:rgb(14, 14, 14)">const</text>
+<text transform="translate(672,1809) rotate(-90)" font-size="38" style="fill:rgb(15, 14, 11)">true</text>
+<text transform="translate(2898,1538)" font-size="38" style="fill:rgb(18, 18, 16)">320px</text>
+<text transform="translate(2993,1003)" font-size="38" style="fill:rgb(66, 62, 61)">toolbar</text>
+<text transform="translate(1150,871)" font-size="38" style="fill:rgb(115, 110, 105)">random</text>
+<text transform="translate(1018,2141)" font-size="38" style="fill:rgb(12, 12, 12)">CommunityEngagement</text>
+<text transform="translate(3022,175)" font-size="38" style="fill:rgb(50, 46, 45)">5P1</text>
+<text transform="translate(3518,239)" font-size="38" style="fill:rgb(71, 65, 59)">faq</text>
+<text transform="translate(36,2055)" font-size="38" style="fill:rgb(16, 16, 16)">hover fade</text>
+<text transform="translate(136,224)" font-size="38" style="fill:rgb(88, 83, 78)">hover motion</text>
+<text transform="translate(2438,792)" font-size="38" style="fill:rgb(20, 16, 13)">style scoped</text>
+<text transform="translate(226,623)" font-size="38" style="fill:rgb(103, 98, 94)">min height</text>
+<text transform="translate(631,2143)" font-size="38" style="fill:rgb(10, 10, 10)">style background</text>
+<text transform="translate(737,907)" font-size="38" style="fill:rgb(192, 191, 188)">seo script</text>
+<text transform="translate(584,774)" font-size="38" style="fill:rgb(131, 127, 123)">direction act</text>
+<text transform="translate(2131,2055)" font-size="38" style="fill:rgb(11, 11, 11)">act false</text>
+<text transform="translate(1530,1627)" font-size="35" style="fill:rgb(38, 36, 33)">svg</text>
+<text transform="translate(3035,307)" font-size="35" style="fill:rgb(81, 77, 74)">align</text>
+<text transform="translate(1954,1163)" font-size="35" style="fill:rgb(26, 25, 23)">key</text>
+<text transform="translate(2676,460) rotate(-90)" font-size="35" style="fill:rgb(48, 44, 41)">components</text>
+<text transform="translate(721,1937)" font-size="35" style="fill:rgb(19, 19, 17)">length</text>
+<text transform="translate(3241,1924)" font-size="35" style="fill:rgb(10, 10, 10)">4px</text>
+<text transform="translate(163,1569)" font-size="35" style="fill:rgb(50, 47, 44)">transform</text>
+<text transform="translate(1871,1285) rotate(-90)" font-size="35" style="fill:rgb(27, 27, 24)">2px</text>
+<text transform="translate(3686,1830)" font-size="35" style="fill:rgb(17, 17, 15)">opacity</text>
+<text transform="translate(2312,880)" font-size="35" style="fill:rgb(9, 9, 8)">chat</text>
+<text transform="translate(113,1863)" font-size="35" style="fill:rgb(13, 13, 12)">svg'</text>
+<text transform="translate(2770,1748)" font-size="35" style="fill:rgb(20, 20, 20)">stroke</text>
+<text transform="translate(1339,808)" font-size="35" style="fill:rgb(119, 112, 106)">animation</text>
+<text transform="translate(814,181)" font-size="35" style="fill:rgb(116, 109, 101)">keyframes</text>
+<text transform="translate(2277,478)" font-size="35" style="fill:rgb(43, 40, 35)">flex</text>
+<text transform="translate(3201,114)" font-size="35" style="fill:rgb(57, 53, 51)">hidden</text>
+<text transform="translate(2018,2009)" font-size="35" style="fill:rgb(21, 21, 21)">screen</text>
+<text transform="translate(2107,701)" font-size="35" style="fill:rgb(57, 50, 48)">app</text>
+<text transform="translate(771,1772) rotate(-90)" font-size="35" style="fill:rgb(20, 19, 16)">divider</text>
+<text transform="translate(2876,1660)" font-size="35" style="fill:rgb(22, 21, 20)">frame</text>
+<text transform="translate(876,2040)" font-size="35" style="fill:rgb(25, 25, 23)">outlined</text>
+<text transform="translate(687,1445)" font-size="35" style="fill:rgb(92, 30, 35)">activated</text>
+<text transform="translate(3189,2022)" font-size="35" style="fill:rgb(15, 15, 15)">Skills</text>
+<text transform="translate(1536,1363)" font-size="35" style="fill:rgb(63, 54, 51)">Adobe</text>
+<text transform="translate(111,1813)" font-size="35" style="fill:rgb(14, 13, 13)">working</text>
+<text transform="translate(3593,30)" font-size="35" style="fill:rgb(47, 44, 39)">iter</text>
+<text transform="translate(2521,1139)" font-size="35" style="fill:rgb(208, 203, 201)">whackBlock</text>
+<text transform="translate(687,459)" font-size="35" style="fill:rgb(106, 100, 95)">rel noopener</text>
+<text transform="translate(3553,375)" font-size="35" style="fill:rgb(71, 65, 61)">data return</text>
+<text transform="translate(502,695) rotate(-90)" font-size="35" style="fill:rgb(97, 90, 82)">position relative</text>
+<text transform="translate(3424,1168)" font-size="35" style="fill:rgb(219, 218, 217)">seo activated</text>
+<text transform="translate(718,1902) rotate(-90)" font-size="35" style="fill:rgb(18, 18, 16)">data seo</text>
+<text transform="translate(3303,1890)" font-size="35" style="fill:rgb(19, 19, 19)">Machine Learning</text>
+<text transform="translate(2530,272)" font-size="32" style="fill:rgb(45, 41, 38)">src</text>
+<text transform="translate(890,868)" font-size="32" style="fill:rgb(107, 101, 95)">net</text>
+<text transform="translate(2046,750)" font-size="32" style="fill:rgb(61, 56, 54)">vertical</text>
+<text transform="translate(914,475)" font-size="32" style="fill:rgb(119, 112, 105)">body</text>
+<text transform="translate(2113,777)" font-size="32" style="fill:rgb(54, 48, 46)">mounted</text>
+<text transform="translate(2028,1858)" font-size="32" style="fill:rgb(13, 13, 13)">fetch</text>
+<text transform="translate(1918,1577) rotate(-90)" font-size="32" style="fill:rgb(36, 35, 33)">inputDate</text>
+<text transform="translate(1032,197) rotate(-90)" font-size="32" style="fill:rgb(211, 209, 207)">return</text>
+<text transform="translate(137,464)" font-size="32" style="fill:rgb(84, 78, 72)">spacer</text>
+<text transform="translate(1387,755) rotate(-90)" font-size="32" style="fill:rgb(217, 216, 214)">position</text>
+<text transform="translate(2,2145)" font-size="32" style="fill:rgb(16, 16, 16)">bottom</text>
+<text transform="translate(862,1399)" font-size="32" style="fill:rgb(114, 44, 48)">button</text>
+<text transform="translate(915,1854)" font-size="32" style="fill:rgb(17, 17, 15)">link</text>
+<text transform="translate(3261,2047)" font-size="32" style="fill:rgb(18, 18, 18)">chat_loading_class</text>
+<text transform="translate(3362,322)" font-size="32" style="fill:rgb(69, 63, 59)">loading</text>
+<text transform="translate(3119,848)" font-size="32" style="fill:rgb(77, 72, 67)">setTimeout</text>
+<text transform="translate(3812,400) rotate(-90)" font-size="32" style="fill:rgb(69, 65, 60)">GalleryImageComponent'</text>
+<text transform="translate(3698,113)" font-size="32" style="fill:rgb(70, 65, 61)">480px</text>
+<text transform="translate(746,1973)" font-size="32" style="fill:rgb(16, 16, 15)">navigationRoutes</text>
+<text transform="translate(1060,664)" font-size="32" style="fill:rgb(110, 103, 93)">route</text>
+<text transform="translate(2298,915)" font-size="32" style="fill:rgb(64, 53, 50)">LandingComponent'</text>
+<text transform="translate(1581,1097)" font-size="32" style="fill:rgb(161, 158, 156)">40px</text>
+<text transform="translate(2979,1030)" font-size="32" style="fill:rgb(79, 73, 71)">closeSheet</text>
+<text transform="translate(109,1766)" font-size="32" style="fill:rgb(17, 16, 15)">light</text>
+<text transform="translate(3017,435)" font-size="32" style="fill:rgb(62, 57, 52)">clicked</text>
+<text transform="translate(1990,1935)" font-size="32" style="fill:rgb(23, 23, 23)">know</text>
+<text transform="translate(3593,308)" font-size="32" style="fill:rgb(70, 64, 60)">sitting</text>
+<text transform="translate(2129,1521)" font-size="32" style="fill:rgb(14, 14, 13)">review</text>
+<text transform="translate(254,570)" font-size="32" style="fill:rgb(93, 88, 83)">time</text>
+<text transform="translate(3333,1770) rotate(-90)" font-size="32" style="fill:rgb(13, 11, 12)">try</text>
+<text transform="translate(1096,982)" font-size="32" style="fill:rgb(139, 135, 130)">emoji</text>
+<text transform="translate(1086,1591) rotate(-90)" font-size="32" style="fill:rgb(44, 32, 30)">vid</text>
+<text transform="translate(1059,1338)" font-size="32" style="fill:rgb(80, 60, 58)">using</text>
+<text transform="translate(2138,1416)" font-size="32" style="fill:rgb(8, 8, 8)">clock</text>
+<text transform="translate(966,269)" font-size="32" style="fill:rgb(131, 124, 117)">classroom</text>
+<text transform="translate(2036,2046)" font-size="32" style="fill:rgb(20, 19, 19)">Fuock</text>
+<text transform="translate(1102,1369)" font-size="32" style="fill:rgb(84, 44, 44)">courses</text>
+<text transform="translate(132,389)" font-size="32" style="fill:rgb(72, 67, 61)">timeline</text>
+<text transform="translate(3335,856)" font-size="32" style="fill:rgb(67, 64, 61)">Technical</text>
+<text transform="translate(3275,1151)" font-size="32" style="fill:rgb(203, 202, 201)">Promoted</text>
+<text transform="translate(2427,416)" font-size="32" style="fill:rgb(56, 51, 48)">Managing</text>
+<text transform="translate(3050,1594)" font-size="32" style="fill:rgb(52, 52, 50)">Server</text>
+<text transform="translate(2992,366)" font-size="32" style="fill:rgb(62, 57, 53)">page</text>
+<text transform="translate(419,343)" font-size="32" style="fill:rgb(92, 86, 80)">d4d4d4 solid</text>
+<text transform="translate(671,1985) rotate(-90)" font-size="32" style="fill:rgb(14, 14, 12)">icon small</text>
+<text transform="translate(1242,2031)" font-size="32" style="fill:rgb(17, 17, 15)">vidObj playlist</text>
+<text transform="translate(1213,1438)" font-size="32" style="fill:rgb(50, 36, 33)">lazy model</text>
+<text transform="translate(2770,190)" font-size="32" style="fill:rgb(48, 44, 41)">act options</text>
+<text transform="translate(1314,837) rotate(-90)" font-size="32" style="fill:rgb(219, 217, 216)">options threshold</text>
+<text transform="translate(1231,646) rotate(-90)" font-size="32" style="fill:rgb(224, 223, 221)">threshold min</text>
+<text transform="translate(3509,1710)" font-size="32" style="fill:rgb(35, 34, 33)">transition fade</text>
+<text transform="translate(3446,2151)" font-size="32" style="fill:rgb(15, 15, 15)">fade transition</text>
+<text transform="translate(1326,1335)" font-size="32" style="fill:rgb(62, 46, 43)">img obj</text>
+<text transform="translate(3475,1042)" font-size="32" style="fill:rgb(131, 127, 125)">obj GalleryImage</text>
+<text transform="translate(2933,2029) rotate(-90)" font-size="32" style="fill:rgb(13, 13, 12)">Law Hui</text>
+<text transform="translate(3523,850)" font-size="32" style="fill:rgb(64, 61, 59)">Hui Hao</text>
+<text transform="translate(120,2140)" font-size="32" style="fill:rgb(11, 11, 11)">png' view_text</text>
+<text transform="translate(899,1996)" font-size="32" style="fill:rgb(36, 36, 34)">3DS Max</text>
+<text transform="translate(1272,1293)" font-size="32" style="fill:rgb(55, 48, 44)">full stack</text>
+<text transform="translate(1373,1920) rotate(-90)" font-size="32" style="fill:rgb(38, 37, 34)">Google Assistant</text>
+<text transform="translate(2849,1575)" font-size="32" style="fill:rgb(22, 22, 20)">disable line</text>
+<text transform="translate(1497,1242)" font-size="28" style="fill:rgb(75, 67, 64)">Community</text>
+<text transform="translate(3012,469)" font-size="28" style="fill:rgb(60, 55, 51)">Profile</text>
+<text transform="translate(936,974)" font-size="28" style="fill:rgb(214, 213, 211)">dev_posts</text>
+<text transform="translate(3132,2144)" font-size="28" style="fill:rgb(9, 9, 9)">CommunityEngagement'</text>
+<text transform="translate(136,301)" font-size="28" style="fill:rgb(82, 77, 72)">DisplayCard'</text>
+<text transform="translate(836,1442)" font-size="28" style="fill:rgb(104, 49, 51)">data</text>
+<text transform="translate(3818,2004) rotate(-90)" font-size="28" style="fill:rgb(20, 20, 18)">jonathanlawhh'</text>
+<text transform="translate(2072,1484)" font-size="28" style="fill:rgb(15, 14, 13)">json</text>
+<text transform="translate(2502,1937)" font-size="28" style="fill:rgb(25, 25, 25)">split</text>
+<text transform="translate(3444,1813)" font-size="28" style="fill:rgb(18, 18, 17)">actionUrl</text>
+<text transform="translate(2871,1711)" font-size="28" style="fill:rgb(23, 22, 21)">15s</text>
+<text transform="translate(740,1886)" font-size="28" style="fill:rgb(12, 12, 10)">back</text>
+<text transform="translate(2850,1035)" font-size="28" style="fill:rgb(70, 65, 66)">offset</text>
+<text transform="translate(476,1666)" font-size="28" style="fill:rgb(42, 39, 34)">1px</text>
+<text transform="translate(824,956)" font-size="28" style="fill:rgb(186, 184, 181)">value</text>
+<text transform="translate(1334,690) rotate(-90)" font-size="28" style="fill:rgb(151, 147, 142)">max</text>
+<text transform="translate(3744,27)" font-size="28" style="fill:rgb(68, 64, 60)">blocker</text>
+<text transform="translate(3177,1801)" font-size="28" style="fill:rgb(14, 14, 14)">Messenger</text>
+<text transform="translate(2375,1371)" font-size="28" style="fill:rgb(60, 47, 46)">close</text>
+<text transform="translate(408,1488)" font-size="28" style="fill:rgb(46, 43, 38)">chatWidgetIntiated</text>
+<text transform="translate(2675,1841)" font-size="28" style="fill:rgb(8, 8, 8)">window</text>
+<text transform="translate(3043,1972)" font-size="28" style="fill:rgb(9, 9, 9)">fjs</text>
+<text transform="translate(642,1671)" font-size="28" style="fill:rgb(22, 21, 17)">infinite</text>
+<text transform="translate(3567,268)" font-size="28" style="fill:rgb(73, 65, 61)">none</text>
+<text transform="translate(3343,1753)" font-size="28" style="fill:rgb(17, 15, 15)">Object</text>
+<text transform="translate(1503,1592)" font-size="28" style="fill:rgb(40, 37, 33)">250px</text>
+<text transform="translate(2398,1135)" font-size="28" style="fill:rgb(87, 80, 77)">size</text>
+<text transform="translate(3240,202)" font-size="28" style="fill:rgb(67, 62, 59)">cover</text>
+<text transform="translate(3232,550)" font-size="28" style="fill:rgb(61, 55, 51)">inherit</text>
+<text transform="translate(453,1865) rotate(-90)" font-size="28" style="fill:rgb(41, 38, 33)">elevation</text>
+<text transform="translate(964,631)" font-size="28" style="fill:rgb(118, 111, 102)">large</text>
+<text transform="translate(2706,2150)" font-size="28" style="fill:rgb(10, 10, 10)">scroll_to_content</text>
+<text transform="translate(813,1868) rotate(-90)" font-size="28" style="fill:rgb(30, 29, 25)">ic_scroll_down</text>
+<text transform="translate(1515,1417)" font-size="28" style="fill:rgb(62, 49, 47)">something</text>
+<text transform="translate(2478,1742)" font-size="28" style="fill:rgb(12, 12, 11)">local_sheet</text>
+<text transform="translate(995,1500) rotate(-90)" font-size="28" style="fill:rgb(79, 47, 46)">html</text>
+<text transform="translate(2196,2146)" font-size="28" style="fill:rgb(10, 10, 10)">BigQuery</text>
+<text transform="translate(2818,1878)" font-size="28" style="fill:rgb(8, 8, 8)">cat</text>
+<text transform="translate(3200,1978)" font-size="28" style="fill:rgb(12, 12, 12)">vidObj</text>
+<text transform="translate(1398,841)" font-size="28" style="fill:rgb(131, 125, 121)">RPA</text>
+<text transform="translate(2492,575)" font-size="28" style="fill:rgb(58, 53, 49)">YTComponent</text>
+<text transform="translate(2359,1761)" font-size="28" style="fill:rgb(14, 14, 13)">pano</text>
+<text transform="translate(1009,2037)" font-size="28" style="fill:rgb(17, 17, 15)">studied</text>
+<text transform="translate(1394,775)" font-size="28" style="fill:rgb(137, 132, 128)">free</text>
+<text transform="translate(2665,1031)" font-size="28" style="fill:rgb(48, 44, 43)">netlify</text>
+<text transform="translate(101,35)" font-size="28" style="fill:rgb(100, 94, 88)">APU</text>
+<text transform="translate(877,94)" font-size="28" style="fill:rgb(130, 123, 113)">uni</text>
+<text transform="translate(3636,461)" font-size="28" style="fill:rgb(74, 67, 63)">balls</text>
+<text transform="translate(3661,1107)" font-size="28" style="fill:rgb(45, 40, 37)">lab</text>
+<text transform="translate(1972,1879)" font-size="28" style="fill:rgb(89, 89, 89)">secondary</text>
+<text transform="translate(1910,926)" font-size="28" style="fill:rgb(69, 63, 60)">full</text>
+<text transform="translate(2011,1356)" font-size="28" style="fill:rgb(24, 24, 23)">include</text>
+<text transform="translate(2500,821)" font-size="28" style="fill:rgb(90, 88, 87)">exists</text>
+<text transform="translate(3023,25)" font-size="28" style="fill:rgb(47, 44, 41)">structuredData</text>
+<text transform="translate(2321,598)" font-size="28" style="fill:rgb(45, 40, 36)">type'</text>
+<text transform="translate(2988,1750)" font-size="28" style="fill:rgb(18, 17, 17)">createStructuredData</text>
+<text transform="translate(26,633) rotate(-90)" font-size="28" style="fill:rgb(94, 88, 80)">tmp</text>
+<text transform="translate(2474,1972)" font-size="28" style="fill:rgb(26, 26, 26)">ImageFrame</text>
+<text transform="translate(2468,1037)" font-size="28" style="fill:rgb(50, 46, 45)">end</text>
+<text transform="translate(1154,1823)" font-size="28" style="fill:rgb(20, 19, 17)">cat_fact</text>
+<text transform="translate(617,902)" font-size="28" style="fill:rgb(203, 201, 199)">Activities</text>
+<text transform="translate(3615,1807)" font-size="28" style="fill:rgb(17, 17, 16)">intros</text>
+<text transform="translate(2240,1398)" font-size="28" style="fill:rgb(79, 22, 24)">0px 0px</text>
+<text transform="translate(3819,941) rotate(-90)" font-size="28" style="fill:rgb(92, 84, 81)">document getElementById</text>
+<text transform="translate(439,2150)" font-size="28" style="fill:rgb(12, 12, 12)">disable next</text>
+<text transform="translate(2434,891)" font-size="28" style="fill:rgb(32, 24, 19)">next line</text>
+<text transform="translate(886,1769)" font-size="28" style="fill:rgb(19, 18, 16)">lang scss</text>
+<text transform="translate(2853,2069) rotate(-90)" font-size="28" style="fill:rgb(22, 21, 20)">scss scoped</text>
+<text transform="translate(741,752) rotate(-90)" font-size="28" style="fill:rgb(111, 106, 100)">emit toggle_sheet'</text>
+<text transform="translate(3660,2143)" font-size="28" style="fill:rgb(14, 14, 12)">Google Cloud</text>
+<text transform="translate(25,2096) rotate(-90)" font-size="28" style="fill:rgb(17, 16, 14)">Projects relating</text>
+<text transform="translate(283,375)" font-size="28" style="fill:rgb(91, 85, 79)">Jonathan Law'</text>
+<text transform="translate(555,22)" font-size="28" style="fill:rgb(91, 86, 81)">azurewebsites net</text>
+<text transform="translate(1935,1479)" font-size="28" style="fill:rgb(41, 38, 36)">line sticker</text>
+<text transform="translate(557,1933) rotate(-90)" font-size="28" style="fill:rgb(29, 27, 23)">Illustrating Fuock</text>
+<text transform="translate(675,334)" font-size="28" style="fill:rgb(104, 97, 89)">UHD version'</text>
+<text transform="translate(3105,796) rotate(-90)" font-size="28" style="fill:rgb(62, 56, 52)">vuetify breakpoint</text>
+<text transform="translate(1944,1779)" font-size="28" style="fill:rgb(154, 154, 154)">graduation slide</text>
+<text transform="translate(274,1950) rotate(-90)" font-size="28" style="fill:rgb(46, 44, 40)">Software Department</text>
+<text transform="translate(1523,1847) rotate(-90)" font-size="28" style="fill:rgb(157, 156, 155)">stack developer</text>
+<text transform="translate(2346,434) rotate(-90)" font-size="28" style="fill:rgb(36, 33, 29)">work' direction</text>
+<text transform="translate(2408,2058) rotate(-90)" font-size="28" style="fill:rgb(9, 9, 9)">developer based</text>
+<text transform="translate(1884,1164) rotate(-90)" font-size="28" style="fill:rgb(27, 25, 23)">based Malaysia</text>
+<text transform="translate(3060,54)" font-size="28" style="fill:rgb(48, 44, 42)">tech stuff</text>
+<text transform="translate(395,563) rotate(-90)" font-size="23" style="fill:rgb(86, 79, 73)">badge</text>
+<text transform="translate(2488,535)" font-size="23" style="fill:rgb(49, 44, 40)">Jonathan</text>
+<text transform="translate(3359,1111)" font-size="23" style="fill:rgb(46, 42, 38)">invert</text>
+<text transform="translate(449,188) rotate(-90)" font-size="23" style="fill:rgb(93, 85, 82)">middle</text>
+<text transform="translate(2340,1674) rotate(-90)" font-size="23" style="fill:rgb(27, 14, 14)">getTimestamp</text>
+<text transform="translate(2297,1513)" font-size="23" style="fill:rgb(44, 15, 16)">READ</text>
+<text transform="translate(3620,714)" font-size="23" style="fill:rgb(96, 89, 82)">write</text>
+<text transform="translate(2060,2153)" font-size="23" style="fill:rgb(13, 12, 11)">stuff</text>
+<text transform="translate(2827,1677)" font-size="23" style="fill:rgb(17, 17, 16)">name</text>
+<text transform="translate(466,120)" font-size="23" style="fill:rgb(92, 84, 81)">api</text>
+<text transform="translate(2207,935)" font-size="23" style="fill:rgb(79, 63, 54)">toString</text>
+<text transform="translate(1057,1690)" font-size="23" style="fill:rgb(28, 27, 23)">null</text>
+<text transform="translate(35,1994)" font-size="23" style="fill:rgb(15, 15, 15)">slot</text>
+<text transform="translate(252,1664)" font-size="23" style="fill:rgb(41, 40, 36)">actionText</text>
+<text transform="translate(2657,207) rotate(-90)" font-size="23" style="fill:rgb(46, 42, 39)">dark</text>
+<text transform="translate(1159,389) rotate(-90)" font-size="23" style="fill:rgb(218, 217, 215)">jumpUp</text>
+<text transform="translate(2016,1278)" font-size="23" style="fill:rgb(24, 24, 22)">createChat</text>
+<text transform="translate(1537,1797) rotate(-90)" font-size="23" style="fill:rgb(106, 105, 105)">space</text>
+<text transform="translate(840,19)" font-size="23" style="fill:rgb(129, 122, 113)">contact</text>
+<text transform="translate(1366,1435)" font-size="23" style="fill:rgb(57, 40, 38)">lastUpdate</text>
+<text transform="translate(100,1835)" font-size="23" style="fill:rgb(14, 13, 13)">ahead</text>
+<text transform="translate(2831,844)" font-size="23" style="fill:rgb(100, 93, 84)">customer</text>
+<text transform="translate(2756,1005)" font-size="23" style="fill:rgb(48, 44, 45)">linkedin</text>
+<text transform="translate(1919,1346)" font-size="23" style="fill:rgb(21, 21, 19)">vuetify</text>
+<text transform="translate(921,108)" font-size="23" style="fill:rgb(140, 133, 125)">goTo</text>
+<text transform="translate(3068,224)" font-size="23" style="fill:rgb(54, 50, 47)">chat'</text>
+<text transform="translate(295,465)" font-size="23" style="fill:rgb(87, 82, 76)">connect</text>
+<text transform="translate(1358,1045)" font-size="23" style="fill:rgb(179, 177, 175)">function</text>
+<text transform="translate(1040,1665)" font-size="23" style="fill:rgb(30, 27, 24)">line</text>
+<text transform="translate(1497,1555)" font-size="23" style="fill:rgb(42, 37, 34)">dashoffset</text>
+<text transform="translate(2053,1514)" font-size="23" style="fill:rgb(16, 16, 15)">32px</text>
+<text transform="translate(1066,683)" font-size="23" style="fill:rgb(108, 101, 91)">dash</text>
+<text transform="translate(2906,688)" font-size="23" style="fill:rgb(89, 82, 76)">26px</text>
+<text transform="translate(2504,850)" font-size="23" style="fill:rgb(134, 131, 129)">justify</text>
+<text transform="translate(1395,966)" font-size="23" style="fill:rgb(133, 128, 124)">img_container</text>
+<text transform="translate(2771,1841)" font-size="23" style="fill:rgb(15, 14, 14)">background</text>
+<text transform="translate(2906,424) rotate(-90)" font-size="23" style="fill:rgb(91, 88, 85)">green</text>
+<text transform="translate(1458,869)" font-size="23" style="fill:rgb(137, 132, 128)">18px</text>
+<text transform="translate(2402,1729) rotate(-90)" font-size="23" style="fill:rgb(11, 11, 10)">overflow</text>
+<text transform="translate(2494,341)" font-size="23" style="fill:rgb(43, 39, 36)">expand</text>
+<text transform="translate(2363,2150)" font-size="23" style="fill:rgb(19, 19, 19)">translate3d</text>
+<text transform="translate(992,1968)" font-size="23" style="fill:rgb(21, 20, 17)">delay</text>
+<text transform="translate(2081,1457)" font-size="23" style="fill:rgb(11, 11, 11)">inset</text>
+<text transform="translate(2426,375)" font-size="23" style="fill:rgb(55, 51, 48)">toggle_sheet</text>
+<text transform="translate(3552,2044)" font-size="23" style="fill:rgb(19, 19, 17)">pageTitle</text>
+<text transform="translate(2778,1504)" font-size="23" style="fill:rgb(63, 54, 51)">Array</text>
+<text transform="translate(1191,1861)" font-size="23" style="fill:rgb(14, 14, 12)">Boolean</text>
+<text transform="translate(459,2075)" font-size="23" style="fill:rgb(15, 15, 15)">imageUrl</text>
+<text transform="translate(2943,20)" font-size="23" style="fill:rgb(46, 42, 39)">altText</text>
+<text transform="translate(3547,54)" font-size="23" style="fill:rgb(65, 60, 56)">ImageFrame'</text>
+<text transform="translate(2039,779)" font-size="23" style="fill:rgb(51, 46, 43)">var</text>
+<text transform="translate(719,496)" font-size="23" style="fill:rgb(104, 97, 92)">14px</text>
+<text transform="translate(3575,1732)" font-size="23" style="fill:rgb(27, 26, 24)">quotes</text>
+<text transform="translate(951,1553)" font-size="23" style="fill:rgb(34, 31, 27)">Math</text>
+<text transform="translate(815,259) rotate(-90)" font-size="23" style="fill:rgb(116, 109, 101)">stuffs'</text>
+<text transform="translate(354,2082)" font-size="23" style="fill:rgb(17, 17, 17)">down'</text>
+<text transform="translate(1524,1439)" font-size="23" style="fill:rgb(62, 49, 46)">content'</text>
+<text transform="translate(2003,1127)" font-size="23" style="fill:rgb(42, 38, 36)">pulse</text>
+<text transform="translate(819,2077) rotate(-90)" font-size="23" style="fill:rgb(22, 22, 20)">model</text>
+<text transform="translate(3044,1930)" font-size="23" style="fill:rgb(9, 9, 9)">ripple</text>
+<text transform="translate(522,573)" font-size="23" style="fill:rgb(102, 96, 92)">timeout</text>
+<text transform="translate(3699,1182)" font-size="23" style="fill:rgb(203, 200, 197)">Things</text>
+<text transform="translate(3300,1644)" font-size="23" style="fill:rgb(26, 25, 23)">margin</text>
+<text transform="translate(3305,1667)" font-size="23" style="fill:rgb(22, 21, 19)">Skills'</text>
+<text transform="translate(2966,2146)" font-size="23" style="fill:rgb(11, 11, 11)">Datastudio</text>
+<text transform="translate(2120,672)" font-size="23" style="fill:rgb(63, 57, 54)">etc</text>
+<text transform="translate(3022,272)" font-size="23" style="fill:rgb(54, 51, 48)">ETL</text>
+<text transform="translate(2703,2006)" font-size="23" style="fill:rgb(14, 14, 14)">PHP</text>
+<text transform="translate(380,1748)" font-size="23" style="fill:rgb(41, 37, 34)">Web</text>
+<text transform="translate(3701,929) rotate(-90)" font-size="23" style="fill:rgb(18, 17, 15)">PWA</text>
+<text transform="translate(755,1397)" font-size="23" style="fill:rgb(134, 50, 59)">vSphere</text>
+<text transform="translate(2100,1981)" font-size="23" style="fill:rgb(13, 13, 13)">Horizon</text>
+<text transform="translate(3263,1003) rotate(-90)" font-size="23" style="fill:rgb(20, 19, 17)">padding</text>
+<text transform="translate(3812,1102) rotate(-90)" font-size="23" style="fill:rgb(134, 127, 124)">iframe</text>
+<text transform="translate(2837,494)" font-size="23" style="fill:rgb(44, 38, 33)">playlist</text>
+<text transform="translate(3795,598)" font-size="23" style="fill:rgb(85, 77, 74)">in'</text>
+<text transform="translate(2394,1836)" font-size="23" style="fill:rgb(21, 21, 21)">YouTubeVideoComponent'</text>
+<text transform="translate(2485,967)" font-size="23" style="fill:rgb(47, 41, 39)">Published</text>
+<text transform="translate(825,286)" font-size="23" style="fill:rgb(115, 108, 100)">Bad</text>
+<text transform="translate(1029,1933)" font-size="23" style="fill:rgb(22, 21, 18)">expensive</text>
+<text transform="translate(3190,1592)" font-size="23" style="fill:rgb(24, 24, 22)">JOURNAL</text>
+<text transform="translate(3251,1774)" font-size="23" style="fill:rgb(15, 15, 15)">RPA'</text>
+<text transform="translate(2223,1326)" font-size="23" style="fill:rgb(60, 25, 27)">reviewnator</text>
+<text transform="translate(2095,1710)" font-size="23" style="fill:rgb(8, 8, 8)">Pixelator'</text>
+<text transform="translate(3651,28)" font-size="23" style="fill:rgb(59, 55, 51)">demo</text>
+<text transform="translate(2854,148)" font-size="23" style="fill:rgb(47, 43, 41)">project'</text>
+<text transform="translate(3409,738) rotate(-90)" font-size="23" style="fill:rgb(76, 69, 63)">Identifier'</text>
+<text transform="translate(1156,1759)" font-size="23" style="fill:rgb(24, 23, 21)">Identifying</text>
+<text transform="translate(1409,743)" font-size="23" style="fill:rgb(148, 143, 139)">side</text>
+<text transform="translate(709,926)" font-size="23" style="fill:rgb(220, 219, 218)">work_web_spi</text>
+<text transform="translate(2931,2066)" font-size="23" style="fill:rgb(12, 12, 12)">Graphics</text>
+<text transform="translate(1008,863)" font-size="23" style="fill:rgb(108, 101, 94)">yt_videos</text>
+<text transform="translate(2479,143)" font-size="23" style="fill:rgb(48, 45, 41)">Rendered</text>
+<text transform="translate(790,1661)" font-size="23" style="fill:rgb(28, 27, 24)">Autodesk</text>
+<text transform="translate(3664,2043)" font-size="23" style="fill:rgb(17, 17, 15)">stereo_panos</text>
+<text transform="translate(3591,1890)" font-size="23" style="fill:rgb(39, 37, 35)">Graphics'</text>
+<text transform="translate(3191,140)" font-size="23" style="fill:rgb(53, 49, 47)">Effects</text>
+<text transform="translate(823,873)" font-size="23" style="fill:rgb(102, 97, 91)">Fuock'</text>
+<text transform="translate(3791,483)" font-size="23" style="fill:rgb(76, 68, 65)">post</text>
+<text transform="translate(1929,1587)" font-size="23" style="fill:rgb(50, 47, 44)">form</text>
+<text transform="translate(253,114)" font-size="23" style="fill:rgb(98, 92, 86)">pano'</text>
+<text transform="translate(1362,1257)" font-size="23" style="fill:rgb(69, 64, 60)">Morning'</text>
+<text transform="translate(3519,267)" font-size="23" style="fill:rgb(73, 66, 60)">Bar'</text>
+<text transform="translate(166,1961)" font-size="23" style="fill:rgb(20, 19, 17)">tf_bar</text>
+<text transform="translate(1139,893)" font-size="23" style="fill:rgb(116, 111, 105)">Bedroom'</text>
+<text transform="translate(849,344)" font-size="23" style="fill:rgb(118, 111, 103)">Room'</text>
+<text transform="translate(1072,1005)" font-size="23" style="fill:rgb(204, 202, 200)">tf_clock</text>
+<text transform="translate(3518,25)" font-size="23" style="fill:rgb(49, 45, 40)">Works'</text>
+<text transform="translate(668,1708)" font-size="23" style="fill:rgb(20, 19, 16)">worked</text>
+<text transform="translate(2300,1952)" font-size="23" style="fill:rgb(9, 9, 9)">Learning</text>
+<text transform="translate(1381,1543)" font-size="23" style="fill:rgb(44, 39, 35)">programs'</text>
+<text transform="translate(990,485)" font-size="23" style="fill:rgb(120, 113, 105)">made</text>
+<text transform="translate(117,503)" font-size="23" style="fill:rgb(85, 80, 74)">years</text>
+<text transform="translate(2449,1663)" font-size="23" style="fill:rgb(15, 15, 13)">schedule</text>
+<text transform="translate(3629,228)" font-size="23" style="fill:rgb(73, 66, 60)">Guide</text>
+<text transform="translate(2998,334)" font-size="23" style="fill:rgb(82, 77, 74)">creating</text>
+<text transform="translate(3539,471)" font-size="23" style="fill:rgb(73, 66, 61)">history</text>
+<text transform="translate(213,20)" font-size="23" style="fill:rgb(96, 89, 83)">related</text>
+<text transform="translate(2375,819)" font-size="23" style="fill:rgb(7, 7, 6)">pluralsight</text>
+<text transform="translate(1507,1384)" font-size="23" style="fill:rgb(67, 51, 49)">Infrastructure</text>
+<text transform="translate(2852,1616)" font-size="23" style="fill:rgb(22, 22, 20)">education</text>
+<text transform="translate(168,190)" font-size="23" style="fill:rgb(95, 90, 84)">lighten</text>
+<text transform="translate(2856,814)" font-size="23" style="fill:rgb(99, 92, 83)">container</text>
+<text transform="translate(2421,504)" font-size="23" style="fill:rgb(44, 39, 36)">webp</text>
+<text transform="translate(2995,398)" font-size="23" style="fill:rgb(62, 57, 53)">Assistant'</text>
+<text transform="translate(3354,818)" font-size="23" style="fill:rgb(81, 77, 73)">coordinating</text>
+<text transform="translate(284,245)" font-size="23" style="fill:rgb(97, 92, 86)">setting</text>
+<text transform="translate(1433,1355)" font-size="23" style="fill:rgb(70, 52, 51)">Head</text>
+<text transform="translate(2197,680)" font-size="23" style="fill:rgb(64, 57, 54)">Software</text>
+<text transform="translate(517,457)" font-size="23" style="fill:rgb(91, 85, 78)">Background'</text>
+<text transform="translate(139,796) rotate(-90)" font-size="23" style="fill:rgb(105, 100, 95)">Developing</text>
+<text transform="translate(3043,813)" font-size="23" style="fill:rgb(95, 88, 81)">2020'</text>
+<text transform="translate(269,2038)" font-size="23" style="fill:rgb(36, 36, 34)">school'</text>
+<text transform="translate(2945,1837)" font-size="23" style="fill:rgb(10, 10, 10)">Diploma</text>
+<text transform="translate(2638,603)" font-size="23" style="fill:rgb(76, 71, 67)">really</text>
+<text transform="translate(2357,445)" font-size="23" style="fill:rgb(45, 41, 37)">shameless</text>
+<text transform="translate(2654,138)" font-size="23" style="fill:rgb(46, 42, 39)">Faq'</text>
+<text transform="translate(2493,2146)" font-size="23" style="fill:rgb(10, 10, 10)">Malaysia</text>
+<text transform="translate(2164,1433)" font-size="23" style="fill:rgb(8, 9, 9)">enjoys</text>
+<text transform="translate(3556,326)" font-size="23" style="fill:rgb(70, 64, 60)">my_name</text>
+<text transform="translate(1184,970)" font-size="23" style="fill:rgb(157, 153, 150)">whack_intro</text>
+<text transform="translate(967,1831)" font-size="23" style="fill:rgb(19, 18, 16)">age</text>
+<text transform="translate(833,658)" font-size="23" style="fill:rgb(118, 113, 107)">fact</text>
+<text transform="translate(1830,1198)" font-size="23" style="fill:rgb(53, 52, 50)">replace</text>
+<text transform="translate(3190,1949)" font-size="23" style="fill:rgb(11, 11, 11)">classList</text>
+<text transform="translate(115,247)" font-size="23" style="fill:rgb(91, 86, 81)">whack_intro'</text>
+<text transform="translate(3157,682)" font-size="23" style="fill:rgb(78, 71, 65)">void</text>
+<text transform="translate(179,1834)" font-size="23" style="fill:rgb(16, 16, 14)">orange</text>
+<text transform="translate(3366,478)" font-size="23" style="fill:rgb(69, 61, 58)">typing</text>
+<text transform="translate(400,491) rotate(-90)" font-size="23" style="fill:rgb(89, 82, 76)">step</text>
+<text transform="translate(3455,204)" font-size="23" style="fill:rgb(69, 64, 60)">d2fltix0v2e0sb cloudfront</text>
+<text transform="translate(1031,1444)" font-size="23" style="fill:rgb(64, 37, 35)">plugin Code</text>
+<text transform="translate(2205,499)" font-size="23" style="fill:rgb(46, 41, 38)">en_US sdk</text>
+<text transform="translate(177,815)" font-size="23" style="fill:rgb(215, 214, 213)">sdk xfbml</text>
+<text transform="translate(24,1730) rotate(-90)" font-size="23" style="fill:rgb(52, 48, 44)">customerchat js'</text>
+<text transform="translate(532,154)" font-size="23" style="fill:rgb(97, 91, 86)">chatbox setAttribute</text>
+<text transform="translate(678,119)" font-size="23" style="fill:rgb(102, 96, 88)">inline block</text>
+<text transform="translate(2239,765)" font-size="23" style="fill:rgb(45, 40, 38)">cursor pointer</text>
+<text transform="translate(2576,2076)" font-size="23" style="fill:rgb(15, 15, 15)">bar nav</text>
+<text transform="translate(2510,755) rotate(-90)" font-size="23" style="fill:rgb(70, 65, 61)">Computer vision</text>
+<text transform="translate(2184,2072)" font-size="23" style="fill:rgb(11, 11, 11)">VMware ESXi</text>
+<text transform="translate(1989,1903)" font-size="23" style="fill:rgb(68, 68, 68)">Health Issues</text>
+<text transform="translate(2976,586)" font-size="23" style="fill:rgb(64, 57, 53)">doi org</text>
+<text transform="translate(345,848)" font-size="23" style="fill:rgb(210, 209, 208)">org IJCRR</text>
+<text transform="translate(3244,440) rotate(-90)" font-size="23" style="fill:rgb(65, 60, 56)">raw githubusercontent</text>
+<text transform="translate(2232,1734)" font-size="23" style="fill:rgb(18, 18, 17)">Merdeka Short</text>
+<text transform="translate(42,1656)" font-size="19" style="fill:rgb(20, 20, 18)">breakpoint smAndDown</text>
+<text transform="translate(2546,1986)" font-size="19" style="fill:rgb(16, 16, 16)">Bsc Hons</text>
+<text transform="translate(18,781) rotate(-90)" font-size="19" style="fill:rgb(100, 96, 88)">Hons Intelligent</text>
+<text transform="translate(2623,849)" font-size="19" style="fill:rgb(103, 96, 89)">Intelligent Systems'</text>
+<text transform="translate(26,432)" font-size="19" style="fill:rgb(82, 76, 68)">Asia Pacific</text>
+<text transform="translate(815,256)" font-size="19" style="fill:rgb(116, 109, 101)">Pacific University</text>
+<text transform="translate(2276,2033)" font-size="19" style="fill:rgb(7, 7, 7)">catfact ninja</text>
+<text transform="translate(579,474)" font-size="19" style="fill:rgb(95, 88, 80)">blink caret</text>
+<text transform="translate(748,628)" font-size="14" style="fill:rgb(109, 104, 100)">Engagement</text>
+<text transform="translate(3468,82)" font-size="14" style="fill:rgb(64, 59, 55)">rel</text>
+<text transform="translate(937,1516)" font-size="14" style="fill:rgb(40, 35, 31)">published_at</text>
+<text transform="translate(1226,2046)" font-size="14" style="fill:rgb(18, 18, 16)">articles</text>
+<text transform="translate(71,1952)" font-size="14" style="fill:rgb(10, 10, 10)">username</text>
+<text transform="translate(2693,768)" font-size="14" style="fill:rgb(100, 93, 85)">tag_list</text>
+<text transform="translate(3570,776) rotate(-90)" font-size="14" style="fill:rgb(95, 88, 80)">substr</text>
+<text transform="translate(2732,18)" font-size="14" style="fill:rgb(47, 43, 40)">theme</text>
+<text transform="translate(1107,1671)" font-size="14" style="fill:rgb(32, 30, 27)">d4d4d4</text>
+<text transform="translate(241,195)" font-size="14" style="fill:rgb(98, 93, 87)">160px</text>
+<text transform="translate(3732,39)" font-size="14" style="fill:rgb(69, 64, 60)">radius</text>
+<text transform="translate(375,119)" font-size="14" style="fill:rgb(98, 91, 85)">translate</text>
+<text transform="translate(2650,1931)" font-size="14" style="fill:rgb(26, 23, 23)">Jump</text>
+</svg>
