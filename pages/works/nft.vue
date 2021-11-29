@@ -1,13 +1,8 @@
 <template>
   <div>
-    <v-row class="mt-8 mb-8 text-center"
-           style="background: url('/gallery/nft/art-20211107150655.svg') center; min-height: 320px" align="center"
-           justify="center">
-      <v-col cols="12">
-        <h2>NFT art</h2>
-        <p>[WIP] Word cloud art created using data from YouTube captions</p>
-      </v-col>
-    </v-row>
+    <LandingComponent background-image="/gallery/nft/art-20211107150655.svg"
+                      description="[WIP] Word cloud art created using data from YouTube captions"
+                      title="NFT art"></LandingComponent>
 
     <v-row v-for="(nft, i) in nfts" :key="i" class="mb-4">
       <v-col cols="12" md="4" lg="3">

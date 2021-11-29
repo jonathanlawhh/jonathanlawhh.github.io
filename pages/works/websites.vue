@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingComponent title="Websites"></LandingComponent>
+    <LandingComponent title="Websites" description="Production and random sites, some random programs" background-image="/img/logo_w_websites.webp"></LandingComponent>
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">

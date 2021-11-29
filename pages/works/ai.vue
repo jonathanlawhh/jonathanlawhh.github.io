@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingComponent title="AI / ML"></LandingComponent>
+    <LandingComponent title="AI / ML" description="Computer Vision, Machine Learning, Automations" background-image="/img/logo_w_AI.webp"></LandingComponent>
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">

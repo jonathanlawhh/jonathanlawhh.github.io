@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingComponent title="Graphics"></LandingComponent>
+    <LandingComponent title="Graphics" description="3DS Max, Unreal Engine, Adobe stuffs" background-image="/img/logo_w_graphics.webp"></LandingComponent>
 
     <v-row id="content">
       <v-col cols="12">
