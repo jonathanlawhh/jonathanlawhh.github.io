@@ -65,8 +65,8 @@ export default {
         json: {
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'jonathan law',
-          alternateName: 'jonathan law hui hao',
+          name: 'Jonathan Law Hui Hao',
+          alternateName: 'jonathanlawhh',
           url: SITE_URL,
           logo: SITE_URL + '/img/me.webp',
           sameAs: [

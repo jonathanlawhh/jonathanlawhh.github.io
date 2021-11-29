@@ -57,7 +57,7 @@ export default {
         url: '/works/graphics/',
         image: '/img/logo_w_graphics.webp',
         desc: '3DS Max, Unreal Engine, Adobe stuffs',
-      },{
+      }, {
         title: 'NFT',
         url: '/works/nft/',
         image: '/gallery/nft/art-20211107150655.svg',
@@ -65,6 +65,23 @@ export default {
       },
     ],
   }),
+  head() {
+    return {
+      script: [
+        {
+          hid: 'ldjson',
+          type: 'application/ld+json',
+          json: {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            "itemListElement": this.works.map((w, i) => {
+              return {"@type": "ListItem", "position": i + 1, "url": 'https://jonathanlawhh.com' + w.url}
+            })
+          },
+        },
+      ],
+    }
+  },
   created() {
     this.$nuxt.$emit('seo_update', this.seo)
   },
