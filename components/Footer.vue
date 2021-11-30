@@ -97,7 +97,7 @@ export default {
         },
         {
           media: 'YouTube',
-          url: 'https://www.youtube.com/channel/UCQ2d9BUPhq1AG9UKJSExRXg/featured',
+          url: 'https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag/featured',
           icon: 'youtube.svg',
         },
       ],
