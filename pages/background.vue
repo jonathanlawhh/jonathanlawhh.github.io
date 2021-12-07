@@ -1,43 +1,5 @@
 <template>
   <div>
-    <v-row class="mb-8">
-      <v-col cols="12">
-        <h2>Extra courses</h2>
-        <p>
-          Online courses that I took when they were free (It's expensive ok).
-          <br/>
-          Can't share my YouTube history sooo 😏
-        </p>
-      </v-col>
-
-      <v-col cols="12">
-        <v-row>
-          <v-col cols="12" md="6" lg="3">
-            <v-card outlined style="background-color: transparent">
-              <v-card-text>
-                <p>Courses related to BigQuery and Machine Learning</p>
-                <v-btn color="brown" target="_blank" href="https://app.pluralsight.com/profile/jonathanlawhh">
-                  Pluralsight
-                </v-btn>
-              </v-card-text>
-            </v-card>
-          </v-col>
-
-          <v-col cols="12" md="6" lg="3">
-            <v-card outlined style="background-color: transparent">
-              <v-card-text>
-                <p>Courses related to Google Cloud Infrastructure</p>
-                <v-btn color="blue" target="_blank"
-                       href="https://www.qwiklabs.com/public_profiles/80fd39b3-19aa-47bf-9681-d17be9468f9e">
-                  wiklabs
-                </v-btn>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-
     <v-row>
       <v-col cols="12">
         <h2>My education and work history</h2>
@@ -64,6 +26,24 @@
             <v-container>
               <v-row>
                 <v-col cols="12">{{ info.desc }}</v-col>
+
+                <template v-if="info.title === 'AirAsia'">
+                  <v-col cols="12">
+                    <b>2020 - Business Intelligence Analyst</b><br/>
+                    <span class="text--secondary">
+                      Understanding business requirements and using data to assist in decision-making.
+                      Identifying opportunities to improve workflows and processes using technology.
+                      BI dashboard building, hands-on system development and managing a few GCP projects too.
+                    </span>
+                  </v-col>
+                  <v-col cols="12">
+                    <b>2019 - Developer</b><br/>
+                    <span class="text--secondary">
+                      Developing ETLs, BI analysis, cloud infrastructure management
+                      and building systems that automate tasks and processes.
+                    </span>
+                  </v-col>
+                </template>
 
                 <template v-if="info.title === 'Bsc Hons in Intelligent Systems'">
                   <img src="/img/graduation_me.webp" style="width: 100%" alt="Jonathan's graduation slide"/>
@@ -115,9 +95,7 @@ export default {
         title: 'AirAsia',
         duration: '2019 - NOW',
         desc:
-          'Full stack developer at AirAsia logistic arm, Teleport.\n' +
-          'Promoted from an intern to working full time. Developing and deploying solutions on Google Cloud. ' +
-          'Few projects include developing ETLs from SQL Server to BigQuery, Datastudio for BI Reporting',
+          'Working in AirAsia cargo subsidiary, Teleport. Promoted from an intern to working full time.',
         theme_color: 'red',
         icon: 'work',
         direction: 'r',
