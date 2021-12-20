@@ -10,17 +10,19 @@
         <p class="display-1">Hi there !</p>
         <p>
           I am
-          <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>, a
-          full stack developer based in Malaysia. I work with tech stuff
-          including but not limited to software's, hardware's and
-          infrastructures.<br/><br/>
-          Tbh I am not sure what people write on their personal website, so I
-          will end it here. Feel free to browse around this site and hopefully
-          there are contents that made your visit un-wasted!<br/>
-          <span style="font-size: 80%"
-          >( Also to increase your duration on this site so my demographics
-            looks nice :p )</span
-          ><br/>
+          <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>,
+          a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!
+          <br/><br/>
+          Adding some gibberish words here that is totally unrelated to my profile so that my website looks <strong>packed</strong>
+          with content.
+          <br/><br/>
+          Anyway, do come say hi via the
+          <span class="a-custom-button text-no-wrap" @click="loadMessenger">site chatbox</span>
+           or
+          <span class="text-no-wrap"> email
+            <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
+          </span>
+          <br/><br/>
         </p>
         <p id="whack_intro_block" class="mt-8 font-weight-bold whack_intro"></p>
         <p class="mt-10 text-right font-weight-light">
@@ -48,7 +50,7 @@ export default {
     seo: {
       title: 'Something About Me',
       description:
-        "I'm a fullstack developer based in Malaysia who works with tech stuff and enjoys learning and working on RPA and Machine Learning!",
+        "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
     },
     age: 22,
     cat_fact: '',
@@ -91,6 +93,12 @@ export default {
   activated() {
     this.$nuxt.$emit('seo_update', this.seo)
   },
+  methods: {
+    loadMessenger() {
+      this.$vuetify.goTo('#fbchat', {duration: 1250, offset: 0, easing: 'easeInOutCubic'});
+      document.getElementById('fbchat').click();
+    }
+  }
 }
 </script>
 

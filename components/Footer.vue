@@ -12,7 +12,7 @@
 
     <v-row>
       <v-col cols="12" md="8">
-        <a class="link-social-media ml-4" @click="createChat">
+        <a id="fbchat" class="link-social-media ml-4" @click="createChat">
           <svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white">
             <g>
               <path
