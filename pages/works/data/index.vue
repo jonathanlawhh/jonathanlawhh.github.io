@@ -31,6 +31,8 @@ export default {
         title: 'Works/Data',
         description:
           'Data visualizations and analysis',
+        image:
+          '/img/og/logo_w_data.png'
       },
       projects: [
         {

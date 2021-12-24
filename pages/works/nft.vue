@@ -42,6 +42,8 @@ export default {
       seo: {
         title: 'NFT art',
         description: 'NFT art created using data',
+        image:
+          '/img/og/work_nft_cover.png'
       },
       nfts: [
         {

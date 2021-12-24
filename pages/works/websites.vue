@@ -31,6 +31,8 @@ export default {
         title: 'Works/Websites',
         description:
           'Projects relating websites or programs created by Jonathan Law',
+        image:
+          '/img/og/logo_w_websites.png'
       },
       projects: [
         {

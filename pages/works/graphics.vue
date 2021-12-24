@@ -55,6 +55,8 @@ export default {
       title: 'Works/Graphics',
       description:
         'Projects relating to media such as Adobe Photoshop, Adobe After Effects or 3DS Max created by Jonathan Law',
+      image:
+        '/img/og/logo_w_graphics.png'
     },
     yt_videos: [
       {

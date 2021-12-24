@@ -1,6 +1,7 @@
 <template>
   <div>
-    <LandingComponent title="AI / ML" description="Computer Vision, Machine Learning, Automations" background-image="/img/logo_w_AI.webp"></LandingComponent>
+    <LandingComponent title="AI / ML" description="Computer Vision, Machine Learning, Automations"
+                      background-image="/img/logo_w_AI.webp"></LandingComponent>
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">
@@ -61,6 +62,8 @@ export default {
         title: 'Works/AI, ML. RPA',
         description:
           'Projects relating to AI, ML or RPA created by Jonathan Law',
+        image:
+          '/img/og/logo_w_AI.png'
       },
       projects: [
         {

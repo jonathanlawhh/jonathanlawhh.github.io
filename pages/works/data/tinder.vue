@@ -57,6 +57,7 @@ export default {
         title: 'Tinder',
         description:
           'Summing up my year with an in-depth tutorial on data scrapping and analysis on Tinder users around me according to my preference.',
+        image: '/img/og/work_data_tinder_cover.png'
       },
     }
   },
