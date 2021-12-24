@@ -47,6 +47,18 @@ export default {
         desc: 'Computer Vision, Machine Learning, Automations',
       },
       {
+        title: 'Data',
+        url: '/works/data/',
+        image: '/img/logo_w_data.webp',
+        desc: 'Data visualizations and analysis',
+      },
+      {
+        title: 'NFT',
+        url: '/works/nft/',
+        image: '/gallery/nft/art-20211107150655.svg',
+        desc: 'Word cloud art created using data from YouTube captions',
+      },
+      {
         title: 'Websites and Stuff',
         url: '/works/websites/',
         image: '/img/logo_w_websites.webp',
@@ -57,11 +69,6 @@ export default {
         url: '/works/graphics/',
         image: '/img/logo_w_graphics.webp',
         desc: '3DS Max, Unreal Engine, Adobe stuffs',
-      }, {
-        title: 'NFT',
-        url: '/works/nft/',
-        image: '/gallery/nft/art-20211107150655.svg',
-        desc: 'Word cloud art created using data from YouTube captions',
       },
     ],
   }),
