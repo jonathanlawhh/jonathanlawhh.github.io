@@ -110,7 +110,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://jonathanlawhh.com' + this.seo.image || 'https://jonathanlawhh.com/img/og/me.png',
+          content: this.seo.image ? 'https://jonathanlawhh.com' + this.seo.image : 'https://jonathanlawhh.com/img/og/me.png',
         },
         {
           hid: 'og:title',
@@ -125,7 +125,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://jonathanlawhh.com' + this.seo.image || 'https://jonathanlawhh.com/img/og/me.png',
+          content: this.seo.image ? 'https://jonathanlawhh.com' + this.seo.image : 'https://jonathanlawhh.com/img/og/me.png',
         },
         {
           hid: 'og:url',
