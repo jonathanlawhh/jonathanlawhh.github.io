@@ -7,7 +7,10 @@
     <v-row v-for="(nft, i) in nfts" :key="i" class="mb-4">
       <v-col cols="12" md="4" lg="3">
         <h3>{{ nft.title }}</h3>
-        <v-item-group mandatory>
+        <a v-if="nft.shop" :href="nft.shop" class="white--text a-custom-button" target="_blank" rel="noopener">
+          opensea.io collection
+        </a>
+        <v-item-group class="mt-4" mandatory>
           <div class="d-flex flex-wrap">
             <div v-for="(art,j) in nft.art" :key="j">
               <v-item v-slot="{ active, toggle }" style="cursor: pointer">
@@ -60,6 +63,7 @@ export default {
           selected_art: '/gallery/nft/uncle-roger-reviews-food-min-1.svg'
         }, {
           title: 'Gordon Ramsay: Ramsay in 10 Playlist',
+          shop: 'https://opensea.io/collection/gordan-ramsay-in-10',
           thumbnail: '/gallery/nft/ramsay-in-ten-1.svg',
           art: [
             {
