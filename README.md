@@ -1,6 +1,6 @@
 # <span style="font-size: 16px">👋 Hi! I am</span> Jonathan Law Hui Hao!
 <p>
-💼 Business Intelligence Analyst<br>
+💼 Business Support Specialist<br>
 🌏 Malaysia
 </p>
 
