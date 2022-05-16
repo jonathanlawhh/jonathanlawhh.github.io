@@ -92,8 +92,18 @@ export default {
     },
     infos: [
       {
+        title: 'IKEA Supply',
+        duration: '2022 - NOW',
+        desc:
+          'Business Support Specialist at IKEA Distribution Centre Malaysia, Port Klang.',
+        theme_color: 'orange',
+        icon: 'work',
+        direction: 'l',
+        act: false,
+      },
+      {
         title: 'AirAsia',
-        duration: '2019 - NOW',
+        duration: '2019 - 2022',
         desc:
           'Working in AirAsia cargo subsidiary, Teleport. Promoted from an intern to working full time.',
         theme_color: 'red',
