@@ -11,7 +11,7 @@
         <p>
           I am
           <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>,
-          a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!
+          a Business Support Specialist in Malaysia who enjoys working with tech, RPA and Machine Learning!
           <br/><br/>
           Adding some gibberish words here that is totally unrelated to my profile so that my website looks <strong>packed</strong>
           with content.
