@@ -11,7 +11,10 @@
     </v-row>
 
     <v-row>
-      <v-col cols="12" md="8">
+      <v-col cols="2" class="hidden-md-and-down">
+        <strong>Jonathan Law Hui Hao</strong>
+      </v-col>
+      <v-col cols="12" md="12" lg="10" class="text-right">
         <a id="fbchat" class="link-social-media ml-4" @click="createChat">
           <svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white">
             <g>
@@ -29,10 +32,6 @@
            class="ml-8 link-social-media">
           <img class="mt-1" :src="'/icons/' + c.icon" :alt="c.media" loading="lazy"/>
         </a>
-      </v-col>
-
-      <v-col cols="12" md="4">
-        <p class="text-right">Last updated on {{ lastUpdate }}</p>
       </v-col>
     </v-row>
 
@@ -71,12 +70,6 @@
 <script>
 export default {
   name: 'Footer',
-  props: {
-    lastUpdate: {
-      type: String,
-      default: '2021',
-    },
-  },
   data() {
     return {
       contact: [

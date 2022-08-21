@@ -26,9 +26,9 @@
         <v-col cols="4" class="hr-line ma-0 pt-0 pb-0"></v-col>
       </v-row>
 
-      <Nuxt keep-alive />
+      <Nuxt style="min-height: 70vh" keep-alive/>
 
-      <Footer :last-update="last_update"></Footer>
+      <Footer></Footer>
     </v-container>
 
     <NavigationMobile
@@ -49,14 +49,13 @@ export default {
   },
   data: () => ({
     sheet: false,
-    pages: { '/': 0, '/background': 1, '/works': 2 },
+    pages: {'/': 0, '/background': 1, '/works': 2},
     navigation_routes: [
-      { title: 'HOME', route: '/' },
-      { title: 'MY BACKGROUND', route: '/background/' },
-      { title: 'WORKS', route: '/works/' },
-      { title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/' },
+      {title: 'HOME', route: '/'},
+      {title: 'MY BACKGROUND', route: '/background/'},
+      {title: 'WORKS', route: '/works/'},
+      {title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/'},
     ],
-    last_update: '',
     seo: {
       title: '',
       description: '',
@@ -64,21 +63,8 @@ export default {
     },
     canonical: '/',
   }),
-  async fetch() {
+  fetch() {
     this.seo_update()
-
-    await fetch(
-      'https://api.github.com/repos/jonathanlawhh/jonathanlawhh.github.io/commits/gh-pages'
-    )
-      .then((res) => res.json())
-      .then((r) => {
-        if (r.commit !== undefined) {
-          const d = new Date(r.commit.author.date).toDateString().split(' ')
-          this.last_update = `${d[1]} ${d[3]}`
-        } else {
-          this.last_update = '|| Github API rate limit hit :('
-        }
-      })
   },
   head() {
     return {

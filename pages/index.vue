@@ -18,17 +18,13 @@
           <br/><br/>
           Anyway, do come say hi via the
           <span class="a-custom-button text-no-wrap" @click="loadMessenger">site chatbox</span>
-           or
+          or
           <span class="text-no-wrap"> email
             <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
           </span>
           <br/><br/>
         </p>
         <p id="whack_intro_block" class="mt-8 font-weight-bold whack_intro"></p>
-        <p class="mt-10 text-right font-weight-light">
-          {{ cat_fact }}<br/>
-          (catfact.ninja, 2021)
-        </p>
       </v-col>
     </v-row>
 
@@ -53,7 +49,6 @@ export default {
         "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
     },
     age: 22,
-    cat_fact: '',
     intros: [
       'I CODE PROGRAMS',
       'I CREATE ROBOTS',
@@ -68,15 +63,7 @@ export default {
   },
   mounted() {
     const d = new Date()
-    this.age = d.getFullYear() - 1998
-
-    if (process.env.NODE_ENV !== 'development') {
-      fetch('https://catfact.ninja/fact')
-        .then((r) => r.json())
-        .then((r) => {
-          this.cat_fact = r.fact.replace('/', '').replace('"', '')
-        })
-    }
+    this.age = d.getFullYear() - 199
 
     let iter = 1
     const whackBlock = document.getElementById('whack_intro_block')
