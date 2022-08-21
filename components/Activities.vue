@@ -6,7 +6,7 @@
     </v-col>
 
     <v-col cols="12" md="4" xl="3">
-      <v-card class="pa-8" elevation="16">
+      <v-card class="pa-8" elevation="16" style="min-height: 180px">
         <h3 class="text-center">
           I write stuff at Medium/Towards Data Science.
         </h3>
@@ -20,9 +20,9 @@
       </v-card>
     </v-col>
     <v-col cols="12" md="4" xl="3">
-      <v-card class="pa-8" elevation="16">
+      <v-card class="pa-8" elevation="16" style="min-height: 180px">
         <h3 class="text-center">
-          Projects that I have no idea why I did it...
+          Projects made, because why not
         </h3>
         <p class="text-center mt-4">
           Check out my
@@ -33,10 +33,11 @@
       </v-card>
     </v-col>
     <v-col cols="12" md="4" xl="3">
-      <v-card class="pa-8" elevation="16">
-        <h3 class="text-center">Using data to make NFT art!</h3>
+      <v-card class="pa-8" elevation="16" style="min-height: 180px">
+        <h3 class="text-center">A venture into creating NFT art using data from YouTube captions, or computed generated art</h3>
         <p class="text-center mt-4">
-          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">[WIP] here</nuxt-link>
+          Some "art"
+          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">here</nuxt-link>
         </p>
       </v-card>
     </v-col>

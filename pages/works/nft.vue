@@ -1,37 +1,39 @@
 <template>
   <div>
     <LandingComponent background-image="/gallery/nft/art-20211107150655.svg"
-                      description="[WIP] Word cloud art created using data from YouTube captions"
+                      description="A venture into creating NFT art using data from YouTube captions, or computed generated art"
                       title="NFT art"></LandingComponent>
 
-    <v-row v-for="(nft, i) in nfts" :key="i" class="mb-4">
-      <v-col cols="12" md="4" lg="3">
+    <v-row v-for="(nft, i) in nfts" :key="i" class="mb-8">
+      <v-col cols="12">
         <h3>{{ nft.title }}</h3>
-        <a v-if="nft.shop" :href="nft.shop" class="white--text a-custom-button" target="_blank" rel="noopener">
-          opensea.io collection
-        </a>
-        <v-item-group class="mt-4" mandatory>
-          <div class="d-flex flex-wrap">
-            <div v-for="(art,j) in nft.art" :key="j">
-              <v-item v-slot="{ active, toggle }" style="cursor: pointer">
-                <div>
-                  <v-img :src="nft.thumbnail" class="nft-preview" style="background-color: grey"
-                         :style="active ? 'width: 120px' : 'width: 72px'"
-                         @click="nft.selected_art = art.src;toggle()">
-                    <p class="font-weight-bold black--text text-center mt-4">#{{ j + 1 }}</p>
-                  </v-img>
-                </div>
-              </v-item>
-            </div>
-          </div>
-        </v-item-group>
+        <p>{{ nft.desc }}</p>
+
+        <v-row>
+          <v-col v-for="(art, j) in nft.art" :key="j" cols="6" md="4" lg="3">
+            <v-img :src="art.thumbnail" style="background-color: grey; height: 240px" class="hover-motion">
+              <v-btn v-if="art.src" class="hover-motion" right bottom absolute :href="art.src" target="_blank" large>
+                {{ nft.action }}
+              </v-btn>
+            </v-img>
+          </v-col>
+
+          <v-col v-if="nft.shop" cols="6" md="4">
+            <DisplayCard
+              title="View more"
+              subtitle="View full collection on opensea.io market"
+            >
+              <a :href="nft.shop" rel="noopener" target="_blank"
+                 class="a-custom-button white--text">
+                {{ nft.shop }}
+              </a>
+            </DisplayCard>
+
+          </v-col>
+        </v-row>
+
       </v-col>
 
-      <v-col cols="12" md="8" lg="9">
-        <v-img style="background-color: grey" :src="nft.selected_art">
-          <v-btn right bottom absolute :href="nft.selected_art" target="_blank" large>SVG Interactive</v-btn>
-        </v-img>
-      </v-col>
     </v-row>
 
   </div>
@@ -44,33 +46,63 @@ export default {
     return {
       seo: {
         title: 'NFT art',
-        description: 'NFT art created using data',
+        description: 'A venture into creating NFT art using data from YouTube captions, or computed generated art.',
         image:
           '/img/og/work_nft_cover.png'
       },
       nfts: [
         {
-          title: 'Uncle Roger Food Review playlist',
-          thumbnail: '/gallery/nft/nft-uncle-roger-thumbnail.webp',
+          title: 'Digit of Pi',
+          desc: 'Pi, is an irrational number, a mathematical constant that seems infinite. Be part of the growing collection as more Pi digits are added in.',
+          shop: 'https://opensea.io/collection/digit-of-pi',
+          action: 'View item',
           art: [
             {
+              thumbnail: '/gallery/nft/digitofpi-1.webp',
+              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623652721749131265/'
+            },
+            {
+              thumbnail: '/gallery/nft/digitofpi-2.webp',
+              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623653821260759041/'
+            },
+            {
+              thumbnail: '/gallery/nft/digitofpi-3.webp',
+              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623654920772386817'
+            },
+            {
+              thumbnail: '/gallery/nft/digitofpi-4.webp',
+              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623656020284014593'
+            },
+            {
+              thumbnail: '/gallery/nft/digitofpi-5.webp',
+              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623657119795642369'
+            }
+          ],
+        }, {
+          title: 'Uncle Roger Food Review playlist',
+          desc: 'Taken from Uncle Roger egg fried rice review YouTube series.',
+          action: 'Full resolution',
+          art: [
+            {
+              thumbnail: '/gallery/nft/uncle-roger-reviews-food-min-1.webp',
               src: '/gallery/nft/uncle-roger-reviews-food-min-1.svg'
             },
             {
+              thumbnail: '/gallery/nft/uncle-roger-reviews-food-min-2.webp',
               src: '/gallery/nft/uncle-roger-reviews-food-min-2.svg'
             }
           ],
-          selected_art: '/gallery/nft/uncle-roger-reviews-food-min-1.svg'
         }, {
           title: 'Gordon Ramsay: Ramsay in 10 Playlist',
+          desc: 'Based on Gordan Ramsay in 10 YouTube series, a collection of word art of the words he uses frequently in his playlist.',
           shop: 'https://opensea.io/collection/gordan-ramsay-in-10',
-          thumbnail: '/gallery/nft/ramsay-in-ten-1.svg',
+          action: 'Full resolution',
           art: [
             {
+              thumbnail: '/gallery/nft/ramsay-in-ten-1.webp',
               src: '/gallery/nft/ramsay-in-ten-1.svg'
             },
           ],
-          selected_art: '/gallery/nft/ramsay-in-ten-1.svg'
         },
       ],
     }
@@ -83,11 +115,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.nft-preview {
-  margin: 4px;
-  width: 120px;
-  transition: all 0.25s ease-in;
-}
-</style>

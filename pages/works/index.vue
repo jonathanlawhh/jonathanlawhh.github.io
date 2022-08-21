@@ -56,7 +56,7 @@ export default {
         title: 'NFT',
         url: '/works/nft/',
         image: '/gallery/nft/art-20211107150655.svg',
-        desc: 'Word cloud art created using data from YouTube captions',
+        desc: 'A venture into creating NFT art using data from YouTube captions, or computed generated art',
       },
       {
         title: 'Websites and Stuff',
