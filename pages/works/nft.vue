@@ -10,7 +10,7 @@
         <p>{{ nft.desc }}</p>
 
         <v-row>
-          <v-col v-for="(art, j) in nft.art" :key="j" cols="6" md="4" lg="3">
+          <v-col v-for="(art, j) in nft.art" :key="j" cols="12" md="6" lg="4" xl="3">
             <v-img :src="art.thumbnail" style="background-color: grey; height: 240px" class="hover-motion">
               <v-btn v-if="art.src" class="hover-motion" right bottom absolute :href="art.src" target="_blank" large>
                 {{ nft.action }}
@@ -18,7 +18,7 @@
             </v-img>
           </v-col>
 
-          <v-col v-if="nft.shop" cols="6" md="4">
+          <v-col v-if="nft.shop" cols="12" md="6" lg="4" xl="3">
             <DisplayCard
               title="View more"
               subtitle="View full collection on opensea.io market"
@@ -69,14 +69,6 @@ export default {
               thumbnail: '/gallery/nft/digitofpi-3.webp',
               src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623654920772386817'
             },
-            {
-              thumbnail: '/gallery/nft/digitofpi-4.webp',
-              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623656020284014593'
-            },
-            {
-              thumbnail: '/gallery/nft/digitofpi-5.webp',
-              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623657119795642369'
-            }
           ],
         }, {
           title: 'Uncle Roger Food Review playlist',
