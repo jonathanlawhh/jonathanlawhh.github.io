@@ -11,10 +11,10 @@
           I write stuff at Medium/Towards Data Science.
         </h3>
         <p class="text-center mt-4">
-          Check out my
+          Check out
           <a href="https://jonathanlawhh.medium.com/" target="_blank" rel="noopener"
              class="a-custom-button white--text text-decoration-none">
-            tech blog!
+            my tech blog!
           </a>
         </p>
       </v-card>
@@ -25,19 +25,20 @@
           Projects made, because why not
         </h3>
         <p class="text-center mt-4">
-          Check out my
+          Check out
           <nuxt-link to="/works/" class="a-custom-button white--text text-decoration-none">
-            works
+            my works
           </nuxt-link>
         </p>
       </v-card>
     </v-col>
     <v-col cols="12" md="4" xl="3">
       <v-card class="pa-8" elevation="16" style="min-height: 180px">
-        <h3 class="text-center">A venture into creating NFT art using data from YouTube captions, or computed generated art</h3>
+        <h3 class="text-center">A venture into creating NFT art using data from YouTube captions, or computed generated
+          art</h3>
         <p class="text-center mt-4">
-          Some "art"
-          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">here</nuxt-link>
+          Browse
+          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">my "art/s"</nuxt-link>
         </p>
       </v-card>
     </v-col>

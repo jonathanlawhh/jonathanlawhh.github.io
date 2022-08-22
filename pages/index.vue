@@ -48,7 +48,6 @@ export default {
       description:
         "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
     },
-    age: 22,
     intros: [
       'I CODE PROGRAMS',
       'I CREATE ROBOTS',
@@ -62,9 +61,6 @@ export default {
     await this.$nuxt.$emit('seo_update', this.seo)
   },
   mounted() {
-    const d = new Date()
-    this.age = d.getFullYear() - 199
-
     let iter = 1
     const whackBlock = document.getElementById('whack_intro_block')
     setInterval(() => {
@@ -98,6 +94,7 @@ export default {
 
 <style scoped>
 .whack_intro {
+  min-height: 36px;
   font-size: 150%;
   overflow: hidden;
   border-right: 0.15em solid orange;
