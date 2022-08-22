@@ -3,7 +3,9 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <h1>Jonathan Law</h1>
+          <nuxt-link to="/" class="text-decoration-none white--text">
+            <h1>Jonathan Law</h1>
+          </nuxt-link>
         </v-col>
       </v-row>
 
