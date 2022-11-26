@@ -8,7 +8,7 @@
         <p>Hover over to know more!</p>
       </v-col>
 
-      <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" lg="4" xl="3">
+      <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
         <GalleryImage :img-obj="p"></GalleryImage>
       </v-col>
     </v-row>

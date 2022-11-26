@@ -8,8 +8,8 @@
         <h2>Some random stuff</h2>
         <p>Hover over to know more!</p>
       </v-col>
-      <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" lg="4" xl="3">
-        <v-lazy v-model="p.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
+      <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
+        <v-lazy v-model="p.act" :options="{ threshold: 0.5 }" min-height="100" transition="fade-transition">
           <GalleryImage :img-obj="p"></GalleryImage>
         </v-lazy>
       </v-col>
@@ -18,7 +18,6 @@
     <v-row class="mb-8">
       <v-col cols="12">
         <h2>Published paper</h2>
-        <p>Thanks to my lecturer</p>
       </v-col>
 
       <v-col cols="12" md="8" lg="5">
@@ -42,8 +41,6 @@
         </DisplayCard>
       </v-col>
     </v-row>
-
-    <CommunityEngagement filter="machinelearning"></CommunityEngagement>
   </div>
 </template>
 
@@ -53,7 +50,6 @@ export default {
   components: {
     LandingComponent: () => import('@/components/LandingComponent'),
     GalleryImage: () => import('@/components/GalleryImageComponent'),
-    CommunityEngagement: () => import('@/components/CommunityEngagement'),
     DisplayCard: () => import('@/components/DisplayCard'),
   },
   data() {
@@ -72,7 +68,7 @@ export default {
             'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
           src: 'https://reviewnator.jonathanlawhh.com/icon.svg',
           view: 'https://reviewnator.jonathanlawhh.com/',
-          view_text: 'Click here to try it',
+          view_text: 'try it',
         },
         {
           title: 'Emoji Pixelator',
@@ -80,7 +76,7 @@ export default {
             'Sliding window implementation to pixelate emoji/s from screen record',
           src: 'https://raw.githubusercontent.com/jonathanlawhh/emoji-pixelator/master/Resource/pixelated-demo.gif',
           view: 'https://github.com/jonathanlawhh/emoji-pixelator',
-          view_text: 'Click here to view Github project',
+          view_text: 'Github project',
         },
         {
           title: 'Sitting Posture Identifier',
@@ -88,13 +84,14 @@ export default {
             'Identifying the sitting posture of a person based on a side view image',
           view: 'https://sitting-posture.azurewebsites.net/',
           src: '/img/work_web_spi.webp',
+          view_text: 'try it',
         },
         {
           title: 'LINE Sticker Scrapper',
           description: 'LINE has good stickers, Whatsapp dont.',
           view: 'https://github.com/jonathanlawhh/line-sticker-downloader',
           src: 'https://raw.githubusercontent.com/jonathanlawhh/line-sticker-downloader/main/cover.png',
-          view_text: 'Click here to view Github project',
+          view_text: 'Github project',
         },
       ],
     }

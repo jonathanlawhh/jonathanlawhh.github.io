@@ -1,10 +1,14 @@
 <template>
   <div>
-    <LandingComponent title="Graphics" description="3DS Max, Unreal Engine, Adobe stuffs" background-image="/img/logo_w_graphics.webp"></LandingComponent>
+    <LandingComponent title="Graphics" description="3DS Max, Unreal Engine, Adobe stuffs"
+                      background-image="/img/logo_w_graphics.webp"></LandingComponent>
 
     <v-row id="content">
       <v-col cols="12">
         <h2>YouTube vids</h2>
+        <p>Subscribe to my <a class="a-custom-button white--text"
+                              href="https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag"
+                              target="_blank" rel="noopener">YouTube channel</a>!</p>
       </v-col>
       <v-col v-for="(vid, i) in yt_videos" :key="i" cols="12" xl="10" offset-xl="1">
         <YTComponent :vid-obj="vid"></YTComponent>
@@ -12,7 +16,7 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="mt-16">
       <v-col cols="12">
         <h2>Stereo Pano</h2>
         <p>
@@ -21,19 +25,19 @@
         </p>
       </v-col>
 
-      <v-col v-for="(sp, k) in stereo_panos" :key="k" cols="12" md="6" lg="4">
-        <v-lazy v-model="sp.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
+      <v-col v-for="(sp, k) in stereo_panos" :key="k" cols="12" md="6">
+        <v-lazy v-model="sp.act" :options="{ threshold: 0.5 }" min-height="100" transition="fade-transition">
           <GalleryImage :img-obj="sp"></GalleryImage>
         </v-lazy>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="mt-16">
       <v-col cols="12">
         <h2>3DS Renders</h2>
         <p>Hover over to know more!</p>
       </v-col>
-      <v-col v-for="(g, j) in gallery" :key="j" cols="12" md="6" lg="4">
+      <v-col v-for="(g, j) in gallery" :key="j" cols="12" md="6" xl="4">
         <v-lazy v-model="g.act" :options="{ threshold: 0.5 }" min-height="200" transition="fade-transition">
           <GalleryImage :img-obj="g"></GalleryImage>
         </v-lazy>
@@ -59,6 +63,20 @@ export default {
         '/img/og/logo_w_graphics.png'
     },
     yt_videos: [
+      {
+        title: '[4K] Bangkok | Cinematic Travel 2022',
+        description:
+          '11.11.2022<br>' +
+          'My first ever attempt at creating a travel video, and first ever trip post pandemic to Bangkok. Thailand! Fully shot on a GoPro Hero 11.<br><br>' +
+          'Took a morning flight from Malaysia on Saturday morning, went to Chatuchak market on the first day, ' +
+          'Maeklong Train Market and Amphawa Floating Market on the second day and did shopping on the third day. ' +
+          'Unfortunately many roads were close for maintenance at that time I went, therefore the night activities were cut short too.',
+        playlist: [
+          {
+            id: 'MwyoXr4ems8',
+          },
+        ],
+      },
       {
         title: 'The Fuock',
         description:

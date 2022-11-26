@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" class="pb-0 pt-0 mt-8">
         <p class="text-right">
-          <span class="a-custom-button" @click="jumpUp">Jump back up</span>
+          <button type="button" class="a-custom-button" @click="jumpUp">Jump back up</button>
           <v-icon small>arrow_upward</v-icon>
         </p>
       </v-col>
