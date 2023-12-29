@@ -13,7 +13,27 @@
       </v-col>
     </v-row>
 
-    <CommunityEngagement filter="programming"></CommunityEngagement>
+    <v-row>
+      <v-col cols="12" md="4">
+        <DisplayCard
+            title="I write stuff on dev.to"
+            subtitle=""
+            body="About DEV: DEV is a community of software developers getting together to help one another out. The software industry relies on collaboration and networked learning. We provide a place for that to happen."
+            action-text="dev.to"
+            action-url="https://dev.to/jonathanlawhh"
+        >
+          <p class="mt-4">
+            <img
+                src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+                alt="Jonathan Law's DEV Community Profile"
+                height="30"
+                width="30"
+                style="filter: invert(95%); vertical-align: middle"
+            />
+          </p>
+        </DisplayCard>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -22,9 +42,6 @@ export default {
   name: 'WorksWebsites',
   data() {
     return {
-      seo: {
-
-      },
       projects: [
         {
           title: 'Sitting Posture Identifier',

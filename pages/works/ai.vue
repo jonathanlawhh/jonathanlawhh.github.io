@@ -54,7 +54,7 @@ export default {
           title: 'Optimizing Container Fill Rate with Computer Vision',
           description:
               'Leveraging AI for smarter logistics and data-driven perspective on container utilization, maximizing efficiency and ROI.',
-          src: '/img/work_AI_in_Logistics_Container_Fill_Rate_Header.webp',
+          src: '/img/work_ai_in_logistics_container_fill_rate.webp',
           view: 'https://github.com/jonathanlawhh/container-fill-rate-ai',
           view_text: 'Container Fill Rate AI Github',
         },
@@ -62,7 +62,7 @@ export default {
           title: 'Reviewnator',
           description:
               'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
-          src: 'https://reviewnator.jonathanlawhh.com/icon.svg',
+          src: '/img/work_ai_reviewnator.webp',
           view: 'https://reviewnator.jonathanlawhh.com/',
           view_text: 'try it',
         },
@@ -86,7 +86,7 @@ export default {
           title: 'LINE Sticker Scrapper',
           description: 'LINE has good stickers, Whatsapp dont.',
           view: 'https://github.com/jonathanlawhh/line-sticker-downloader',
-          src: 'https://raw.githubusercontent.com/jonathanlawhh/line-sticker-downloader/main/cover.png',
+          src: '/img/work_ai_line_scrapper.webp',
           view_text: 'Github project',
         },
       ],
@@ -101,7 +101,7 @@ export default {
       ogTitle: title,
       description: desc,
       ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_graphics.png',
+      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_AI.png',
       twitterCard: 'summary_large_image',
     })
     this.$emit('updatePageTitle', title)

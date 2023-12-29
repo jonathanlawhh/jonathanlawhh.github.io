@@ -28,7 +28,7 @@ export default {
           title: 'Tinder',
           description:
               'Summing up my year with an in-depth tutorial on data scrapping and analysis on Tinder users around me according to my preference.',
-          src: '/img/work_data_tinder_cover.webp',
+          src: '/img/work_data_tinder.webp',
           view: '/works/data/tinder/',
           view_text: 'View Tinder dashboard',
         },
