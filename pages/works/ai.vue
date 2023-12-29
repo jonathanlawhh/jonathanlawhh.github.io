@@ -10,7 +10,7 @@
       </v-col>
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
         <v-lazy v-model="p.act" :options="{ threshold: 0.5 }" min-height="100" transition="fade-transition">
-          <GalleryImage :img-obj="p"></GalleryImage>
+          <GalleryImageComponent :img-obj="p"></GalleryImageComponent>
         </v-lazy>
       </v-col>
     </v-row>
@@ -22,11 +22,11 @@
 
       <v-col cols="12" md="8" lg="5">
         <DisplayCard
-          title="Sitting Posture Identifier to Overcome Health Issues"
-          subtitle="Jonathan Law Hui Hao, Rajasvaran Logeswaran, Hema Latha Krishna Nair"
-          body="Introduction: Bad sitting posture habits cause health issues such as headaches or discomfort in the back and can lead to expensive medical expenditure for correction or cure."
-          action-text="VIEW JOURNAL"
-          action-url="https://www.ijcrr.com/abstract.php?article_id=3771#/"
+            title="Sitting Posture Identifier to Overcome Health Issues"
+            subtitle="Jonathan Law Hui Hao, Rajasvaran Logeswaran, Hema Latha Krishna Nair"
+            body="Introduction: Bad sitting posture habits cause health issues such as headaches or discomfort in the back and can lead to expensive medical expenditure for correction or cure."
+            action-text="VIEW JOURNAL"
+            action-url="https://www.ijcrr.com/abstract.php?article_id=3771#/"
         >
           <p class="mt-4">
             <span class="font-weight-bold">Published at: </span>
@@ -47,25 +47,21 @@
 <script>
 export default {
   name: 'WorksAIML',
-  components: {
-    LandingComponent: () => import('@/components/LandingComponent'),
-    GalleryImage: () => import('@/components/GalleryImageComponent'),
-    DisplayCard: () => import('@/components/DisplayCard'),
-  },
   data() {
     return {
-      seo: {
-        title: 'Works/AI, ML. RPA',
-        description:
-          'Projects relating to AI, ML or RPA created by Jonathan Law',
-        image:
-          '/img/og/logo_w_AI.png'
-      },
       projects: [
+        {
+          title: 'Optimizing Container Fill Rate with Computer Vision',
+          description:
+              'Leveraging AI for smarter logistics and data-driven perspective on container utilization, maximizing efficiency and ROI.',
+          src: '/img/work_AI_in_Logistics_Container_Fill_Rate_Header.webp',
+          view: 'https://github.com/jonathanlawhh/container-fill-rate-ai',
+          view_text: 'Container Fill Rate AI Github',
+        },
         {
           title: 'Reviewnator',
           description:
-            'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
+              'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
           src: 'https://reviewnator.jonathanlawhh.com/icon.svg',
           view: 'https://reviewnator.jonathanlawhh.com/',
           view_text: 'try it',
@@ -73,7 +69,7 @@ export default {
         {
           title: 'Emoji Pixelator',
           description:
-            'Sliding window implementation to pixelate emoji/s from screen record',
+              'Sliding window implementation to pixelate emoji/s from screen record',
           src: 'https://raw.githubusercontent.com/jonathanlawhh/emoji-pixelator/master/Resource/pixelated-demo.gif',
           view: 'https://github.com/jonathanlawhh/emoji-pixelator',
           view_text: 'Github project',
@@ -81,7 +77,7 @@ export default {
         {
           title: 'Sitting Posture Identifier',
           description:
-            'Identifying the sitting posture of a person based on a side view image',
+              'Identifying the sitting posture of a person based on a side view image',
           view: 'https://sitting-posture.azurewebsites.net/',
           src: '/img/work_web_spi.webp',
           view_text: 'try it',
@@ -97,10 +93,22 @@ export default {
     }
   },
   created() {
-    this.$nuxt.$emit('seo_update', this.seo)
-  },
-  activated() {
-    this.$nuxt.$emit('seo_update', this.seo)
+    let title = 'Works/AI, ML. RPA'
+    let desc = 'Discover my innovative projects utilizing AI and RPA technology. From machine learning models to computer vision applications, learn how I have applied cutting-edge AI solutions to tackle real-world problems and create meaningful impact.'
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: desc,
+      ogDescription: desc,
+      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_graphics.png',
+      twitterCard: 'summary_large_image',
+    })
+    this.$emit('updatePageTitle', title)
   },
 }
 </script>
+
+<style scoped>
+
+</style>

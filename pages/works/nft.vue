@@ -10,18 +10,14 @@
         <p>{{ nft.desc }}</p>
 
         <v-row>
-          <v-col v-for="(art, j) in nft.art" :key="j" cols="12" md="6" lg="4" xl="3">
-            <v-img :src="art.thumbnail" style="background-color: grey; height: 240px" class="hover-motion">
-              <v-btn v-if="art.src" class="hover-motion" right bottom absolute :href="art.src" target="_blank" large>
-                {{ nft.action }}
-              </v-btn>
-            </v-img>
+          <v-col v-for="(art, j) in nft.art" :key="j" cols="12" md="6" xl="4">
+            <GalleryImageComponent :img-obj="art"></GalleryImageComponent>
           </v-col>
 
           <v-col v-if="nft.shop" cols="12" md="6" lg="4" xl="3">
             <DisplayCard
-              title="View more"
-              subtitle="View full collection on opensea.io market"
+                title="View more"
+                subtitle="View full collection on opensea.io market"
             >
               <a :href="nft.shop" rel="noopener" target="_blank"
                  class="a-custom-button white--text">
@@ -44,12 +40,6 @@ export default {
   name: "Nft",
   data() {
     return {
-      seo: {
-        title: 'NFT art',
-        description: 'A venture into creating NFT art using data from YouTube captions, or computed generated art.',
-        image:
-          '/img/og/work_nft_cover.png'
-      },
       nfts: [
         {
           title: 'Digit of Pi',
@@ -58,16 +48,22 @@ export default {
           action: 'View item',
           art: [
             {
-              thumbnail: '/gallery/nft/digitofpi-1.webp',
-              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623652721749131265/'
+              title: 'Digit of Pi 3',
+              src: '/gallery/nft/digitofpi-1.webp',
+              view: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623652721749131265/',
+              view_text: 'View collection'
             },
             {
-              thumbnail: '/gallery/nft/digitofpi-2.webp',
-              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623653821260759041/'
+              title: 'Digit of Pi 1',
+              src: '/gallery/nft/digitofpi-2.webp',
+              view: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623653821260759041/',
+              view_text: 'View collection'
             },
             {
-              thumbnail: '/gallery/nft/digitofpi-3.webp',
-              src: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623654920772386817'
+              title: 'Digit of Pi 4',
+              src: '/gallery/nft/digitofpi-3.webp',
+              view: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/5554991987641350561461118944922476071054144833987466959004623654920772386817',
+              view_text: 'View collection'
             },
           ],
         }, {
@@ -76,12 +72,16 @@ export default {
           action: 'Full resolution',
           art: [
             {
-              thumbnail: '/gallery/nft/uncle-roger-reviews-food-min-1.webp',
-              src: '/gallery/nft/uncle-roger-reviews-food-min-1.svg'
+              title: 'Uncle Roger #1',
+              src: '/gallery/nft/uncle-roger-reviews-food-min-1.webp',
+              view: '/gallery/nft/uncle-roger-reviews-food-min-1.svg',
+              view_text: 'View HD'
             },
             {
-              thumbnail: '/gallery/nft/uncle-roger-reviews-food-min-2.webp',
-              src: '/gallery/nft/uncle-roger-reviews-food-min-2.svg'
+              title: 'Uncle Roger #2',
+              src: '/gallery/nft/uncle-roger-reviews-food-min-2.webp',
+              view: '/gallery/nft/uncle-roger-reviews-food-min-2.svg',
+              view_text: 'View HD'
             }
           ],
         }, {
@@ -91,8 +91,10 @@ export default {
           action: 'Full resolution',
           art: [
             {
-              thumbnail: '/gallery/nft/ramsay-in-ten-1.webp',
-              src: '/gallery/nft/ramsay-in-ten-1.svg'
+              title: 'Gordan Ramsay in 10 #1',
+              src: '/gallery/nft/ramsay-in-ten-1.webp',
+              view: '/gallery/nft/ramsay-in-ten-1.svg',
+              view_text: 'View HD'
             },
           ],
         },
@@ -100,10 +102,19 @@ export default {
     }
   },
   created() {
-    this.$nuxt.$emit('seo_update', this.seo)
-  },
-  activated() {
-    this.$nuxt.$emit('seo_update', this.seo)
+    let title = 'NFT art'
+    let desc = 'Step into the cutting-edge world of NFT art and explore my portfolio of pieces created using YouTube captions'
+
+    useSeoMeta
+    ({
+      title: title,
+      ogTitle: title,
+      description: desc,
+      ogDescription: desc,
+      ogImage: 'https://jonathanlawhh.com/img/og/work_nft_cover.png',
+      twitterCard: 'summary_large_image',
+    })
+    this.$emit('updatePageTitle', title)
   },
 }
 </script>

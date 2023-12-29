@@ -8,7 +8,7 @@
     </v-card-text>
     <v-card-actions v-if="actionUrl">
       <v-spacer></v-spacer>
-      <v-btn class="hover-fade-in hover-motion" text :href="actionUrl" target="_blank" rel="noopener">
+      <v-btn class="hover-fade-in hover-motion" variant="text" :href="actionUrl" target="_blank" rel="noopener">
         {{ actionText }}
       </v-btn>
     </v-card-actions>

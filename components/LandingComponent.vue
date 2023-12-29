@@ -2,8 +2,8 @@
   <div>
     <v-row>
       <v-col cols="12">
-        <v-btn outlined text to="/works/" exact large>
-          <v-icon>chevron_left</v-icon>
+        <v-btn variant="outlined" to="/works/" :exact="true" size="large" class="btn-return">
+          <v-icon size="large" icon="mdi-chevron-left"></v-icon>
           BACK TO WORKS
         </v-btn>
       </v-col>
@@ -45,3 +45,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.btn-return:hover {
+  background-color: white;
+  color: #262626;
+}
+</style>

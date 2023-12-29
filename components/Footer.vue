@@ -102,7 +102,11 @@ export default {
   },
   methods: {
     jumpUp() {
-      this.$vuetify.goTo(64)
+      window.scrollTo({
+        top: 64,
+        left: 0,
+        behavior: 'smooth'
+      });
     },
     createChat() {
       if (!this.chatWidgetIntiated) {
@@ -148,7 +152,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .loading-chat {
   stroke: #00a56a;
   stroke-dasharray: 500;
@@ -190,6 +194,6 @@ export default {
 
 .link-social-media:hover::before {
   width: 100%;
-  border-bottom: 2px $custom-pink solid;
+  border-bottom: 2px var(--custom-pink) solid;
 }
 </style>

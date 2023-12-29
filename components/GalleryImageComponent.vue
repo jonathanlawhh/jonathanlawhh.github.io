@@ -4,16 +4,20 @@
 
     <v-card-text style="padding: 0">
       <v-card class="inner-card">
-        <v-card-title class="text-bg">{{ imgObj.title }}</v-card-title>
+        <v-card-title class="text-bg mt-4 text-wrap">{{ imgObj.title }}</v-card-title>
 
         <v-card-text class="inner-card-text">
-          <p>
-            {{ imgObj.description }}</p>
+          <p>{{ imgObj.description }}</p>
         </v-card-text>
 
         <v-card-actions v-if="imgObj.view">
           <v-spacer></v-spacer>
-          <v-btn class="hover-fade-in hover-motion" text :href="imgObj.view" target="_blank" rel="noopener">
+          <v-btn v-if="imgObj.view[0] === 'h' || imgObj.view. slice(0, 9) === '/gallery/'" class="hover-fade-in hover-motion" variant="text" :href="imgObj.view"
+                 target="_blank" rel="noopener">
+            {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}
+          </v-btn>
+
+          <v-btn v-if="imgObj.view[0] === '/' && imgObj.view. slice(0, 9) !== '/gallery/'" class="hover-fade-in hover-motion" variant="text" :to="imgObj.view">
             {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}
           </v-btn>
         </v-card-actions>
@@ -48,8 +52,11 @@ export default {
   z-index: 2;
   background-size: cover;
   background-position: center;
-  background-position-x: -120px;
+  background-color: #262626;
   margin: 8px;
+  position: relative;
+  overflow: visible;
+  border: #d4d4d4 solid 1px;
 }
 
 .outer-card:before {
@@ -79,8 +86,11 @@ export default {
 
 .outer-card-bg {
   position: absolute;
-  width: 55%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
 }
 
 .inner-card {
@@ -89,6 +99,8 @@ export default {
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
   transition: all 0.2s ease-in;
+  border-top: #d4d4d4 solid 1px;
+  border-bottom: #d4d4d4 solid 1px;
 }
 
 .inner-card:hover {
@@ -119,14 +131,15 @@ export default {
   }
 
   .outer-card {
-    background-size: cover;
-    background-position: bottom;
+    background-position: center;
     min-height: 60px;
+    overflow: hidden;
   }
 
   .outer-card-bg {
-    width: 100%;
-    height: 65%;
+    background-position: center;
+    max-width: none;
+    max-height: none;
   }
 }
 </style>

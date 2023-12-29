@@ -4,9 +4,9 @@
       <v-row>
         <v-col v-if="!clicked" cols="12" md="6" lg="5">
           <v-img :src="`https://img.youtube.com/vi/${selected_vid.id}/mqdefault.jpg`" contain class="hover-motion"
-                 style="cursor: pointer" @click="clicked = true">
+                 style="cursor: pointer; height: 320px" @click="clicked = true">
             <div style="background-color: rgba(0, 0, 0, 0.6); height: 100%" class="text-center">
-              <v-icon style="margin-top: 20%; font-size: 64px">play_circle_outline</v-icon>
+              <v-icon style="margin-top: 20%; font-size: 64px" icon="mdi-play-circle-outline"></v-icon>
             </div>
           </v-img>
         </v-col>

@@ -3,20 +3,21 @@
     <v-row v-once>
       <v-col cols="12" class="text-center">
         <h2>Things that I do</h2>
-        <p>And always excited to learn more</p>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="mt-8">
       <v-col v-for="(s, i) in skills" :key="i" cols="12" md="6" lg="3" class="mb-8">
-        <v-card class="hover-motion" style="position: relative; border: 1px solid white">
+        <v-card class="hover-motion" style="position: relative; border: 1px solid white; overflow: visible;">
           <div class="custom-card-overlay hover-motion">
-            <v-card class="custom-card-overlay-card" elevation="12" light>
+            <v-card class="custom-card-overlay-card" elevation="12" theme="light">
               <h3 style="font-size: 140%">{{ s.title }}</h3>
             </v-card>
           </div>
 
-          <p class="ml-8" style="margin-top: 40px" v-html="s.description"></p>
+          <v-card-item>
+            <p class="ml-8" style="margin-top: 40px" v-html="s.description"></p>
+          </v-card-item>
         </v-card>
       </v-col>
     </v-row>

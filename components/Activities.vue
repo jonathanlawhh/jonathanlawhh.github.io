@@ -1,8 +1,8 @@
 <template>
   <v-row style="background-color: #ececec; min-height: 320px; border-radius: 4px;" justify="center" align="center">
     <v-col cols="12">
-      <h2 class="text-center black--text">Activities</h2>
-      <p class="text-center black--text">Stuff I do whenever I am free</p>
+      <h2 class="text-center text-black">Activities</h2>
+      <p class="text-center text-black">Stuff I do whenever I am free</p>
     </v-col>
 
     <v-col cols="12" md="4" xl="3">
@@ -26,9 +26,9 @@
         </h3>
         <p class="text-center mt-4">
           Check out
-          <nuxt-link to="/works/" class="a-custom-button white--text text-decoration-none">
+          <NuxtLink to="/works/" class="a-custom-button white--text text-decoration-none">
             my works
-          </nuxt-link>
+          </NuxtLink>
         </p>
       </v-card>
     </v-col>
@@ -38,7 +38,7 @@
           art</h3>
         <p class="text-center mt-4">
           Browse
-          <nuxt-link to="/works/nft" class="a-custom-button white--text text-decoration-none">my "art/s"</nuxt-link>
+          <NuxtLink to="/works/nft" class="a-custom-button white--text text-decoration-none">my "art/s"</NuxtLink>
         </p>
       </v-card>
     </v-col>

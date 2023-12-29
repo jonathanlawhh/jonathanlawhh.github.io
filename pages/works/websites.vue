@@ -9,7 +9,7 @@
       </v-col>
 
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
-        <GalleryImage :img-obj="p"></GalleryImage>
+        <GalleryImageComponent :img-obj="p"></GalleryImageComponent>
       </v-col>
     </v-row>
 
@@ -20,19 +20,10 @@
 <script>
 export default {
   name: 'WorksWebsites',
-  components: {
-    LandingComponent: () => import('@/components/LandingComponent'),
-    GalleryImage: () => import('@/components/GalleryImageComponent'),
-    CommunityEngagement: () => import('@/components/CommunityEngagement'),
-  },
   data() {
     return {
       seo: {
-        title: 'Works/Websites',
-        description:
-          'Projects relating websites or programs created by Jonathan Law',
-        image:
-          '/img/og/logo_w_websites.png'
+
       },
       projects: [
         {
@@ -74,10 +65,18 @@ export default {
     }
   },
   created() {
-    this.$nuxt.$emit('seo_update', this.seo)
-  },
-  activated() {
-    this.$nuxt.$emit('seo_update', this.seo)
+    let title = 'Works/Websites'
+    let desc = 'Take a look at my portfolio of diverse websites, including a sitting posture identification website'
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: desc,
+      ogDescription: desc,
+      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_websites.png',
+      twitterCard: 'summary_large_image',
+    })
+    this.$emit('updatePageTitle', title)
   },
 }
 </script>

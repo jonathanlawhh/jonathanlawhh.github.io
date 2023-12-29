@@ -17,10 +17,11 @@
             background-color: #424242;
             border: 1px solid white;
             max-width: 480px;
+            overflow: visible;
           ">
-          <v-img style="opacity: 0.75" width="100%" height="200" :src="w.image"></v-img>
+          <v-img style="opacity: 0.75" width="100%" height="200" :src="w.image" :cover="true"></v-img>
           <div class="custom-card-overlay hover-motion">
-            <v-card class="custom-card-overlay-card" elevation="12" light>
+            <v-card class="custom-card-overlay-card" elevation="12" theme="light">
               <h3 style="font-size: 140%">{{ w.title }}</h3>
               <p>{{ w.desc }}</p>
             </v-card>
@@ -35,10 +36,6 @@
 export default {
   name: 'Works',
   data: () => ({
-    seo: {
-      title: 'Works',
-      description: 'My portfolio of projects that I worked on',
-    },
     works: [
       {
         title: 'AI/ML/RPA',
@@ -72,28 +69,19 @@ export default {
       },
     ],
   }),
-  head() {
-    return {
-      script: [
-        {
-          hid: 'ldjson',
-          type: 'application/ld+json',
-          json: {
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            "itemListElement": this.works.map((w, i) => {
-              return {"@type": "ListItem", "position": i + 1, "url": 'https://jonathanlawhh.com' + w.url}
-            })
-          },
-        },
-      ],
-    }
-  },
   created() {
-    this.$nuxt.$emit('seo_update', this.seo)
-  },
-  activated() {
-    this.$nuxt.$emit('seo_update', this.seo)
+    let title = 'Works'
+    let desc = 'My portfolio of projects that I worked on'
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: desc,
+      ogDescription: desc,
+      ogImage: 'https://jonathanlawhh.com/img/me.webp',
+      twitterCard: 'summary_large_image',
+    })
+    this.$emit('updatePageTitle', title)
   },
 }
 </script>
@@ -108,6 +96,7 @@ export default {
 
 .custom-card-overlay-card {
   padding: 12px 18px;
+  min-height: 100px;
 }
 
 @media only screen and (max-width: 1256px) {

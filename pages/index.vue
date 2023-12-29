@@ -7,17 +7,18 @@
       </v-col>
 
       <v-col xl="9" lg="8" md="6" sm="12">
-        <p class="display-1">Hi there !</p>
+        <p class="text-h4 mb-4">Hi there !</p>
         <p>
           I am
           <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>,
           a Business Support Specialist in Malaysia who enjoys working with tech, RPA and Machine Learning!
           <br/><br/>
-          Adding some gibberish words here that is totally unrelated to my profile so that my website looks <strong>packed</strong>
+          Adding some gibberish words here that is totally unrelated to my profile so that my website looks
+          <strong>packed</strong>
           with content.
           <br/><br/>
           Anyway, do come say hi via the
-          <span class="a-custom-button text-no-wrap" @click="loadMessenger">site chatbox</span>
+          <!--          <span class="a-custom-button text-no-wrap" @click="loadMessenger">site chatbox</span>-->
           or
           <span class="text-no-wrap"> email
             <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
@@ -37,16 +38,11 @@
 <script>
 export default {
   name: 'Home',
-  components: {
-    Activities: () => import('@/components/Activities'),
-    Skills: () => import('@/components/Skills'),
-    ImageFrame: () => import('@/components/ImageFrame'),
-  },
   data: () => ({
     seo: {
       title: 'Something About Me',
       description:
-        "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
+          "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
     },
     intros: [
       'I CODE PROGRAMS',
@@ -57,8 +53,18 @@ export default {
     ],
     current_intro: 0,
   }),
-  async fetch() {
-    await this.$nuxt.$emit('seo_update', this.seo)
+  created() {
+    let title = 'Something About Me'
+    let desc = 'I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!'
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: desc,
+      ogDescription: desc,
+      ogImage: 'https://jonathanlawhh.com/img/me.webp',
+      twitterCard: 'summary_large_image',
+    })
+    this.$emit('updatePageTitle', title)
   },
   mounted() {
     let iter = 1
@@ -73,26 +79,15 @@ export default {
       whackBlock.classList.add('whack_intro')
     }, 3000)
   },
-  activated() {
-    this.$nuxt.$emit('seo_update', this.seo)
-  },
-  methods: {
-    loadMessenger() {
-      this.$vuetify.goTo('#fbchat', {duration: 1250, offset: 0, easing: 'easeInOutCubic'});
-      document.getElementById('fbchat').click();
-    }
-  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 .my_name {
-  color: $custom-green;
+  color: var(--custom-green);
   font-size: 110%;
 }
-</style>
 
-<style scoped>
 .whack_intro {
   min-height: 36px;
   font-size: 150%;
@@ -132,4 +127,6 @@ export default {
     border-color: orange;
   }
 }
+
 </style>
+
