@@ -1,0 +1,1 @@
+import{_ as o,c as n,b as t,o as c,N as s}from"./entry.YNKE0Ne_.js";const a={name:"works main"};function r(_,p,m,u,d,f){const e=s;return c(),n("div",null,[t(e)])}const l=o(a,[["render",r]]);export{l as default};
