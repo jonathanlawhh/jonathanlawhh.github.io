@@ -1,9 +1,11 @@
 <template>
-  <NuxtPage />
+  <div>
+    <NuxtPage />
+  </div>
 </template>
 
 <script>
 export default {
-  name: "works"
+  name: "works main",
 }
 </script>

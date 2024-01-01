@@ -53,19 +53,6 @@ export default {
     ],
     current_intro: 0,
   }),
-  created() {
-    let title = 'Something About Me'
-    let desc = 'I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!'
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/me.webp',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
   mounted() {
     let iter = 1
     const whackBlock = document.getElementById('whack_intro_block')

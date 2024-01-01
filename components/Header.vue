@@ -4,7 +4,7 @@
 
     </v-app-bar-nav-icon>
     <v-icon size="x-small" class="hidden-sm-and-down mr-4" icon="mdi-circle"></v-icon>
-    <v-toolbar-title style="min-width: 320px">{{ pageTitle }}</v-toolbar-title>
+    <v-toolbar-title style="min-width: 320px">{{ page_name }}</v-toolbar-title>
 
     <v-spacer></v-spacer>
     <nav style="display: inline; width: 70%; height: 100%" class="hidden-sm-and-down">
@@ -71,11 +71,12 @@ export default {
     pageTitle: {
       type: String,
       default: '',
-    },
+    }
   },
   data() {
     return {
-      toggle_sheet: false
+      toggle_sheet: false,
+      page_name: ''
     }
   },
   methods: {
@@ -85,6 +86,14 @@ export default {
       }, timeout)
     },
   },
+  created() {
+    this.page_name = this.$route.name
+  },
+  watch: {
+    $route(to) {
+      this.page_name = to.name
+    },
+  }
 }
 </script>
 

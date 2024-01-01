@@ -35,21 +35,6 @@ export default {
       ]
     }
   },
-  created() {
-    let title = 'Works/Data'
-    let desc = 'Explore my portfolio of innovative projects created using Google Data Studio. From data visualization to interactive dashboards, discover how I use the power of Google Data Studio to turn data into actionable insights and drive business results'
-
-    useSeoMeta
-    ({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_data.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>
 

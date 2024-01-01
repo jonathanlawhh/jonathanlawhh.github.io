@@ -182,20 +182,5 @@ export default {
     ],
   }),
 
-
-  created() {
-    let title = 'Works/Graphics'
-    let desc = 'My portfolio of short videos uploaded on YouTube and 3DS Max renders'
-
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_graphics.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>

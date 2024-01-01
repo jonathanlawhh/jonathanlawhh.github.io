@@ -24,13 +24,30 @@
       <v-col cols="4" class="hr-line ma-0 pt-0 pb-0"></v-col>
     </v-row>
 
-    <NuxtPage style="min-height: 70vh" @updatePageTitle="updatePageTitle" page-key="static"/>
+    <NuxtPage style="min-height: 70vh" page-key="static" />
 
 
     <Footer></Footer>
   </v-container>
 </template>
 
+<script setup>
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} | Jonathan Law` : 'Jonathan Law';
+  }
+})
+
+let r = useRoute()
+useSeoMeta({
+  title: r.name,
+  ogTitle: `${r.name} | Jonathan Law`,
+  description: r.meta.description,
+  ogDescription: r.meta.description,
+  ogImage: r.meta.image ?? 'https://jonathanlawhh.com/img/me.webp',
+  twitterCard: 'summary_large_image',
+})
+</script>
 
 <script>
 export default {
@@ -51,18 +68,20 @@ export default {
     },
     canonical: '/',
   }),
-  methods: {
-    updatePageTitle(e) {
-      this.seo.title = e
-    }
-  },
-}
-
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | Jonathan Law` : 'Jonathan Law';
+  watch: {
+    $route(to) {
+      this.page_name = to.name
+      useSeoMeta({
+        title: to.name,
+        ogTitle: `${to.name} | Jonathan Law`,
+        description: to.meta.description,
+        ogDescription: to.meta.description,
+        ogImage: to.meta.image ?? 'https://jonathanlawhh.com/img/me.webp',
+        twitterCard: 'summary_large_image',
+      })
+    },
   }
-})
+}
 </script>
 
 <style>
@@ -108,5 +127,15 @@ useHead({
 
 .v-btn::before {
   background-color: transparent;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.25s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(0.8rem);
 }
 </style>

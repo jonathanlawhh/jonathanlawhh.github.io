@@ -69,20 +69,6 @@ export default {
       },
     ],
   }),
-  created() {
-    let title = 'Works'
-    let desc = 'My portfolio of projects that I worked on'
-
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/me.webp',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>
 

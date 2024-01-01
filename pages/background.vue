@@ -149,18 +149,5 @@ export default {
       },
     ],
   }),
-  created() {
-    let title = 'Background'
-    let desc = 'Discover my career journey from APU to AirAsia and the diverse experiences that have shaped my skills and perspective. From education to work history, explore my background and accomplishments in the field of IT. Visit my website now.'
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/me.webp',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>

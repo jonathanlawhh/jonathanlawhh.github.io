@@ -52,24 +52,6 @@
 <script>
 export default {
   name: "Tinder",
-  data() {
-    return {}
-  },
-  created() {
-    let title = 'Tinder'
-    let desc = 'Get a glimpse into the world of online dating with my interactive dashboard showcasing Tinder users and their demographics in my area, created using Google Data Studio. From age to location, explore the insights and trends that shape the online dating scene'
-
-    useSeoMeta
-    ({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/work_data_tinder_cover.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>
 

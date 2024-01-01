@@ -101,20 +101,5 @@ export default {
       ],
     }
   },
-  created() {
-    let title = 'NFT art'
-    let desc = 'Step into the cutting-edge world of NFT art and explore my portfolio of pieces created using YouTube captions'
-
-    useSeoMeta
-    ({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/work_nft_cover.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>

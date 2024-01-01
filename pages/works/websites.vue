@@ -81,19 +81,5 @@ export default {
       ],
     }
   },
-  created() {
-    let title = 'Works/Websites'
-    let desc = 'Take a look at my portfolio of diverse websites, including a sitting posture identification website'
-
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_websites.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>

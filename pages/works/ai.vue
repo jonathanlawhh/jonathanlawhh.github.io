@@ -92,20 +92,6 @@ export default {
       ],
     }
   },
-  created() {
-    let title = 'Works/AI, ML. RPA'
-    let desc = 'Discover my innovative projects utilizing AI and RPA technology. From machine learning models to computer vision applications, learn how I have applied cutting-edge AI solutions to tackle real-world problems and create meaningful impact.'
-
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: desc,
-      ogDescription: desc,
-      ogImage: 'https://jonathanlawhh.com/img/og/logo_w_AI.png',
-      twitterCard: 'summary_large_image',
-    })
-    this.$emit('updatePageTitle', title)
-  },
 }
 </script>
 

@@ -12,13 +12,16 @@
 
         <v-card-actions v-if="imgObj.view">
           <v-spacer></v-spacer>
-          <v-btn v-if="imgObj.view[0] === 'h' || imgObj.view. slice(0, 9) === '/gallery/'" class="hover-fade-in hover-motion" variant="text" :href="imgObj.view"
+
+          <v-btn v-if="imgObj.view[0] === 'h' || imgObj.view. slice(0, 9) === '/gallery/'"
+                 class="hover-fade-in hover-motion" variant="text" :href="imgObj.view" size="small"
                  target="_blank" rel="noopener">
-            {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}
+           [ {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }} ]
           </v-btn>
 
-          <v-btn v-if="imgObj.view[0] === '/' && imgObj.view. slice(0, 9) !== '/gallery/'" class="hover-fade-in hover-motion" variant="text" :to="imgObj.view">
-            {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }}
+          <v-btn v-if="imgObj.view[0] === '/' && imgObj.view. slice(0, 9) !== '/gallery/'"
+                 class="hover-fade-in hover-motion" variant="text" :to="imgObj.view">
+          [  {{ imgObj.view_text ? imgObj.view_text : 'Click here to see more' }} ]
           </v-btn>
         </v-card-actions>
       </v-card>
