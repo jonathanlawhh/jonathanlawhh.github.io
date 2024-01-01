@@ -11,15 +11,15 @@
         <p>
           I am
           <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>,
-          a Business Support Specialist in Malaysia who enjoys working with tech, RPA and Machine Learning!
+          a Business Support Specialist in Malaysia.
           <br/><br/>
-          Adding some gibberish words here that is totally unrelated to my profile so that my website looks
-          <strong>packed</strong>
-          with content.
+          I combine logistics and process improvement with technology.<br/>
+          Whether it's optimizing workflows, analyzing data, or automating tasks to drive efficiency,
+          I find joy in the challenge of navigating complex systems.
           <br/><br/>
-          Anyway, do come say hi via the
-          <!--          <span class="a-custom-button text-no-wrap" @click="loadMessenger">site chatbox</span>-->
-          or
+          No ChatGPT was involved here, just many years of scrolling LinkedIn and Grammarly.
+          <br/><br/>
+          Anyway, do say hi via the <button type="button" class="a-custom-button" @click="jumpDown">site chatbox</button> below the page or
           <span class="text-no-wrap"> email
             <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
           </span>
@@ -39,11 +39,6 @@
 export default {
   name: 'Home',
   data: () => ({
-    seo: {
-      title: 'Something About Me',
-      description:
-          "I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!",
-    },
     intros: [
       'I CODE PROGRAMS',
       'I CREATE ROBOTS',
@@ -66,6 +61,15 @@ export default {
       whackBlock.classList.add('whack_intro')
     }, 3000)
   },
+  methods: {
+    jumpDown(){
+      window.scrollTo({
+        top: 9999,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 

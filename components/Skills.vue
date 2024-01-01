@@ -2,7 +2,43 @@
   <div>
     <v-row v-once>
       <v-col cols="12" class="text-center">
-        <h2>Things that I do</h2>
+        <h2>Things I do</h2>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-card variant="outlined" rounded="lg">
+          <v-card-item>
+            <p>
+              <br/>
+              <strong>What I tell people I do:</strong>
+              <br/>
+              [
+              <button v-for="s in [
+              'Logistics and supply chain management',
+              'Data analysis and visualization',
+              'Process improvement',
+              'Automation, AI',
+              'System administrator'
+              ]" class="ma-2 hover-motion a-custom-button">{{ s }}
+              </button>
+              ]
+              <br/><br/><br/>
+              <strong>What I actually do:</strong><br/>
+              I grab cat facts and send them to the company group chat every time
+              someone requests to move something from the warehouse.
+              <br/>
+              <br/>
+            </p>
+          </v-card-item>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row class="mt-12">
+      <v-col cols="12" class="text-center">
+        <h2>Things I do, specifically</h2>
       </v-col>
     </v-row>
 
@@ -33,7 +69,7 @@ export default {
         {
           title: 'Data',
           description: `- Analyst, Visualizing<br />
-           <span class="ml-8 custom-mini-text">(Datastudio, Tableau etc...)</span><br />
+           <span class="ml-8 custom-mini-text">(Power BI, Tableau etc...)</span><br />
            - Engineering<br />
            <span class="ml-8 custom-mini-text">(ETL/ELT, Warehousing, BigQuery)</span>
           `,

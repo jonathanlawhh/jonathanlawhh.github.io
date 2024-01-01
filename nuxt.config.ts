@@ -4,7 +4,7 @@ export const routes = [
     {
         name: 'Something About Me',
         path: '/',
-        meta: {description: 'I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia who enjoys working with tech, RPA and Machine Learning!'}
+        meta: {description: 'I am Jonathan Law Hui Hao, a Business Intelligence Analyst in Malaysia. I combine logistics and process improvement with technology.'}
     },
     {
         name: 'Background',

@@ -4,7 +4,6 @@
       <v-col cols="12" class="pb-0 pt-0 mt-8">
         <p class="text-right">
           <button type="button" class="a-custom-button" @click="jumpUp">Jump back up</button>
-          <v-icon small>arrow_upward</v-icon>
         </p>
       </v-col>
       <v-col cols="5" offset="7" style="border-bottom: aliceblue 1px solid; width: 100%"></v-col>
@@ -19,8 +18,8 @@
           <svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white">
             <g>
               <path
-                :class="chat_loading_class"
-                d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+                  :class="chat_loading_class"
+                  d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
 			c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024S397.376,0,256,0z M281.44,319.2l-65.184-69.536
 			L89.056,319.2l139.936-148.544l66.784,69.536l125.6-69.536L281.44,319.2z"
               />
@@ -35,29 +34,35 @@
       </v-col>
     </v-row>
 
-    <v-overlay :value="overlay" z-index="10" opacity=".9">
-      <div style="max-width: 90%" class="ml-4">
-        <p class="display-1">Ooops</p>
+    <v-overlay v-model="overlay" z-index="20" style="background-color: #121212; opacity: .9">
+      <v-row>
+        <v-col cols="12" align-self="center">
+          <div style="max-width: 90%" class="ma-16">
+            <p class="text-h2">Ooops</p>
+            <br/>
 
-        <p>
-          It seems like there is an ad blocker stopping Messenger from popping
-          out!<br/>
-          This is completely normal as ad blockers generally treat Facebook
-          domains on other sites "trackers"
-        </p>
+            <p>
+              It seems like there is an ad blocker stopping Messenger from popping
+              out!<br/>
+              This is completely normal as ad blockers generally treat Facebook
+              domains on other sites "trackers"
+            </p>
+            <br/>
 
-        <p>
-          Do not worry as Messenger on this site does not load until you choose
-          to chat me!<br/>
-          You can go ahead and disable your ad blocker for this site,<br/>
-          or reach me via jon_law98@hotmail.com
-        </p>
+            <p>
+              Do not worry as Messenger on this site does not load until you choose
+              to chat me!<br/>
+              You can go ahead and disable your ad blocker for this site,<br/>
+              or reach me via jon_law98@hotmail.com
+            </p>
+            <br/><br/>
 
-        <a class="a-custom-button" @click="overlay = false">
-          <v-icon small>close</v-icon>
-          Close this prompt
-        </a>
-      </div>
+            <a class="a-custom-button" @click="overlay = false">
+              Close this prompt
+            </a>
+          </div>
+        </v-col>
+      </v-row>
     </v-overlay>
 
     <!-- Messenger Chat plugin Code -->
@@ -112,40 +117,40 @@ export default {
       if (!this.chatWidgetIntiated) {
         this.chat_loading_class = 'loading-chat'
         fetch('https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js')
-          .then(() => {
-            const chatbox = document.getElementById('fb-customer-chat')
-            chatbox.setAttribute('page_id', '107274521174225')
-            chatbox.setAttribute('attribution', 'biz_inbox')
+            .then(() => {
+              const chatbox = document.getElementById('fb-customer-chat')
+              chatbox.setAttribute('page_id', '107274521174225')
+              chatbox.setAttribute('attribution', 'biz_inbox')
 
-            window.fbAsyncInit = function () {
-              // eslint-disable-next-line no-undef
-              FB.init({
-                xfbml: true,
-                version: 'v11.0',
-              })
-            }
-            ;(function (d, s, id) {
-              let js
-              const fjs = d.getElementsByTagName(s)[0]
-              if (d.getElementById(id)) return
-              // eslint-disable-next-line prefer-const
-              js = d.createElement(s)
-              js.id = id
-              js.src =
-                'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
-              fjs.parentNode.insertBefore(js, fjs)
-            })(document, 'script', 'facebook-jssdk')
+              window.fbAsyncInit = function () {
+                // eslint-disable-next-line no-undef
+                FB.init({
+                  xfbml: true,
+                  version: 'v11.0',
+                })
+              }
+              ;(function (d, s, id) {
+                let js
+                const fjs = d.getElementsByTagName(s)[0]
+                if (d.getElementById(id)) return
+                // eslint-disable-next-line prefer-const
+                js = d.createElement(s)
+                js.id = id
+                js.src =
+                    'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+                fjs.parentNode.insertBefore(js, fjs)
+              })(document, 'script', 'facebook-jssdk')
 
-            this.chatWidgetIntiated = true
-          })
-          .catch((r) => {
-            this.overlay = true
-          })
-          .finally(() => {
-            setTimeout(() => {
-              this.chat_loading_class = ''
-            }, 3000)
-          })
+              this.chatWidgetIntiated = true
+            })
+            .catch((r) => {
+              this.overlay = true
+            })
+            .finally(() => {
+              setTimeout(() => {
+                this.chat_loading_class = ''
+              }, 3000)
+            })
       }
     },
   },
