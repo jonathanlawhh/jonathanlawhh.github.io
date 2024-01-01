@@ -22,14 +22,14 @@
   <v-dialog
       v-model="toggle_sheet"
       width="auto"
-      transition="dialog-bottom-transition"
+      transition="fade-transition"
   >
     <v-card height="70vh" width="90vw" class="mobile-nav-card">
       <v-card-text>
         <v-row class="text-center">
           <nav style="width: 100%" class="mt-16">
             <v-col cols="12">
-              <p class="font-weight-bold mb-8">NAVIGATION</p>
+              <p class="font-weight-bold mb-8" style="letter-spacing: 8px">NAVIGATION</p>
             </v-col>
             <v-col cols="12" v-for="(nr, i) in navigationRoutes" :key="i">
               <v-btn v-if="nr.route" class="hover-fade-in" rounded="0" size="large" variant="text" :to="nr.route"
@@ -40,7 +40,7 @@
 
               <v-btn v-else-if="nr.href" target="_blank" :href="nr.href" class="hover-fade-in" rounded="0"
                      size="large"
-                     variant="text" :to="nr.route" @click="closeSheet(500)">
+                     variant="text" :to="nr.route" @click="closeSheet(10)">
                 {{ nr.title }}
               </v-btn>
             </v-col>
@@ -64,14 +64,6 @@ export default {
       type: Array,
       default: null,
     },
-    sheet: {
-      type: Boolean,
-      default: false,
-    },
-    pageTitle: {
-      type: String,
-      default: '',
-    }
   },
   data() {
     return {
@@ -110,8 +102,22 @@ export default {
 
 .mobile-nav-card {
   border: #d4d4d4 solid 1px;
+  border-radius: 12px !important;
   overflow: hidden;
 }
+
+@keyframes dialog-bg-anim {
+  0% {
+    transform: rotate(-2deg)
+  }
+  50% {
+    transform: rotate(-8deg)
+  }
+  100% {
+    transform: rotate(-2deg)
+  }
+}
+
 
 .mobile-nav-card:before {
   border: #d4d4d4 solid 1px;
@@ -126,5 +132,8 @@ export default {
   transition: all 0.15s ease-in;
   z-index: -10;
   transform: rotate(-4deg);
+  animation: dialog-bg-anim;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 </style>

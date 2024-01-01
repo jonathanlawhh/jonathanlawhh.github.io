@@ -13,8 +13,6 @@
     <v-row class="sticky-header" style="top: 1px">
       <v-col cols="12" class="pa-0" style="height: 100%">
         <Header
-            :sheet="sheet"
-            :page-title="seo.title"
             :navigation-routes="navigation_routes"
         ></Header>
       </v-col>
@@ -53,20 +51,12 @@ useSeoMeta({
 export default {
   name: 'App',
   data: () => ({
-    sheet: false,
-    pages: {'/': 0, '/background': 1, '/works': 2},
     navigation_routes: [
       {title: 'HOME', route: '/'},
       {title: 'MY BACKGROUND', route: '/background/'},
       {title: 'WORKS', route: '/works/'},
       {title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/'},
     ],
-    seo: {
-      title: '',
-      description: '',
-      image: '',
-    },
-    canonical: '/',
   }),
   watch: {
     $route(to) {
