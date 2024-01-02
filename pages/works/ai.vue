@@ -51,6 +51,14 @@ export default {
     return {
       projects: [
         {
+          title: 'Container Number Recognition using AI (CNRAI)',
+          description:
+              'CNRAI extracts container numbers from images, saving time and improving operational efficiency and reducing supply chain risk.',
+          src: '/img/work_ai_in_logistics_cnrai.webp',
+          view: 'https://cnrai.jonathanlawhh.com/',
+          view_text: 'CNRAI App',
+        },
+        {
           title: 'Optimizing Container Fill Rate with Computer Vision',
           description:
               'Leveraging AI for smarter logistics and data-driven perspective on container utilization, maximizing efficiency and ROI.',
@@ -64,12 +72,12 @@ export default {
               'A Shopee review AI moderator. Making product reviews not suck, one review at a time.',
           src: '/img/work_ai_reviewnator.webp',
           view: 'https://reviewnator.jonathanlawhh.com/',
-          view_text: 'try it',
+          view_text: 'Reviewnator App',
         },
         {
           title: 'Emoji Pixelator',
           description:
-              'Sliding window implementation to pixelate emoji/s from screen record',
+              'Sliding window implementation with CNN to pixelate emoji/s from screen record.',
           src: 'https://raw.githubusercontent.com/jonathanlawhh/emoji-pixelator/master/Resource/pixelated-demo.gif',
           view: 'https://github.com/jonathanlawhh/emoji-pixelator',
           view_text: 'Github project',
@@ -77,7 +85,7 @@ export default {
         {
           title: 'Sitting Posture Identifier',
           description:
-              'Identifying the sitting posture of a person based on a side view image',
+              'Identifying the sitting posture of a person based on a side view image using AI.',
           view: 'https://sitting-posture.azurewebsites.net/',
           src: '/img/work_web_spi.webp',
           view_text: 'try it',
@@ -94,7 +102,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-
-</style>
