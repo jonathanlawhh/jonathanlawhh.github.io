@@ -5,6 +5,9 @@ on: [push, pull_request]
 jobs:
   cd:
     runs-on: ${{ matrix.os }}
+    environment:
+      name: github-pages
+      url: https://github.com
 
     strategy:
       matrix:
