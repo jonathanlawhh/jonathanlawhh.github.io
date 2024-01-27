@@ -96,8 +96,7 @@ export default defineNuxtConfig({
         trailingSlash: true,
     },
     gtag: {
-        //     Use environment variable: NUXT_PUBLIC_GTAG_ID
-        //     Configure in build environment
+        id: 'G-1NMJW2TCTK'
     },
     hooks: {
         // Mini hack just to give each page a nice name and meta image
