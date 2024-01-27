@@ -88,12 +88,16 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify'],
     },
-    modules: ['nuxt-simple-sitemap'],
+    modules: ['nuxt-simple-sitemap', 'nuxt-gtag'],
     site: {
         url: 'https://jonathanlawhh.com/',
         name: 'Jonathan Law Hui Hao',
         cacheTtl: 1000 * 60 * 60 * 24 * 30,
         trailingSlash: true,
+    },
+    gtag: {
+        //     Use environment variable: NUXT_PUBLIC_GTAG_ID
+        //     Configure in build environment
     },
     hooks: {
         // Mini hack just to give each page a nice name and meta image

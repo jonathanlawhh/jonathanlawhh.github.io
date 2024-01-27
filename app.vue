@@ -22,7 +22,7 @@
       <v-col cols="4" class="hr-line ma-0 pt-0 pb-0"></v-col>
     </v-row>
 
-    <NuxtPage style="min-height: 70vh" page-key="static" />
+    <NuxtPage style="min-height: 70vh" page-key="static"/>
 
 
     <Footer></Footer>
@@ -33,7 +33,32 @@
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} | Jonathan Law` : 'Jonathan Law';
-  }
+  },
+  script: [
+    {
+      hid: "ld-json",
+      type: "application/ld+json",
+      textContent: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2024-01-27T00:00:00-05:00",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Jonathan Law Hui Hao",
+          "alternateName": ["Jonathan Law", "jonathanlawhh"],
+          "image": "https://jonathanlawhh.com/img/me.webp",
+          "sameAs": [
+            "https://jonathanlawhh.medium.com/",
+            "https://www.linkedin.com/in/jonathanlawhh/",
+            "https://dev.to/jonathanlawhh",
+          ]
+        },
+        "name": "Jonathan Law Hui Hao",
+        "alternateName": "Jonathan Law",
+        "url": "https://jonathanlawhh.com/",
+      })
+    }
+  ]
 })
 
 let r = useRoute()
@@ -123,6 +148,7 @@ export default {
 .page-leave-active {
   transition: all 0.25s;
 }
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
