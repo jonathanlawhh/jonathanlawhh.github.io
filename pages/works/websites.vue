@@ -4,8 +4,8 @@
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">
-        <h2>Websites made by me</h2>
-        <p>Hover over to know more!</p>
+        <h2>A website of websites</h2>
+        <p>Websites can be opened in incognito mode (not that I do).</p>
       </v-col>
 
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">

@@ -5,8 +5,8 @@
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">
-        <h2>Some random stuff</h2>
-        <p>Hover over to know more!</p>
+        <h2>Is AI similar to Computer Vision?</h2>
+        <p>Dropping in some buzzwords like AI, Computer Vision, RPA, the future is near. In reality, my PC fans spin loudly when running "AI" and my electricity bill goes up.</p>
       </v-col>
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
         <v-lazy v-model="p.act" :options="{ threshold: 0.5 }" min-height="100" transition="fade-transition">

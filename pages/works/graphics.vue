@@ -8,7 +8,7 @@
         <h2>YouTube vids</h2>
         <p>Subscribe to my <a class="a-custom-button white--text"
                               href="https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag"
-                              target="_blank" rel="noopener">YouTube channel</a>!</p>
+                              target="_blank" rel="noopener">YouTube channel</a>! Please, I need them to earn some ads money apparently.</p>
       </v-col>
       <v-col cols="12" lg="10" offset-lg="1" v-for="(vid, i) in yt_videos" :key="i">
         <YouTubeVideoComponent :vid-obj="vid"></YouTubeVideoComponent>

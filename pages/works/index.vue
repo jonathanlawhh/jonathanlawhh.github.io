@@ -4,8 +4,7 @@
       <v-col cols="12">
         <h2>Works that I have ventured into</h2>
         <p>
-          Things I did when I had too much free time. Professional work ahead.
-          (not)
+          Some call it a portfolio, some call it their life's work, my mum calls it a waste of time.
         </p>
       </v-col>
     </v-row>

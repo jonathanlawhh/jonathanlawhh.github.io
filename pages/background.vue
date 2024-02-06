@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12">
         <h2>My education and work history</h2>
-        <p>Where I studied and worked</p>
+        <p>On the weekends, I work as an on-demand chauffeur for my family.</p>
       </v-col>
     </v-row>
 

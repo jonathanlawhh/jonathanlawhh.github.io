@@ -6,7 +6,7 @@
     <v-row id="content" class="mb-8">
       <v-col cols="12">
         <h3>Dashboards I have built</h3>
-        <p>Hover over to know more!</p>
+        <p>As bosses likes to say, DATA! FACTS! FIGURES! ANALYSIS!</p>
       </v-col>
 
       <v-col v-for="(p, i) in projects" :key="i" cols="12" md="6" xl="4">
