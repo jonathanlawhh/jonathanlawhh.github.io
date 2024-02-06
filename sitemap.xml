@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/background/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/ai/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/data/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/graphics/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/nft/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/websites/</loc>
     </url>
     <url>
-        <lastmod>2024-01-27T02:55:57+00:00</lastmod>
+        <lastmod>2024-02-06T14:11:42+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/data/tinder/</loc>
     </url>
 </urlset>
