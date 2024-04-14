@@ -13,7 +13,7 @@
           <template v-if="info.title === 'IKEA Supply Malaysia'">
             <v-divider class="ml-2" style="width: 60%" thickness="3" :color="info.theme_color"></v-divider>
             <v-col cols="12">
-              Process improvement, RCA, data and reporting.
+              Process improvement, RCA, project management, data and reporting.
             </v-col>
           </template>
 

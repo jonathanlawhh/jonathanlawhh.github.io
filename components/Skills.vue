@@ -69,7 +69,7 @@ export default {
         {
           title: 'Data',
           description: `- Analyst, Visualizing<br />
-           <span class="ml-8 custom-mini-text">(Power BI, Tableau etc...)</span><br />
+           <span class="ml-8 custom-mini-text">(Looker, Power BI, Tableau etc...)</span><br />
            - Engineering<br />
            <span class="ml-8 custom-mini-text">(ETL/ELT, Warehousing, BigQuery)</span>
           `,
@@ -77,7 +77,8 @@ export default {
         {
           title: 'Artificial Intelligence',
           description: `- Computer vision<br />
-            <span class="ml-8 custom-mini-text">(OpenCV, Tensorflow)</span>
+            <span class="ml-8 custom-mini-text">(OpenCV, Tensorflow)</span><br />
+            - Does ChatGPT counts?
           `,
         },
         {
