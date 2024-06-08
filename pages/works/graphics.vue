@@ -55,12 +55,13 @@ export default {
       {
         title: 'Osaka Japan 2023 | GoPro Hero 11 Cinematic Travel',
         description:
-            '13.05.2023<br>' +
+            '11.07.2023<br>' +
             'A very quick 6 days travel trip to Osaka Japan, which includes using the train to Kyoto and Nara. Within Kyoto, Arashiyama Bamboo Grove and Gion (Geisha District) was visited in one day. Visiting Nara Deer Park for half a day and did a little detour to Aeon Dome Mall.<br>' +
             'From Dontonbori, a short walk would bring you to a notable few markets which are Shinsekai Market, Kuromon Ichiba Market and Shinsaibashisuji street. Of course the Glico Running Man would be on the same area too.',
         playlist: [
           {
             id: 'DNGlpDPrDbs',
+            travel_page_url: '/travels/japan-osaka-23'
           },
         ],
       },

@@ -1,5 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
 export const routes = [
     {
         name: 'Something About Me',
@@ -75,57 +73,3 @@ export const routes = [
         }
     },
 ]
-
-export default defineNuxtConfig({
-    ssr: true,
-    app: {
-        head: {
-            meta: [
-                {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-            ],
-            htmlAttrs: {
-                lang: 'en'
-            },
-        },
-        pageTransition: {name: 'page', mode: 'out-in'}
-    },
-    css: [
-        '@/assets/main.css',
-        '@/assets/override.scss'
-    ],
-    build: {
-        transpile: ['vuetify'],
-    },
-    modules: ['nuxt-simple-sitemap', 'nuxt-gtag'],
-    site: {
-        url: 'https://jonathanlawhh.com/',
-        name: 'Jonathan Law Hui Hao',
-        cacheTtl: 1000 * 60 * 60 * 24 * 30,
-        trailingSlash: true,
-    },
-    gtag: {
-        id: 'G-1NMJW2TCTK'
-    },
-    hooks: {
-        // Mini hack just to give each page a nice name and meta image
-        'pages:extend': (pages: any[]) => {
-            pages.map((page) => {
-                for (let r = 0; r < routes.length; r++) {
-                    if (routes[r].path === page.path) {
-                        Object.assign(page, {name: routes[r].name, meta: routes[r].meta})
-                    }
-
-                    if (page.children.length > 0) {
-                        for (let cidx = 0; cidx < page.children.length; cidx++) {
-                            let childRoute = page.children[cidx]
-                            if (childRoute.path === routes[r].path.substring(page.path.length + 1)) {
-                                Object.assign(childRoute, {name: routes[r].name, meta: routes[r].meta})
-                                break
-                            }
-                        }
-                    }
-                }
-            })
-        }
-    },
-});

@@ -24,14 +24,9 @@
           <p v-html="vidObj.description"></p>
           <br/>
           <p v-if="vidObj.playlist.length > 1">Progression journey:</p>
-          <div v-if="vidObj.playlist.length > 1">
-            <v-btn v-for="(v, i) in vidObj.playlist" :key="i" class="ma-2"
-                   :class="!(selected_vid === v) && 'hover-fade-in'" rounded :outlined="!(selected_vid === v)"
-                   @click="selected_vid = v"
-            >
-              {{ v.title }}
-            </v-btn>
-          </div>
+          <NuxtLink v-if="selected_vid.travel_page_url" :to="selected_vid.travel_page_url" class="a-custom-button white--text text-decoration-none">
+            [ TRAVEL STORY ]
+          </NuxtLink>
         </v-col>
       </v-row>
     </v-card-text>
