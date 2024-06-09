@@ -1,7 +1,7 @@
 <template>
   <v-row style="position: relative">
     <v-btn variant="outlined" @click="$router.go(-1)" :exact="true" size="large" class="btn-return" rounded="0"
-           style="position: absolute; top: 0; left: 0; z-index: 2;background-image: linear-gradient(to right, white, rgba(0,0,0,0))">
+           style="position: absolute; top: 0; left: 0; z-index: 2;background-image: linear-gradient(to right, black, rgba(0,0,0,0))">
       <v-icon size="large" icon="mdi-chevron-left"></v-icon>
       GO BACK
     </v-btn>
@@ -107,6 +107,6 @@ export default {
 
 .btn-return:hover {
   background: white;
-  color: #262626;
+  color: white;
 }
 </style>
