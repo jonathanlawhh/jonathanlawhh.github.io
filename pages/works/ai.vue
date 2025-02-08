@@ -51,6 +51,14 @@ export default {
     return {
       projects: [
         {
+          title: 'The Algorithmic Approach to Online Dating',
+          description:
+              'What if AI could eliminate the guesswork from online dating, helping you present your best self and connect with compatible partners?',
+          src: '/img/work_ai_dating_profile.webp',
+          view: 'https://dating.jonathanlawhh.com/',
+          view_text: 'AI Dating Profile Optimizer',
+        },
+        {
           title: 'Container Number Recognition using AI (CNRAI)',
           description:
               'CNRAI extracts container numbers from images, saving time and improving operational efficiency and reducing supply chain risk.',
