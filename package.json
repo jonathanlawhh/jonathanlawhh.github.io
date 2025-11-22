@@ -12,10 +12,11 @@
     "@mdi/font": "7.4.47",
     "nuxt": "^3.20.1",
     "nuxt-gtag": "^4.1.0",
-    "sass": "1.94.2"
+    "sass": "1.94.2",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vuetify": "^3.10.11"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "^7.4.7",
-    "vuetify": "3.10.11"
+    "@nuxtjs/sitemap": "^7.4.7"
   }
 }

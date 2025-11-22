@@ -1,3 +1,4 @@
+import vuetify from 'vite-plugin-vuetify'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export const routes = [
@@ -78,6 +79,12 @@ export const routes = [
 
 export default defineNuxtConfig({
     ssr: true,
+    vite: {
+    plugins: [
+        // @ts-expect-error
+        vuetify({ autoImport: true }),
+        ]
+    },
     app: {
         head: {
             meta: [
