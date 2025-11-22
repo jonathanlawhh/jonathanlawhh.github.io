@@ -96,7 +96,7 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify'],
     },
-    modules: ['nuxt-simple-sitemap', 'nuxt-gtag'],
+    modules: ['@nuxtjs/sitemap', 'nuxt-gtag'],
     site: {
         url: 'https://jonathanlawhh.com/',
         name: 'Jonathan Law Hui Hao',
