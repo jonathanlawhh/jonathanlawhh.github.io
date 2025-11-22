@@ -53,12 +53,12 @@
           }
 
           .expl a {
-            color: #398465
+            color: #398465;
             font-weight: 600;
           }
 
           .expl a:visited {
-            color: #398465
+            color: #398465;
           }
 
           a {
@@ -101,13 +101,15 @@
           li { padding-bottom: 0.5rem; line-height: 1.5; }
           h1 { margin: 0; }
           .mb-5 { margin-bottom: 1.25rem; }
+          .mb-3 { margin-bottom: 0.75rem; }
         </style>
       </head>
       <body>
         <div style="grid-template-columns: 1fr 1fr; display: grid; margin: 3rem;">
             <div>
              <div id="content">
-          <h1 class="text-2xl mb-5">Jonathan Law Hui Hao XML Sitemap</h1>
+          <h1 class="text-2xl mb-3">XML Sitemap</h1>
+          <h2>Jonathan Law Hui Hao</h2>
           
           <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
             <p class="expl" style="margin-bottom: 1rem;">

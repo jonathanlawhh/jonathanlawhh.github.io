@@ -1,44 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/me.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/background/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/graduation_me.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/travels/japan-osaka-23/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/ai/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/data/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/graphics/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/nft/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/digitofpi-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/digitofpi-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/digitofpi-3.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/uncle-roger-reviews-food-min-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/uncle-roger-reviews-food-min-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/gallery/nft/ramsay-in-ten-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/websites/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/work_web_spi.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/work_web_vibratez.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/work_web_apu-schedule.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/work_web_style_guide.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/img/work_web_balls.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
     <url>
-        <lastmod>2025-02-08T16:56:50+00:00</lastmod>
         <loc>https://jonathanlawhh.com/works/data/tinder/</loc>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/fb.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/github.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/linkedin.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jonathanlawhh.com/icons/youtube.svg</image:loc>
+        </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by Nuxt Simple Sitemap V3.4.1 -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.7 at 2025-11-22T11:55:15.373Z -->
