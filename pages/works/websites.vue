@@ -1,6 +1,7 @@
 <template>
   <div>
-    <LandingComponent title="Websites" description="Production and random sites, some random programs" background-image="/img/logo_w_websites.webp"></LandingComponent>
+    <LandingComponent title="Websites" description="Production and random sites, some random programs"
+      background-image="/img/logo_w_websites.webp"></LandingComponent>
 
     <v-row id="content" class="mb-8">
       <v-col cols="12">
@@ -15,21 +16,12 @@
 
     <v-row>
       <v-col cols="12" md="4">
-        <DisplayCard
-            title="I write stuff on dev.to"
-            subtitle=""
-            body="About DEV: DEV is a community of software developers getting together to help one another out. The software industry relies on collaboration and networked learning. We provide a place for that to happen."
-            action-text="dev.to"
-            action-url="https://dev.to/jonathanlawhh"
-        >
+        <DisplayCard title="I write stuff on dev.to" subtitle=""
+          body="About DEV: DEV is a community of software developers getting together to help one another out. The software industry relies on collaboration and networked learning. We provide a place for that to happen."
+          action-text="dev.to" action-url="https://dev.to/jonathanlawhh">
           <p class="mt-4">
-            <img
-                src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-                alt="Jonathan Law's DEV Community Profile"
-                height="30"
-                width="30"
-                style="filter: invert(95%); vertical-align: middle"
-            />
+            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Jonathan Law's DEV Community Profile"
+              height="30" width="30" style="filter: invert(95%); vertical-align: middle" />
           </p>
         </DisplayCard>
       </v-col>
@@ -44,17 +36,24 @@ export default {
     return {
       projects: [
         {
+          title: 'Toolbox',
+          description:
+            'Mini toolbox I created for random things I need to do on a daily basis.',
+          view: 'https://toolbox.jonathanlawhh.com/',
+          src: '/img/work_web_balls.webp',
+        },
+        {
           title: 'Sitting Posture Identifier',
           description:
             'Serving as an interface for identifying your bad posture using machine learning. Upload a side view image of yourself sitting,and the machine will tell if you are doing it right! ',
-          view: 'https://sitting-posture.azurewebsites.net/',
+          view: 'https://posture.jonathanlawhh.com/',
           src: '/img/work_web_spi.webp',
         },
         {
           title: 'Vibratez',
           description:
             'A website created for the sole purpose of vibrating... How you use it is err, not my business. (Works on Android browsers only, Apple has blocked it)',
-          view: 'https://vibratez.netlify.com/',
+          view: 'https://vibratez.netlify.app/',
           src: '/img/work_web_vibratez.webp',
         },
         {
