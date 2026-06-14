@@ -20,7 +20,7 @@
                 subtitle="View full collection on opensea.io market"
             >
               <a :href="nft.shop" rel="noopener" target="_blank"
-                 class="a-custom-button white--text">
+                 class="a-custom-button text-white">
                 {{ nft.shop }}
               </a>
             </DisplayCard>

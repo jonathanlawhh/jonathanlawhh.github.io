@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 :root {
     --custom-pink: #ff7582;
     --custom-green: #00a56a;
@@ -25,11 +27,13 @@
     border-radius: 4px;
 }
 
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
     transition: opacity 0.25s ease-in-out;
 }
 
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
     opacity: 0;
 }
 
@@ -39,6 +43,8 @@
     cursor: pointer;
     text-decoration: none;
     color: white;
+    background: none;
+    border: none;
 }
 
 .a-custom-button::before {
@@ -88,9 +94,11 @@
     0% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(2px);
     }
+
     100% {
         transform: translateY(-2px);
     }

@@ -1,32 +1,32 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="12">
-        <h1>Jonathan Law</h1>
-      </v-col>
-    </v-row>
+  <v-app>
+    <v-container>
+      <v-row>
+        <v-col cols="12">
+          <h1>Jonathan Law</h1>
+        </v-col>
+      </v-row>
 
-    <v-row class="sticky-header" style="top: 0">
-      <v-col cols="12" class="hr-line pa-0"></v-col>
-    </v-row>
+      <v-row class="sticky-header" style="top: 0">
+        <v-col cols="12" class="hr-line pa-0"></v-col>
+      </v-row>
 
-    <v-row class="sticky-header" style="top: 1px">
-      <v-col cols="12" class="pa-0" style="height: 100%">
-        <Header
-            :navigation-routes="navigation_routes"
-        ></Header>
-      </v-col>
-    </v-row>
+      <v-row class="sticky-header" style="top: 1px; margin: 0;">
+        <v-col cols="12" class="pa-0" style="height: 100%">
+          <Header :navigation-routes="navigation_routes"></Header>
+        </v-col>
+      </v-row>
 
-    <v-row class="sticky-header mb-8" style="top: 56px">
-      <v-col cols="4" class="hr-line ma-0 pt-0 pb-0"></v-col>
-    </v-row>
+      <v-row class="sticky-header mb-8" style="top: 56px; margin-top: 0;">
+        <v-col cols="4" class="hr-line ma-0 pt-0 pb-0"></v-col>
+      </v-row>
 
-    <NuxtPage style="min-height: 70vh" page-key="static"/>
+      <NuxtPage style="min-height: 70vh" page-key="static" />
 
 
-    <Footer></Footer>
-  </v-container>
+      <Footer></Footer>
+    </v-container>
+  </v-app>
 </template>
 
 <script setup>
@@ -77,10 +77,10 @@ export default {
   name: 'App',
   data: () => ({
     navigation_routes: [
-      {title: 'HOME', route: '/'},
-      {title: 'MY BACKGROUND', route: '/background/'},
-      {title: 'WORKS', route: '/works/'},
-      {title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/'},
+      { title: 'HOME', route: '/' },
+      { title: 'MY BACKGROUND', route: '/background/' },
+      { title: 'WORKS', route: '/works/' },
+      { title: 'TECH BLOG', href: 'https://jonathanlawhh.medium.com/' },
     ],
   }),
   watch: {

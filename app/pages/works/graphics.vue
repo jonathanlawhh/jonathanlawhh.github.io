@@ -6,7 +6,7 @@
     <v-row id="content">
       <v-col cols="12">
         <h2>YouTube vids</h2>
-        <p>Subscribe to my <a class="a-custom-button white--text"
+        <p>Subscribe to my <a class="a-custom-button text-white"
                               href="https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag"
                               target="_blank" rel="noopener">YouTube channel</a>! Please, I need them to earn some ads money apparently.</p>
       </v-col>

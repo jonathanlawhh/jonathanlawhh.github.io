@@ -3,27 +3,28 @@
     <v-row class="mb-8">
       <v-col xl="3" lg="4" md="6" sm="12">
         <ImageFrame image-url="/img/me.webp" style="width: 100%; height: 100%" class="ma-2"
-                    alt-text="An image of Jonathan Law on a yacht"></ImageFrame>
+          alt-text="An image of Jonathan Law on a yacht"></ImageFrame>
       </v-col>
 
       <v-col xl="9" lg="8" md="6" sm="12">
-        <p class="text-h4 mb-4">Hi there !</p>
-        <p>
+        <p class="mb-4 ml-8" style="font-size: 2rem;">Hi there !</p>
+        <p class="ml-8">
           I am
           <span class="my_name font-weight-bold">Jonathan Law Hui Hao</span>,
           a Business Support Specialist in Malaysia.
-          <br/><br/>
-          I combine logistics and process improvement with technology.<br/>
+          <br /><br />
+          I combine logistics and process improvement with technology.<br />
           Whether it's optimizing workflows, analyzing data, or automating tasks to drive efficiency,
           I find joy in the challenge of navigating complex systems.
-          <br/><br/>
+          <br /><br />
           No ChatGPT was involved here, just many years of scrolling LinkedIn and Grammarly.
-          <br/><br/>
-          Anyway, do say hi via the <button type="button" class="a-custom-button" @click="jumpDown">site chatbox</button> below the page or
+          <br /><br />
+          Anyway, do say hi via the <button type="button" class="a-custom-button" @click="jumpDown">site
+            chatbox</button> below the page or
           <span class="text-no-wrap"> email
             <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
           </span>
-          <br/><br/>
+          <br /><br />
         </p>
         <p id="whack_intro_block" class="mt-8 font-weight-bold whack_intro"></p>
       </v-col>
@@ -62,7 +63,7 @@ export default {
     }, 3000)
   },
   methods: {
-    jumpDown(){
+    jumpDown() {
       window.scrollTo({
         top: 9999,
         left: 0,
@@ -95,29 +96,33 @@ export default {
   0% {
     width: 0;
   }
+
   5% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   95% {
     width: 0;
   }
+
   100% {
     width: 0;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: orange;
   }
 }
-
 </style>
-

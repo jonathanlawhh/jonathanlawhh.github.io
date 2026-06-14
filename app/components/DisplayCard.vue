@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.theme--dark.v-sheet {
+.v-theme--dark.v-sheet {
   border-color: #d4d4d4;
   border-style: solid;
 }

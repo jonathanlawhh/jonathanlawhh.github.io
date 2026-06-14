@@ -11,25 +11,25 @@
         <v-card variant="outlined" rounded="lg">
           <v-card-item>
             <p>
-              <br/>
+              <br />
               <strong>What I tell people I do:</strong>
-              <br/>
+              <br />
               [
               <button v-for="s in [
-              'Logistics and supply chain management',
-              'Data analysis and visualization',
-              'Process improvement',
-              'Automation, AI',
-              'System administrator'
+                'Logistics and supply chain management',
+                'Data analysis and visualization',
+                'Process improvement',
+                'Automation, AI',
+                'System administrator'
               ]" class="ma-2 hover-motion a-custom-button">{{ s }}
               </button>
               ]
-              <br/><br/><br/>
-              <strong>What I actually do:</strong><br/>
+              <br /><br /><br />
+              <strong>What I actually do:</strong><br />
               I grab cat facts and send them to the company group chat every time
               someone requests to move something from the warehouse.
-              <br/>
-              <br/>
+              <br />
+              <br />
             </p>
           </v-card-item>
         </v-card>
@@ -47,7 +47,7 @@
         <v-card class="hover-motion" style="position: relative; border: 1px solid white; overflow: visible;">
           <div class="custom-card-overlay hover-motion">
             <v-card class="custom-card-overlay-card" elevation="12" theme="light">
-              <h3 style="font-size: 140%">{{ s.title }}</h3>
+              <h3 style="font-size: 140%; margin:0;">{{ s.title }}</h3>
             </v-card>
           </div>
 

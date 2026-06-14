@@ -15,7 +15,7 @@
     </v-row>
 
     <v-row style="position: relative">
-      <v-col style="position: absolute; top: -240px;" class="text-center">
+      <v-col style="position: absolute; top: -240px; width: 100%; left: 0;" class="text-center">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
       </v-col>

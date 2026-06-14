@@ -32,7 +32,7 @@
             <br />
             <span class="font-weight-bold">DOI URL: </span>
             <a href="http://dx.doi.org/10.31782/IJCRR.2021.131123" rel="noopener" target="_blank"
-              class="a-custom-button white--text">
+              class="a-custom-button text-white">
               http://dx.doi.org/10.31782/IJCRR.2021.131123
             </a>
           </p>

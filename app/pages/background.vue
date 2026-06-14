@@ -10,61 +10,54 @@
     <v-row>
       <v-col cols="12" md="9" :offset-md="i % 3" lg="6" :offset-lg="i % 8" v-for="(info, i) in infos" :key="i">
         <WorkExperienceCard :info="info">
-          <template v-if="info.title === 'IKEA Supply Malaysia'">
-            <v-divider class="ml-2" style="width: 60%" thickness="3" :color="info.theme_color"></v-divider>
-            <v-col cols="12">
-              Process improvement, RCA, project management, data and reporting.
-            </v-col>
-          </template>
-
           <template v-if="info.title === 'AirAsia'">
             <v-divider class="ml-2" style="width: 60%" thickness="3" :color="info.theme_color"></v-divider>
             <v-col cols="12">
-              <b>2020 - Business Intelligence Analyst</b><br/>
-              <span class="text--secondary">
-                                Understanding business requirements and using data to assist in decision-making.
-                                Identifying opportunities to improve workflows and processes using technology.
-                                BI dashboard building, hands-on system development and managing GCP projects too.
-                              </span>
+              <h4 class="ml-4 mb-0">2020 - Business Intelligence Analyst</h4>
+              <p class="ml-5">
+                Understanding business requirements and using data to assist in decision-making.
+                Identifying opportunities to improve workflows and processes using technology.
+                BI dashboard building, hands-on system development and managing GCP projects too.
+              </p>
             </v-col>
             <v-col cols="12">
-              <b>2019 - Developer</b><br/>
-              <span class="text--secondary">
-                                Developing ETLs, BI analysis, cloud infrastructure management
-                                and building systems that automate tasks and processes.
-                              </span>
+              <h4 class="ml-4 mb-0">2019 - Developer</h4>
+              <p class="ml-5">
+                Developing ETLs, BI analysis, cloud infrastructure management
+                and building systems that automate tasks and processes.
+              </p>
             </v-col>
           </template>
 
           <template v-if="info.title === 'Bsc Hons in Intelligent Systems'">
             <v-divider class="ml-2" style="width: 60%" thickness="3" :color="info.theme_color"></v-divider>
-            <img class="ma-4" src="/img/graduation_me.webp" style="width: 80%" alt="Jonathan's graduation slide"/>
+            <img class="ma-4" src="/img/graduation_me.webp" style="width: 80%" alt="Jonathan's graduation slide" />
           </template>
 
 
           <template v-if="info.title === 'Technical Assistant'">
             <v-divider class="ml-2" style="width: 60%" thickness="3" :color="info.theme_color"></v-divider>
             <v-col cols="12">
-              <b>2019 - Promoted to Lab Chief</b><br/>
-              <span class="text--secondary">
-                                Managing servers, coordinating the Technical Assistants
-                                team, setting up and enforcing SOPs for APU
-                              </span>
+              <h4 class="ml-4 mb-0">2019 - Promoted to Lab Chief</h4>
+              <p class="ml-5">
+                Managing servers, coordinating the Technical Assistants
+                team, setting up and enforcing SOPs for APU
+              </p>
             </v-col>
 
             <v-col cols="12">
-              <b>2018 - Promoted to Head of Software Department</b><br/>
-              <span class="text--secondary">
-                                Managing and planning maintenance on campus, setting up
-                                servers and coordinating the Software Department
-                              </span>
+              <h4 class="ml-4 mb-0">2018 - Promoted to Head of Software Department</h4>
+              <p class="ml-5">
+                Managing and planning maintenance on campus, setting up
+                servers and coordinating the Software Department
+              </p>
             </v-col>
 
             <v-col cols="12">
-              <b>2017 - Promoted to Software Department</b><br/>
-              <span class="text--secondary">
-                                Creating images, automating labs administration
-                              </span>
+              <h4 class="ml-4 mb-0">2017 - Promoted to Software Department</h4>
+              <p class="ml-5">
+                Creating images, automating labs administration
+              </p>
             </v-col>
           </template>
         </WorkExperienceCard>
@@ -86,7 +79,7 @@ export default {
         title: 'IKEA Supply Malaysia',
         duration: '2022 - current',
         desc:
-            'Business Support Specialist at IKEA Distribution Centre, Malaysia',
+          'Business Support Specialist at IKEA Distribution Centre, Malaysia. Process improvement, RCA, project management, data and reporting.',
         theme_color: 'orange',
         icon: 'work',
         direction: 'l',
@@ -96,7 +89,7 @@ export default {
         title: 'AirAsia',
         duration: '2019 - 2022',
         desc:
-            'Working in AirAsia cargo subsidiary, Teleport. Promoted from an intern to working full time.',
+          'Working in AirAsia cargo subsidiary, Teleport. Promoted from an intern to working full time.',
         theme_color: 'red',
         icon: 'work',
         direction: 'r',

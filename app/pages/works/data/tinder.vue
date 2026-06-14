@@ -26,23 +26,23 @@
           To request for the dataset I scrapped,
           please chat me via the Messenger icon at the bottom left of this page
           <br>or email
-          <a href="mailto:me@jonathanlawhh.com" class="a-custom-button text-decoration-none white--text">me@jonathanlawhh.com</a>
+          <a href="mailto:me@jonathanlawhh.com" class="a-custom-button text-decoration-none text-white">me@jonathanlawhh.com</a>
         </p><br>
 
         <p><strong>Links:</strong>
           <br>
           <a href="https://medium.com/@jonathanlawhh/what-tinder-users-demographics-are-around-me-9d6d9c9c1aa8"
-             rel="nofollow" target="_blank" class="a-custom-button white--text text-decoration-none">Article about this
+             rel="nofollow" target="_blank" class="a-custom-button text-white text-decoration-none">Article about this
             project</a>
 
           <br>
           <a href="https://datastudio.google.com/reporting/4b986367-24b0-4244-b7aa-6e8d3e2fc1b2/page/E17hC"
-             rel="nofollow" target="_blank" class="a-custom-button white--text text-decoration-none">Full dashboard
+             rel="nofollow" target="_blank" class="a-custom-button text-white text-decoration-none">Full dashboard
             link</a>
 
           <br>
           <a href="https://tinder.com/"
-             rel="nofollow" target="_blank" class="a-custom-button white--text text-decoration-none">Tinder website</a>
+             rel="nofollow" target="_blank" class="a-custom-button text-white text-decoration-none">Tinder website</a>
         </p>
       </v-col>
     </v-row>

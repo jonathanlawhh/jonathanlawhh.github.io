@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <v-container>
       <v-row>
         <v-col cols="12">
@@ -24,7 +24,7 @@
       </v-row>
 
     </v-container>
-  </div>
+  </v-app>
 </template>
 
 <script setup lang="ts">

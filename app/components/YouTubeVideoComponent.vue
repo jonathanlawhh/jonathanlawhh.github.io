@@ -3,7 +3,7 @@
     <v-card-text>
       <v-row>
         <v-col v-if="!clicked" cols="12" md="6" lg="5">
-          <v-img :src="`https://img.youtube.com/vi/${selected_vid.id}/mqdefault.jpg`" contain class="hover-motion"
+          <v-img :src="`https://img.youtube.com/vi/${selected_vid.id}/mqdefault.jpg`" :cover="false" class="hover-motion"
                  style="cursor: pointer; height: 320px" @click="clicked = true">
             <div style="background-color: rgba(0, 0, 0, 0.6); height: 100%" class="text-center">
               <v-icon style="margin-top: 20%; font-size: 64px" icon="mdi-play-circle-outline"></v-icon>
@@ -24,7 +24,7 @@
           <p v-html="vidObj.description"></p>
           <br/>
           <p v-if="vidObj.playlist.length > 1">Progression journey:</p>
-          <NuxtLink v-if="selected_vid.travel_page_url" :to="selected_vid.travel_page_url" class="a-custom-button white--text text-decoration-none">
+          <NuxtLink v-if="selected_vid.travel_page_url" :to="selected_vid.travel_page_url" class="a-custom-button text-white text-decoration-none">
             [ TRAVEL STORY ]
           </NuxtLink>
         </v-col>

@@ -46,8 +46,8 @@
             </v-col>
           </nav>
           <v-col cols="12" class="mt-12">
-            <v-btn icon="true" variant="outlined" color="red" x-large @click="closeSheet(500)" class="rotate-close">
-              <v-icon small icon="mdi-window-close"></v-icon>
+            <v-btn icon variant="outlined" color="red" size="x-large" @click="closeSheet(500)" class="rotate-close">
+              <v-icon size="small" icon="mdi-window-close"></v-icon>
             </v-btn>
           </v-col>
         </v-row>

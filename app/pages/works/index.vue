@@ -10,7 +10,7 @@
     </v-row>
 
     <v-row class="mt-8">
-      <v-col v-for="(w, i) in works" :key="i" cols="12" md="4" class="mb-8">
+      <v-col v-for="(w, i) in works" :key="i" cols="12" md="6" lg="4" class="mb-8">
         <v-card :to="w.url" class="hover-motion" style="
             position: relative;
             background-color: #424242;

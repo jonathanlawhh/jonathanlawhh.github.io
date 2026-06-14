@@ -85,7 +85,12 @@ export default defineNuxtConfig({
     vite: {
     plugins: [
         // @ts-expect-error
-        vuetify({ autoImport: true }),
+        vuetify({
+            autoImport: true,
+            styles: {
+                configFile: 'assets/override.scss'
+            }
+        }),
         ]
     },
     app: {
