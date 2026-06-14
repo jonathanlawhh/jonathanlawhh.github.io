@@ -1,419 +1,451 @@
-<!DOCTYPE html><html  lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Travels&#x2F;Japan Osaka 2023 | Jonathan Law</title><style id="vuetify-theme-stylesheet">:root {
-      color-scheme: dark;
-    }
-    :root {
-      --v-theme-background: 18,18,18;
-      --v-theme-background-overlay-multiplier: 1;
-      --v-theme-surface: 33,33,33;
-      --v-theme-surface-overlay-multiplier: 1;
-      --v-theme-surface-bright: 204,191,214;
-      --v-theme-surface-bright-overlay-multiplier: 2;
-      --v-theme-surface-light: 66,66,66;
-      --v-theme-surface-light-overlay-multiplier: 1;
-      --v-theme-surface-variant: 200,200,200;
-      --v-theme-surface-variant-overlay-multiplier: 2;
-      --v-theme-on-surface-variant: 0,0,0;
-      --v-theme-primary: 33,150,243;
-      --v-theme-primary-overlay-multiplier: 2;
-      --v-theme-primary-darken-1: 39,124,193;
-      --v-theme-primary-darken-1-overlay-multiplier: 2;
-      --v-theme-secondary: 84,182,178;
-      --v-theme-secondary-overlay-multiplier: 2;
-      --v-theme-secondary-darken-1: 72,169,166;
-      --v-theme-secondary-darken-1-overlay-multiplier: 2;
-      --v-theme-error: 207,102,121;
-      --v-theme-error-overlay-multiplier: 2;
-      --v-theme-info: 33,150,243;
-      --v-theme-info-overlay-multiplier: 2;
-      --v-theme-success: 76,175,80;
-      --v-theme-success-overlay-multiplier: 2;
-      --v-theme-warning: 251,140,0;
-      --v-theme-warning-overlay-multiplier: 2;
-      --v-theme-on-background: 255,255,255;
-      --v-theme-on-surface: 255,255,255;
-      --v-theme-on-surface-bright: 0,0,0;
-      --v-theme-on-surface-light: 255,255,255;
-      --v-theme-on-primary: 255,255,255;
-      --v-theme-on-primary-darken-1: 255,255,255;
-      --v-theme-on-secondary: 255,255,255;
-      --v-theme-on-secondary-darken-1: 255,255,255;
-      --v-theme-on-error: 255,255,255;
-      --v-theme-on-info: 255,255,255;
-      --v-theme-on-success: 255,255,255;
-      --v-theme-on-warning: 255,255,255;
-      --v-border-color: 255, 255, 255;
-      --v-border-opacity: 0.12;
-      --v-high-emphasis-opacity: 1;
-      --v-medium-emphasis-opacity: 0.7;
-      --v-disabled-opacity: 0.5;
-      --v-idle-opacity: 0.1;
-      --v-hover-opacity: 0.04;
-      --v-focus-opacity: 0.12;
-      --v-selected-opacity: 0.08;
-      --v-activated-opacity: 0.12;
-      --v-pressed-opacity: 0.16;
-      --v-dragged-opacity: 0.08;
-      --v-theme-kbd: 66, 66, 66;
-      --v-theme-on-kbd: 255, 255, 255;
-      --v-theme-code: 52, 52, 52;
-      --v-theme-on-code: 204, 204, 204;
-    }
-    .v-theme--light {
-      color-scheme: normal;
-      --v-theme-background: 255,255,255;
-      --v-theme-background-overlay-multiplier: 1;
-      --v-theme-surface: 255,255,255;
-      --v-theme-surface-overlay-multiplier: 1;
-      --v-theme-surface-bright: 255,255,255;
-      --v-theme-surface-bright-overlay-multiplier: 1;
-      --v-theme-surface-light: 238,238,238;
-      --v-theme-surface-light-overlay-multiplier: 1;
-      --v-theme-surface-variant: 66,66,66;
-      --v-theme-surface-variant-overlay-multiplier: 2;
-      --v-theme-on-surface-variant: 238,238,238;
-      --v-theme-primary: 24,103,192;
-      --v-theme-primary-overlay-multiplier: 2;
-      --v-theme-primary-darken-1: 31,85,146;
-      --v-theme-primary-darken-1-overlay-multiplier: 2;
-      --v-theme-secondary: 72,169,166;
-      --v-theme-secondary-overlay-multiplier: 1;
-      --v-theme-secondary-darken-1: 1,135,134;
-      --v-theme-secondary-darken-1-overlay-multiplier: 1;
-      --v-theme-error: 176,0,32;
-      --v-theme-error-overlay-multiplier: 2;
-      --v-theme-info: 33,150,243;
-      --v-theme-info-overlay-multiplier: 1;
-      --v-theme-success: 76,175,80;
-      --v-theme-success-overlay-multiplier: 1;
-      --v-theme-warning: 251,140,0;
-      --v-theme-warning-overlay-multiplier: 1;
-      --v-theme-on-background: 0,0,0;
-      --v-theme-on-surface: 0,0,0;
-      --v-theme-on-surface-bright: 0,0,0;
-      --v-theme-on-surface-light: 0,0,0;
-      --v-theme-on-primary: 255,255,255;
-      --v-theme-on-primary-darken-1: 255,255,255;
-      --v-theme-on-secondary: 255,255,255;
-      --v-theme-on-secondary-darken-1: 255,255,255;
-      --v-theme-on-error: 255,255,255;
-      --v-theme-on-info: 255,255,255;
-      --v-theme-on-success: 255,255,255;
-      --v-theme-on-warning: 255,255,255;
-      --v-border-color: 0, 0, 0;
-      --v-border-opacity: 0.12;
-      --v-high-emphasis-opacity: 0.87;
-      --v-medium-emphasis-opacity: 0.6;
-      --v-disabled-opacity: 0.38;
-      --v-idle-opacity: 0.04;
-      --v-hover-opacity: 0.04;
-      --v-focus-opacity: 0.12;
-      --v-selected-opacity: 0.08;
-      --v-activated-opacity: 0.12;
-      --v-pressed-opacity: 0.12;
-      --v-dragged-opacity: 0.08;
-      --v-theme-kbd: 238, 238, 238;
-      --v-theme-on-kbd: 0, 0, 0;
-      --v-theme-code: 245, 245, 245;
-      --v-theme-on-code: 0, 0, 0;
-    }
-    .v-theme--dark {
-      color-scheme: dark;
-      --v-theme-background: 18,18,18;
-      --v-theme-background-overlay-multiplier: 1;
-      --v-theme-surface: 33,33,33;
-      --v-theme-surface-overlay-multiplier: 1;
-      --v-theme-surface-bright: 204,191,214;
-      --v-theme-surface-bright-overlay-multiplier: 2;
-      --v-theme-surface-light: 66,66,66;
-      --v-theme-surface-light-overlay-multiplier: 1;
-      --v-theme-surface-variant: 200,200,200;
-      --v-theme-surface-variant-overlay-multiplier: 2;
-      --v-theme-on-surface-variant: 0,0,0;
-      --v-theme-primary: 33,150,243;
-      --v-theme-primary-overlay-multiplier: 2;
-      --v-theme-primary-darken-1: 39,124,193;
-      --v-theme-primary-darken-1-overlay-multiplier: 2;
-      --v-theme-secondary: 84,182,178;
-      --v-theme-secondary-overlay-multiplier: 2;
-      --v-theme-secondary-darken-1: 72,169,166;
-      --v-theme-secondary-darken-1-overlay-multiplier: 2;
-      --v-theme-error: 207,102,121;
-      --v-theme-error-overlay-multiplier: 2;
-      --v-theme-info: 33,150,243;
-      --v-theme-info-overlay-multiplier: 2;
-      --v-theme-success: 76,175,80;
-      --v-theme-success-overlay-multiplier: 2;
-      --v-theme-warning: 251,140,0;
-      --v-theme-warning-overlay-multiplier: 2;
-      --v-theme-on-background: 255,255,255;
-      --v-theme-on-surface: 255,255,255;
-      --v-theme-on-surface-bright: 0,0,0;
-      --v-theme-on-surface-light: 255,255,255;
-      --v-theme-on-primary: 255,255,255;
-      --v-theme-on-primary-darken-1: 255,255,255;
-      --v-theme-on-secondary: 255,255,255;
-      --v-theme-on-secondary-darken-1: 255,255,255;
-      --v-theme-on-error: 255,255,255;
-      --v-theme-on-info: 255,255,255;
-      --v-theme-on-success: 255,255,255;
-      --v-theme-on-warning: 255,255,255;
-      --v-border-color: 255, 255, 255;
-      --v-border-opacity: 0.12;
-      --v-high-emphasis-opacity: 1;
-      --v-medium-emphasis-opacity: 0.7;
-      --v-disabled-opacity: 0.5;
-      --v-idle-opacity: 0.1;
-      --v-hover-opacity: 0.04;
-      --v-focus-opacity: 0.12;
-      --v-selected-opacity: 0.08;
-      --v-activated-opacity: 0.12;
-      --v-pressed-opacity: 0.16;
-      --v-dragged-opacity: 0.08;
-      --v-theme-kbd: 66, 66, 66;
-      --v-theme-on-kbd: 255, 255, 255;
-      --v-theme-code: 52, 52, 52;
-      --v-theme-on-code: 204, 204, 204;
-    }
-    .v-theme--t {
-      color-scheme: dark;
-      --v-theme-background: 18,18,18;
-      --v-theme-background-overlay-multiplier: 1;
-      --v-theme-surface: 33,33,33;
-      --v-theme-surface-overlay-multiplier: 1;
-      --v-theme-surface-bright: 204,191,214;
-      --v-theme-surface-bright-overlay-multiplier: 2;
-      --v-theme-surface-light: 66,66,66;
-      --v-theme-surface-light-overlay-multiplier: 1;
-      --v-theme-surface-variant: 200,200,200;
-      --v-theme-surface-variant-overlay-multiplier: 2;
-      --v-theme-on-surface-variant: 0,0,0;
-      --v-theme-primary: 255,117,130;
-      --v-theme-primary-overlay-multiplier: 2;
-      --v-theme-primary-darken-1: 39,124,193;
-      --v-theme-primary-darken-1-overlay-multiplier: 2;
-      --v-theme-secondary: 0,165,106;
-      --v-theme-secondary-overlay-multiplier: 2;
-      --v-theme-secondary-darken-1: 72,169,166;
-      --v-theme-secondary-darken-1-overlay-multiplier: 2;
-      --v-theme-error: 207,102,121;
-      --v-theme-error-overlay-multiplier: 2;
-      --v-theme-info: 33,150,243;
-      --v-theme-info-overlay-multiplier: 2;
-      --v-theme-success: 76,175,80;
-      --v-theme-success-overlay-multiplier: 2;
-      --v-theme-warning: 251,140,0;
-      --v-theme-warning-overlay-multiplier: 2;
-      --v-theme-on-background: 255,255,255;
-      --v-theme-on-surface: 255,255,255;
-      --v-theme-on-surface-bright: 0,0,0;
-      --v-theme-on-surface-light: 255,255,255;
-      --v-theme-on-primary: 255,255,255;
-      --v-theme-on-primary-darken-1: 255,255,255;
-      --v-theme-on-secondary: 255,255,255;
-      --v-theme-on-secondary-darken-1: 255,255,255;
-      --v-theme-on-error: 255,255,255;
-      --v-theme-on-info: 255,255,255;
-      --v-theme-on-success: 255,255,255;
-      --v-theme-on-warning: 255,255,255;
-      --v-border-color: 255, 255, 255;
-      --v-border-opacity: 0.12;
-      --v-high-emphasis-opacity: 1;
-      --v-medium-emphasis-opacity: 0.7;
-      --v-disabled-opacity: 0.5;
-      --v-idle-opacity: 0.1;
-      --v-hover-opacity: 0.04;
-      --v-focus-opacity: 0.12;
-      --v-selected-opacity: 0.08;
-      --v-activated-opacity: 0.12;
-      --v-pressed-opacity: 0.16;
-      --v-dragged-opacity: 0.08;
-      --v-theme-kbd: 66, 66, 66;
-      --v-theme-on-kbd: 255, 255, 255;
-      --v-theme-code: 52, 52, 52;
-      --v-theme-on-code: 204, 204, 204;
-    }
+<!DOCTYPE html><html  lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Travels&#x2F;Japan Osaka 2023 | Jonathan Law</title><style>.sticky-header{position:sticky;z-index:10}.hr-line{border-bottom:1px solid #f0f8ff;width:100%}.btn_close:hover{transform:rotate(180deg)}.v-btn--active:before{opacity:0!important}.v-btn--active:after{content:" ";height:100%;width:100%;position:absolute;top:0;border-bottom:1px solid #fff;border-radius:0!important;animation:btnSelected .25s ease-out}@keyframes btnSelected{0%{width:0}to{width:100%}}.v-btn:before{background-color:transparent}.page-enter-active,.page-leave-active{transition:all .25s}.page-enter-from,.page-leave-to{opacity:0;filter:blur(.8rem)}</style><style>.v-btn__overlay{background-color:transparent!important}</style><style>.rotate-close[data-v-cc87eb0a]:active{transform:rotate(180deg)}.mobile-nav-card[data-v-cc87eb0a]{border:1px solid #d4d4d4;border-radius:12px!important;overflow:hidden}@keyframes dialog-bg-anim-cc87eb0a{0%{transform:rotate(-2deg)}50%{transform:rotate(-8deg)}to{transform:rotate(-2deg)}}.mobile-nav-card[data-v-cc87eb0a]:before{border:1px solid #d4d4d4;height:70%;width:120%;overflow:hidden;top:125px;left:4px;position:absolute;border-radius:64px;content:"";transition:all .15s ease-in;z-index:-10;transform:rotate(-4deg);animation:dialog-bg-anim-cc87eb0a;animation-duration:6s;animation-iteration-count:infinite}</style><style>.travel-iframe[data-v-efef823e]{min-height:100%;min-width:100%;transform:translate(-50%,-50%);top:50%;width:177.77777778vh;box-sizing:border-box;height:80vw;left:50%;position:absolute;z-index:-1;filter:blur(1px)}.travel-iframe-parent[data-v-efef823e]{position:relative;overflow:hidden;height:54vh}.travel-iframe-parent[data-v-efef823e]:after{position:absolute;height:100%;width:75%;right:0;bottom:0;content:" ";z-index:-1;border-bottom:4px solid #fff}.travel-header-main[data-v-efef823e]{font-size:3rem}.travel-header-sub[data-v-efef823e]{font-size:1.6rem}@media only screen and (max-width:800px){.travel-iframe[data-v-efef823e]{height:200vw}.travel-header-main[data-v-efef823e]{font-size:1.8rem}.travel-header-sub[data-v-efef823e]{font-size:1.1rem}}.btn-return[data-v-efef823e]:hover{background:#fff;color:#fff}</style><style>.loading-chat[data-v-72817898]{stroke:#00a56a;stroke-dasharray:500;stroke-dashoffset:1000;stroke-width:32px;animation:dash-72817898 1s infinite}@keyframes dash-72817898{to{stroke-dashoffset:0}}.link-social-media[data-v-72817898]{display:inline-block;position:relative;transition:.3s ease-in-out}.link-social-media>img[data-v-72817898],.link-social-media>svg[data-v-72817898]{width:26px;height:26px}.link-social-media[data-v-72817898]:hover{transform:translateY(-4px)}.link-social-media[data-v-72817898]:before{width:0;height:100%;content:" ";position:absolute;bottom:0;transition:width .2s ease-out}.link-social-media[data-v-72817898]:hover:before{width:100%;border-bottom:2px solid var(--custom-pink)}</style><link rel="stylesheet" href="/_nuxt/entry.D-gHZhkq.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/travels/japan-osaka-23/_payload.json?6ea9bbba-cb43-4ff4-b9fa-b9c3465e0717"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CZKfCnlR.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CcKqqZVK.js"><script type="module" src="/_nuxt/CZKfCnlR.js" crossorigin></script><script hid="ld-json" type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","dateCreated":"2024-01-27T00:00:00-05:00","mainEntity":{"@type":"Person","name":"Jonathan Law Hui Hao","alternateName":["Jonathan Law","jonathanlawhh"],"image":"https://jonathanlawhh.com/img/me.webp","sameAs":["https://jonathanlawhh.medium.com/","https://www.linkedin.com/in/jonathanlawhh/","https://dev.to/jonathanlawhh"]},"name":"Jonathan Law Hui Hao","alternateName":"Jonathan Law","url":"https://jonathanlawhh.com/"}</script><meta property="og:title" content="Travels/Japan Osaka 2023 | Jonathan Law"><meta name="description" content="A small travel diary to the land of sushi and arigatos, Japan"><meta property="og:description" content="A small travel diary to the land of sushi and arigatos, Japan"><meta property="og:image" content="https://jonathanlawhh.com/map/osaka-map.png"><meta name="twitter:card" content="summary_large_image"></head><body><style id="vuetify-theme-stylesheet">@layer vuetify-utilities {
+  @layer theme-base {
+  :root {
+    color-scheme: dark;
+  }
+  :root {
+    --v-theme-background: 18,18,18;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 33,33,33;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 204,191,214;
+    --v-theme-surface-bright-overlay-multiplier: 2;
+    --v-theme-surface-light: 66,66,66;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 200,200,200;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 0,0,0;
+    --v-theme-primary: 33,150,243;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 39,124,193;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 84,182,178;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 72,169,166;
+    --v-theme-secondary-darken-1-overlay-multiplier: 2;
+    --v-theme-error: 207,102,121;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 2;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 2;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 2;
+    --v-theme-on-background: 255,255,255;
+    --v-theme-on-surface: 255,255,255;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 255,255,255;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-border-color: 255, 255, 255;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 1;
+    --v-medium-emphasis-opacity: 0.7;
+    --v-disabled-opacity: 0.5;
+    --v-idle-opacity: 0.1;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.16;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 66, 66, 66;
+    --v-theme-on-kbd: 255, 255, 255;
+    --v-theme-code: 52, 52, 52;
+    --v-theme-on-code: 204, 204, 204;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: white;
+    --v-elevation-overlay-opacity-step: 2%;
+    --v-highlight-opacity: 20%;
+  }
+  .v-theme--light {
+    color-scheme: normal;
+    --v-theme-background: 255,255,255;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 255,255,255;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 255,255,255;
+    --v-theme-surface-bright-overlay-multiplier: 1;
+    --v-theme-surface-light: 238,238,238;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 66,66,66;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 238,238,238;
+    --v-theme-primary: 24,103,192;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 31,85,146;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 72,169,166;
+    --v-theme-secondary-overlay-multiplier: 1;
+    --v-theme-secondary-darken-1: 1,135,134;
+    --v-theme-secondary-darken-1-overlay-multiplier: 1;
+    --v-theme-error: 176,0,32;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 1;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 1;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 1;
+    --v-theme-on-background: 0,0,0;
+    --v-theme-on-surface: 0,0,0;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 0,0,0;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-border-color: 0, 0, 0;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 0.87;
+    --v-medium-emphasis-opacity: 0.6;
+    --v-disabled-opacity: 0.38;
+    --v-idle-opacity: 0.04;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.12;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 238, 238, 238;
+    --v-theme-on-kbd: 0, 0, 0;
+    --v-theme-code: 245, 245, 245;
+    --v-theme-on-code: 0, 0, 0;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: black;
+    --v-elevation-overlay-opacity-step: 2%;
+    --v-highlight-opacity: 8%;
+  }
+  .v-theme--dark {
+    color-scheme: dark;
+    --v-theme-background: 18,18,18;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 33,33,33;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 204,191,214;
+    --v-theme-surface-bright-overlay-multiplier: 2;
+    --v-theme-surface-light: 66,66,66;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 200,200,200;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 0,0,0;
+    --v-theme-primary: 33,150,243;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 39,124,193;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 84,182,178;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 72,169,166;
+    --v-theme-secondary-darken-1-overlay-multiplier: 2;
+    --v-theme-error: 207,102,121;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 2;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 2;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 2;
+    --v-theme-on-background: 255,255,255;
+    --v-theme-on-surface: 255,255,255;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 255,255,255;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-border-color: 255, 255, 255;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 1;
+    --v-medium-emphasis-opacity: 0.7;
+    --v-disabled-opacity: 0.5;
+    --v-idle-opacity: 0.1;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.16;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 66, 66, 66;
+    --v-theme-on-kbd: 255, 255, 255;
+    --v-theme-code: 52, 52, 52;
+    --v-theme-on-code: 204, 204, 204;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: white;
+    --v-elevation-overlay-opacity-step: 2%;
+    --v-highlight-opacity: 20%;
+  }
+  .v-theme--t {
+    color-scheme: dark;
+    --v-theme-background: 18,18,18;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 33,33,33;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 204,191,214;
+    --v-theme-surface-bright-overlay-multiplier: 2;
+    --v-theme-surface-light: 66,66,66;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 200,200,200;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 0,0,0;
+    --v-theme-primary: 255,117,130;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 39,124,193;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 0,165,106;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 72,169,166;
+    --v-theme-secondary-darken-1-overlay-multiplier: 2;
+    --v-theme-error: 207,102,121;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 2;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 2;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 2;
+    --v-theme-on-background: 255,255,255;
+    --v-theme-on-surface: 255,255,255;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 255,255,255;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-border-color: 255, 255, 255;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 1;
+    --v-medium-emphasis-opacity: 0.7;
+    --v-disabled-opacity: 0.5;
+    --v-idle-opacity: 0.1;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.16;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 66, 66, 66;
+    --v-theme-on-kbd: 255, 255, 255;
+    --v-theme-code: 52, 52, 52;
+    --v-theme-on-code: 204, 204, 204;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: white;
+    --v-elevation-overlay-opacity-step: 2%;
+    --v-highlight-opacity: 20%;
+  }
+  }
+  @layer theme-background {
     .bg-background {
       --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
-      background-color: rgb(var(--v-theme-background)) !important;
-      color: rgb(var(--v-theme-on-background)) !important;
+      background-color: rgb(var(--v-theme-background));
+      color: rgb(var(--v-theme-on-background));
     }
     .bg-surface {
       --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
-      background-color: rgb(var(--v-theme-surface)) !important;
-      color: rgb(var(--v-theme-on-surface)) !important;
+      background-color: rgb(var(--v-theme-surface));
+      color: rgb(var(--v-theme-on-surface));
     }
     .bg-surface-bright {
       --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
-      background-color: rgb(var(--v-theme-surface-bright)) !important;
-      color: rgb(var(--v-theme-on-surface-bright)) !important;
+      background-color: rgb(var(--v-theme-surface-bright));
+      color: rgb(var(--v-theme-on-surface-bright));
     }
     .bg-surface-light {
       --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
-      background-color: rgb(var(--v-theme-surface-light)) !important;
-      color: rgb(var(--v-theme-on-surface-light)) !important;
+      background-color: rgb(var(--v-theme-surface-light));
+      color: rgb(var(--v-theme-on-surface-light));
     }
     .bg-surface-variant {
       --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
-      background-color: rgb(var(--v-theme-surface-variant)) !important;
-      color: rgb(var(--v-theme-on-surface-variant)) !important;
+      background-color: rgb(var(--v-theme-surface-variant));
+      color: rgb(var(--v-theme-on-surface-variant));
     }
     .bg-primary {
       --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
-      background-color: rgb(var(--v-theme-primary)) !important;
-      color: rgb(var(--v-theme-on-primary)) !important;
+      background-color: rgb(var(--v-theme-primary));
+      color: rgb(var(--v-theme-on-primary));
     }
     .bg-primary-darken-1 {
       --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
-      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
-      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+      background-color: rgb(var(--v-theme-primary-darken-1));
+      color: rgb(var(--v-theme-on-primary-darken-1));
     }
     .bg-secondary {
       --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
-      background-color: rgb(var(--v-theme-secondary)) !important;
-      color: rgb(var(--v-theme-on-secondary)) !important;
+      background-color: rgb(var(--v-theme-secondary));
+      color: rgb(var(--v-theme-on-secondary));
     }
     .bg-secondary-darken-1 {
       --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
-      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
-      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+      background-color: rgb(var(--v-theme-secondary-darken-1));
+      color: rgb(var(--v-theme-on-secondary-darken-1));
     }
     .bg-error {
       --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
-      background-color: rgb(var(--v-theme-error)) !important;
-      color: rgb(var(--v-theme-on-error)) !important;
+      background-color: rgb(var(--v-theme-error));
+      color: rgb(var(--v-theme-on-error));
     }
     .bg-info {
       --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
-      background-color: rgb(var(--v-theme-info)) !important;
-      color: rgb(var(--v-theme-on-info)) !important;
+      background-color: rgb(var(--v-theme-info));
+      color: rgb(var(--v-theme-on-info));
     }
     .bg-success {
       --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
-      background-color: rgb(var(--v-theme-success)) !important;
-      color: rgb(var(--v-theme-on-success)) !important;
+      background-color: rgb(var(--v-theme-success));
+      color: rgb(var(--v-theme-on-success));
     }
     .bg-warning {
       --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
-      background-color: rgb(var(--v-theme-warning)) !important;
-      color: rgb(var(--v-theme-on-warning)) !important;
+      background-color: rgb(var(--v-theme-warning));
+      color: rgb(var(--v-theme-on-warning));
     }
+  }
+  @layer theme-foreground {
     .text-background {
-      color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-background));
     }
     .border-background {
       --v-border-color: var(--v-theme-background);
     }
     .text-surface {
-      color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-surface));
     }
     .border-surface {
       --v-border-color: var(--v-theme-surface);
     }
     .text-surface-bright {
-      color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-surface-bright));
     }
     .border-surface-bright {
       --v-border-color: var(--v-theme-surface-bright);
     }
     .text-surface-light {
-      color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-surface-light));
     }
     .border-surface-light {
       --v-border-color: var(--v-theme-surface-light);
     }
     .text-surface-variant {
-      color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-surface-variant));
     }
     .border-surface-variant {
       --v-border-color: var(--v-theme-surface-variant);
     }
     .on-surface-variant {
-      color: rgb(var(--v-theme-on-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant));
     }
     .text-primary {
-      color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-primary));
     }
     .border-primary {
       --v-border-color: var(--v-theme-primary);
     }
     .text-primary-darken-1 {
-      color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-primary-darken-1));
     }
     .border-primary-darken-1 {
       --v-border-color: var(--v-theme-primary-darken-1);
     }
     .text-secondary {
-      color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-secondary));
     }
     .border-secondary {
       --v-border-color: var(--v-theme-secondary);
     }
     .text-secondary-darken-1 {
-      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-secondary-darken-1));
     }
     .border-secondary-darken-1 {
       --v-border-color: var(--v-theme-secondary-darken-1);
     }
     .text-error {
-      color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-error));
     }
     .border-error {
       --v-border-color: var(--v-theme-error);
     }
     .text-info {
-      color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-info));
     }
     .border-info {
       --v-border-color: var(--v-theme-info);
     }
     .text-success {
-      color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-success));
     }
     .border-success {
       --v-border-color: var(--v-theme-success);
     }
     .text-warning {
-      color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-warning));
     }
     .border-warning {
       --v-border-color: var(--v-theme-warning);
     }
     .on-background {
-      color: rgb(var(--v-theme-on-background)) !important;
+      color: rgb(var(--v-theme-on-background));
     }
     .on-surface {
-      color: rgb(var(--v-theme-on-surface)) !important;
+      color: rgb(var(--v-theme-on-surface));
     }
     .on-surface-bright {
-      color: rgb(var(--v-theme-on-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright));
     }
     .on-surface-light {
-      color: rgb(var(--v-theme-on-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light));
     }
     .on-primary {
-      color: rgb(var(--v-theme-on-primary)) !important;
+      color: rgb(var(--v-theme-on-primary));
     }
     .on-primary-darken-1 {
-      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1));
     }
     .on-secondary {
-      color: rgb(var(--v-theme-on-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary));
     }
     .on-secondary-darken-1 {
-      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1));
     }
     .on-error {
-      color: rgb(var(--v-theme-on-error)) !important;
+      color: rgb(var(--v-theme-on-error));
     }
     .on-info {
-      color: rgb(var(--v-theme-on-info)) !important;
+      color: rgb(var(--v-theme-on-info));
     }
     .on-success {
-      color: rgb(var(--v-theme-on-success)) !important;
+      color: rgb(var(--v-theme-on-success));
     }
     .on-warning {
-      color: rgb(var(--v-theme-on-warning)) !important;
+      color: rgb(var(--v-theme-on-warning));
     }
-</style><style>.sticky-header{position:sticky;z-index:10}.hr-line{border-bottom:1px solid #f0f8ff;width:100%}.btn_close:hover{transform:rotate(180deg)}.v-btn--active:before{opacity:0!important}.v-btn--active:after{content:" ";height:100%;width:100%;position:absolute;top:0;border-bottom:1px solid #fff;border-radius:0!important;animation:btnSelected .25s ease-out}@keyframes btnSelected{0%{width:0}to{width:100%}}.v-btn:before{background-color:transparent}.page-enter-active,.page-leave-active{transition:all .25s}.page-enter-from,.page-leave-to{opacity:0;filter:blur(.8rem)}</style><style>.v-btn__overlay{background-color:transparent!important}</style><style>.rotate-close[data-v-c115aa95]:active{transform:rotate(180deg)}.mobile-nav-card[data-v-c115aa95]{border:1px solid #d4d4d4;border-radius:12px!important;overflow:hidden}@keyframes dialog-bg-anim-c115aa95{0%{transform:rotate(-2deg)}50%{transform:rotate(-8deg)}to{transform:rotate(-2deg)}}.mobile-nav-card[data-v-c115aa95]:before{border:1px solid #d4d4d4;height:70%;width:120%;overflow:hidden;top:125px;left:4px;position:absolute;border-radius:64px;content:"";transition:all .15s ease-in;z-index:-10;transform:rotate(-4deg);animation:dialog-bg-anim-c115aa95;animation-duration:6s;animation-iteration-count:infinite}</style><style>.travel-iframe[data-v-efef823e]{min-height:100%;min-width:100%;transform:translate(-50%,-50%);top:50%;width:177.77777778vh;box-sizing:border-box;height:80vw;left:50%;position:absolute;z-index:-1;filter:blur(1px)}.travel-iframe-parent[data-v-efef823e]{position:relative;overflow:hidden;height:54vh}.travel-iframe-parent[data-v-efef823e]:after{position:absolute;height:100%;width:75%;right:0;bottom:0;content:" ";z-index:-1;border-bottom:4px solid #fff}.travel-header-main[data-v-efef823e]{font-size:3rem}.travel-header-sub[data-v-efef823e]{font-size:1.6rem}@media only screen and (max-width:800px){.travel-iframe[data-v-efef823e]{height:200vw}.travel-header-main[data-v-efef823e]{font-size:1.8rem}.travel-header-sub[data-v-efef823e]{font-size:1.1rem}}.btn-return[data-v-efef823e]:hover{background:#fff;color:#fff}</style><style>.loading-chat[data-v-72817898]{stroke:#00a56a;stroke-dasharray:500;stroke-dashoffset:1000;stroke-width:32px;animation:dash-72817898 1s infinite}@keyframes dash-72817898{to{stroke-dashoffset:0}}.link-social-media[data-v-72817898]{display:inline-block;position:relative;transition:.3s ease-in-out}.link-social-media>img[data-v-72817898],.link-social-media>svg[data-v-72817898]{width:26px;height:26px}.link-social-media[data-v-72817898]:hover{transform:translateY(-4px)}.link-social-media[data-v-72817898]:before{width:0;height:100%;content:" ";position:absolute;bottom:0;transition:width .2s ease-out}.link-social-media[data-v-72817898]:hover:before{width:100%;border-bottom:2px solid var(--custom-pink)}</style><link rel="stylesheet" href="/_nuxt/entry.BXRtTBUT.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/travels/japan-osaka-23/_payload.json?15b3a4c9-d250-4234-83b1-5cf591528f4a"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/D_L19_Tu.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/zHPMYwxa.js"><script type="module" src="/_nuxt/D_L19_Tu.js" crossorigin></script><script hid="ld-json" type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","dateCreated":"2024-01-27T00:00:00-05:00","mainEntity":{"@type":"Person","name":"Jonathan Law Hui Hao","alternateName":["Jonathan Law","jonathanlawhh"],"image":"https://jonathanlawhh.com/img/me.webp","sameAs":["https://jonathanlawhh.medium.com/","https://www.linkedin.com/in/jonathanlawhh/","https://dev.to/jonathanlawhh"]},"name":"Jonathan Law Hui Hao","alternateName":"Jonathan Law","url":"https://jonathanlawhh.com/"}</script><meta property="og:title" content="Travels/Japan Osaka 2023 | Jonathan Law"><meta name="description" content="A small travel diary to the land of sushi and arigatos, Japan"><meta property="og:description" content="A small travel diary to the land of sushi and arigatos, Japan"><meta property="og:image" content="https://jonathanlawhh.com/map/osaka-map.png"><meta name="twitter:card" content="summary_large_image"></head><body><div id="__nuxt"><div class="v-container v-locale--is-ltr" style=""><div class="v-row" style=""><div class="v-col v-col-12" style=""><h1>Jonathan Law</h1></div></div><div class="v-row sticky-header" style="top:0;"><div class="v-col v-col-12 hr-line pa-0" style=""></div></div><div class="v-row sticky-header" style="top:1px;"><div class="v-col v-col-12 pa-0" style="height:100%;"><!--[--><header class="v-toolbar v-toolbar--collapse-start v-toolbar--density-default elevation-0 v-theme--dark v-locale--is-ltr ps-0" style="background-color:#121212;" data-v-c115aa95><!----><!--[--><div class="v-toolbar__content" style="height:64px;"><!----><!----><!--[--><button type="button" class="v-btn v-btn--icon v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hidden-md-and-up v-app-bar-nav-icon" style="" aria-label="menu button" data-v-c115aa95><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><i class="mdi-menu mdi v-icon notranslate v-theme--dark v-icon--size-default" style="" aria-hidden="true"></i></span><!----><!----></button><i class="mdi-circle mdi v-icon notranslate v-theme--dark v-icon--size-x-small hidden-sm-and-down mr-4" style="" aria-hidden="true" data-v-c115aa95></i><div class="v-toolbar-title" style="min-width:320px;" data-v-c115aa95><div class="v-toolbar-title__placeholder"><!----><!--[-->Travels/Japan Osaka 2023<!--]--></div></div><div class="v-spacer" style="" data-v-c115aa95></div><nav style="display:inline;width:70%;height:100%;" class="hidden-sm-and-down" data-v-c115aa95><!--[--><div class="v-toolbar-items" style="float:right;" data-v-c115aa95><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-c115aa95><a href="https://jonathanlawhh.medium.com/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" target="_blank" data-v-c115aa95><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->TECH BLOG<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-c115aa95><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-c115aa95><a href="/works/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-c115aa95><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->WORKS<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-c115aa95><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-c115aa95><a href="/background/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-c115aa95><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->MY BACKGROUND<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-c115aa95><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-c115aa95><a href="/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-c115aa95><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->HOME<!--]--><!--]--></span><!----><!----></a><!--]--></div><!--]--></nav><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><!--[--><!----><!----><!--]--><!--]--></div></div><div class="v-row sticky-header mb-8" style="top:56px;"><div class="v-col v-col-4 hr-line ma-0 pt-0 pb-0" style=""></div></div><div style="min-height:70vh;"><div class="v-row" style="position:relative;" data-v-efef823e><button type="button" class="v-btn v-theme--dark v-btn--density-default rounded-0 v-btn--size-large v-btn--variant-outlined btn-return" style="position:absolute;top:0;left:0;z-index:2;background-image:linear-gradient(to right, black, rgba(0,0,0,0));" data-v-efef823e><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-chevron-left mdi v-icon notranslate v-theme--dark v-icon--size-large" style="" aria-hidden="true" data-v-efef823e></i> GO BACK <!--]--><!--]--></span><!----><!----></button><div class="v-col v-col-12 travel-iframe-parent" style="" data-v-efef823e><iframe class="travel-iframe" src="https://www.youtube-nocookie.com/embed/DNGlpDPrDbs?modestbranding=1&amp;autoplay=1&amp;showinfo=0&amp;controls=0&amp;loop=1&amp;mute=1&amp;playlist=DNGlpDPrDbs" frameborder="0" allow="autoplay;accelerometer;encrypted-media;" allowfullscreen data-v-efef823e></iframe><div class="v-row" style="margin-top:15%;" data-v-efef823e><div class="v-col v-col-6 text-right" style="background:rgba(0,0,0, 0.6);" data-v-efef823e><h3 class="travel-header-main" data-v-efef823e>Travels Japan 23</h3></div><div class="v-col v-col-6 text-left" style="background:rgba(0,0,0, 0.4);" data-v-efef823e><p class="travel-header-sub" data-v-efef823e>Osaka Kyoto Nara</p><p class="travel-header-sub" data-v-efef823e>01 . 07 . 2023 - 07. 07 . 2023</p></div></div></div></div><div class="v-row" style=""><div class="v-col-md-7 v-col-12" style=""><div class="v-row d-flex flex-wrap" style=""><!--[--><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Arashiyama Bamboo Forest</p><p class="pa-1">Many bamboo...</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Kyoto Gionmachi Minamigawa</p><p class="pa-1">Geisha street</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Dotonbori Street / Glico Guy</p><p class="pa-1">Very happening at night, food and entertainment</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Umeda</p><p class="pa-1">Shopping town</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Nara Deer Park</p><p class="pa-1">Oh deers</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">teamLab Botanical Garden</p><p class="pa-1">Many lights, buy tickets online</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Universal Studio Japan</p><p class="pa-1">There is single people lane, usually faster</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Osaka Castle</p><p class="pa-1">Long walk in from train station...</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Tsutenkaku/Glico Man Tower</p><p class="pa-1">Ate skewers nearby</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Shinsekai Market</p><p class="pa-1">Just a wet market</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><!--]--></div></div><div class="v-col-md-5 v-col-12" style=""><div class="v-responsive v-img v-img--booting" style="height:100%;"><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></div></div></div><div data-v-72817898><div class="v-row" style="" data-v-72817898><div class="v-col v-col-12 pb-0 pt-0 mt-8" style="" data-v-72817898><p class="text-right" data-v-72817898><button type="button" class="a-custom-button" data-v-72817898>Jump back up</button></p></div><div class="v-col v-col-5 offset-7" style="border-bottom:aliceblue 1px solid;width:100%;" data-v-72817898></div></div><div class="v-row" style="" data-v-72817898><div class="v-col v-col-2 hidden-md-and-down" style="" data-v-72817898><strong data-v-72817898>Jonathan Law Hui Hao</strong></div><div class="v-col-md-12 v-col-lg-10 v-col-12 text-right" style="" data-v-72817898><a id="fbchat" class="link-social-media ml-4" data-v-72817898><svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white" data-v-72817898><g data-v-72817898><path class="" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+  }
+
+}</style><div id="__nuxt"><div class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr" style=""><div class="v-application__wrap"><!--[--><div class="v-container v-locale--is-ltr" style=""><div class="v-row v-row--density-default" style=""><div class="v-col v-col--cols-12" style=""><h1>Jonathan Law</h1></div></div><div class="v-row v-row--density-default sticky-header" style="top:0;"><div class="v-col v-col--cols-12 hr-line pa-0" style=""></div></div><div class="v-row v-row--density-default sticky-header" style="top:1px;margin:0;"><div class="v-col v-col--cols-12 pa-0" style="height:100%;"><!--[--><header class="v-toolbar v-toolbar--collapse-start v-toolbar--density-default elevation-0 v-theme--dark v-locale--is-ltr ps-0" style="background-color:#121212;" data-v-cc87eb0a><!----><!--[--><div class="v-toolbar__content" style="height:64px;"><!----><!----><!--[--><button type="button" class="v-btn v-btn--icon v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hidden-md-and-up v-app-bar-nav-icon" style="" aria-label="menu button" data-v-cc87eb0a><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><i class="mdi-menu mdi v-icon notranslate v-theme--dark v-icon--size-default" style="" aria-hidden="true"></i></span><!----><!----></button><i class="mdi-circle mdi v-icon notranslate v-theme--dark v-icon--size-x-small hidden-sm-and-down mr-4" style="" aria-hidden="true" data-v-cc87eb0a></i><div class="v-toolbar-title" style="min-width:320px;" data-v-cc87eb0a><div class="v-toolbar-title__placeholder"><!----><!--[-->Travels/Japan Osaka 2023<!--]--></div></div><div class="v-spacer" style="" data-v-cc87eb0a></div><nav style="display:inline;width:70%;height:100%;" class="hidden-sm-and-down" data-v-cc87eb0a><!--[--><div class="v-toolbar-items" style="float:right;" data-v-cc87eb0a><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-cc87eb0a><a href="https://jonathanlawhh.medium.com/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" target="_blank" data-v-cc87eb0a><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->TECH BLOG<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-cc87eb0a><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-cc87eb0a><a href="/works/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-cc87eb0a><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->WORKS<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-cc87eb0a><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-cc87eb0a><a href="/background/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-cc87eb0a><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->MY BACKGROUND<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-toolbar-items" style="float:right;" data-v-cc87eb0a><!--[--><hr class="v-divider v-divider--inset v-divider--vertical v-theme--dark" style="border-style:solid;" aria-orientation="vertical" role="separator" data-v-cc87eb0a><a href="/" class="v-btn v-theme--dark v-btn--density-default v-btn--size-default v-btn--variant-text hover-fade-in" style="height:inherit;" data-v-cc87eb0a><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->HOME<!--]--><!--]--></span><!----><!----></a><!--]--></div><!--]--></nav><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><!--[--><!----><!----><!--]--><!--]--></div></div><div class="v-row v-row--density-default sticky-header mb-8" style="top:56px;margin-top:0;"><div class="v-col v-col--cols-4 hr-line ma-0 pt-0 pb-0" style=""></div></div><div style="min-height:70vh;"><div class="v-row v-row--density-default" style="position:relative;" data-v-efef823e><button type="button" class="v-btn v-theme--dark v-btn--density-default rounded-0 v-btn--size-large v-btn--variant-outlined btn-return" style="position:absolute;top:0;left:0;z-index:2;background-image:linear-gradient(to right, black, rgba(0,0,0,0));" data-v-efef823e><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-chevron-left mdi v-icon notranslate v-theme--dark v-icon--size-large" style="" aria-hidden="true" data-v-efef823e></i> GO BACK <!--]--><!--]--></span><!----><!----></button><div class="v-col v-col--cols-12 travel-iframe-parent" style="" data-v-efef823e><iframe class="travel-iframe" src="https://www.youtube-nocookie.com/embed/DNGlpDPrDbs?modestbranding=1&amp;autoplay=1&amp;showinfo=0&amp;controls=0&amp;loop=1&amp;mute=1&amp;playlist=DNGlpDPrDbs" frameborder="0" allow="autoplay;accelerometer;encrypted-media;" allowfullscreen data-v-efef823e></iframe><div class="v-row v-row--density-default" style="margin-top:15%;" data-v-efef823e><div class="v-col v-col--cols-6 text-right" style="background:rgba(0,0,0, 0.6);" data-v-efef823e><h3 class="travel-header-main" data-v-efef823e>Travels Japan 23</h3></div><div class="v-col v-col--cols-6 text-left" style="background:rgba(0,0,0, 0.4);" data-v-efef823e><p class="travel-header-sub" data-v-efef823e>Osaka Kyoto Nara</p><p class="travel-header-sub" data-v-efef823e>01 . 07 . 2023 - 07. 07 . 2023</p></div></div></div></div><div class="v-row v-row--density-default" style=""><div class="v-col v-col--cols-md-7 v-col--cols-12" style=""><div class="v-row v-row--density-default d-flex flex-wrap" style=""><!--[--><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Arashiyama Bamboo Forest</p><p class="pa-1">Many bamboo...</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Kyoto Gionmachi Minamigawa</p><p class="pa-1">Geisha street</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Dotonbori Street / Glico Guy</p><p class="pa-1">Very happening at night, food and entertainment</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Umeda</p><p class="pa-1">Shopping town</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Nara Deer Park</p><p class="pa-1">Oh deers</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">teamLab Botanical Garden</p><p class="pa-1">Many lights, buy tickets online</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Universal Studio Japan</p><p class="pa-1">There is single people lane, usually faster</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Osaka Castle</p><p class="pa-1">Long walk in from train station...</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Tsutenkaku/Glico Man Tower</p><p class="pa-1">Ate skewers nearby</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col align-self-stretch" style=""><div class="v-card v-theme--dark v-card--density-default v-card--variant-outlined text-center align-self-center align-content-center" style="width:100%;min-height:124px;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;--v-progress-chunk-gap:4px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style=""></div><div class="v-progress-linear__buffer" style="width:0%;"></div><div class="v-progress-linear__indeterminate"><!----><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-item d-inline-block" style=""><!----><div class="v-card-item__content"><!----><!----><!--[--><p class="text-no-wrap font-weight-black pa-1" style="background:white;color:#262626;">Shinsekai Market</p><p class="pa-1">Just a wet market</p><!--]--></div><!----></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><!--]--></div></div><div class="v-col v-col--cols-md-5 v-col--cols-12" style=""><div class="v-responsive v-img v-img--booting" style="height:100%;"><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></div></div></div><div data-v-72817898><div class="v-row v-row--density-default" style="" data-v-72817898><div class="v-col v-col--cols-12 pb-0 pt-0 mt-8" style="" data-v-72817898><p class="text-right" data-v-72817898><button type="button" class="a-custom-button" data-v-72817898>Jump back up</button></p></div><div class="v-col v-col--cols-5 v-col--offset-7" style="border-bottom:aliceblue 1px solid;width:100%;" data-v-72817898></div></div><div class="v-row v-row--density-default" style="" data-v-72817898><div class="v-col v-col--cols-2 hidden-md-and-down" style="" data-v-72817898><strong data-v-72817898>Jonathan Law Hui Hao</strong></div><div class="v-col v-col--cols-md-12 v-col--cols-lg-10 v-col--cols-12 text-right" style="" data-v-72817898><a id="fbchat" class="link-social-media ml-4" data-v-72817898><svg x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="white" data-v-72817898><g data-v-72817898><path class="" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
 			c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024S397.376,0,256,0z M281.44,319.2l-65.184-69.536
-			L89.056,319.2l139.936-148.544l66.784,69.536l125.6-69.536L281.44,319.2z" data-v-72817898></path></g></svg></a><!--[--><a href="https://facebook.com/jonathanlawhh" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/fb.svg" alt="Facebook" loading="lazy" data-v-72817898></a><a href="https://github.com/jonathanlawhh" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/github.svg" alt="Github" loading="lazy" data-v-72817898></a><a href="https://www.linkedin.com/in/jonathanlawhh/" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/linkedin.svg" alt="LinkedIn" loading="lazy" data-v-72817898></a><a href="https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag/featured" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/youtube.svg" alt="YouTube" loading="lazy" data-v-72817898></a><!--]--></div></div><!--[--><!----><!----><!--]--><div id="fb-root" data-v-72817898></div><div id="fb-customer-chat" class="fb-customerchat" data-v-72817898></div></div></div></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{gtag:{enabled:true,initMode:"auto",id:"G-1NMJW2TCTK",initCommands:[],config:{},tags:[],loadingStrategy:"defer",url:"https://www.googletagmanager.com/gtag/js"}},app:{baseURL:"/",buildId:"15b3a4c9-d250-4234-83b1-5cf591528f4a",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/travels/japan-osaka-23/_payload.json?15b3a4c9-d250-4234-83b1-5cf591528f4a">[{"state":1,"once":12,"_errors":13,"serverRendered":10,"path":15,"prerenderedAt":16},["Reactive",2],{"$ssite-config":3},{"_priority":4,"cacheTtl":7,"env":8,"name":9,"trailingSlash":10,"url":11},{"env":5,"url":6,"name":6,"cacheTtl":6,"trailingSlash":6},-15,-3,2592000000,"production","Jonathan Law Hui Hao",true,"https:\u002F\u002Fjonathanlawhh.com\u002F",["Set"],["ShallowReactive",14],{},"\u002Ftravels\u002Fjapan-osaka-23",1781429663719]</script></body></html>
+			L89.056,319.2l139.936-148.544l66.784,69.536l125.6-69.536L281.44,319.2z" data-v-72817898></path></g></svg></a><!--[--><a href="https://facebook.com/jonathanlawhh" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/fb.svg" alt="Facebook" loading="lazy" data-v-72817898></a><a href="https://github.com/jonathanlawhh" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/github.svg" alt="Github" loading="lazy" data-v-72817898></a><a href="https://www.linkedin.com/in/jonathanlawhh/" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/linkedin.svg" alt="LinkedIn" loading="lazy" data-v-72817898></a><a href="https://www.youtube.com/channel/UC3c-D9k1Q4VhbXalew1N-Ag/featured" target="_blank" rel="noopener" class="ml-8 link-social-media" data-v-72817898><img class="mt-1" src="/icons/youtube.svg" alt="YouTube" loading="lazy" data-v-72817898></a><!--]--></div></div><!--[--><!----><!----><!--]--><div id="fb-root" data-v-72817898></div><div id="fb-customer-chat" class="fb-customerchat" data-v-72817898></div></div></div><!--]--></div></div></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{gtag:{enabled:true,initMode:"auto",id:"G-1NMJW2TCTK",initCommands:[],config:{},tags:[],loadingStrategy:"defer",url:"https://www.googletagmanager.com/gtag/js"}},app:{baseURL:"/",buildId:"6ea9bbba-cb43-4ff4-b9fa-b9c3465e0717",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/travels/japan-osaka-23/_payload.json?6ea9bbba-cb43-4ff4-b9fa-b9c3465e0717">[{"state":1,"once":12,"_errors":13,"serverRendered":10,"path":15,"prerenderedAt":16},["Reactive",2],{"$ssite-config":3},{"_priority":4,"cacheTtl":7,"env":8,"name":9,"trailingSlash":10,"url":11},{"env":5,"url":6,"name":6,"cacheTtl":6,"trailingSlash":6},-15,-3,2592000000,"production","Jonathan Law Hui Hao",true,"https:\u002F\u002Fjonathanlawhh.com\u002F",["Set"],["ShallowReactive",14],{},"\u002Ftravels\u002Fjapan-osaka-23",1781437156720]</script></body></html>
