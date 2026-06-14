@@ -79,6 +79,9 @@ export const routes = [
 
 export default defineNuxtConfig({
     ssr: true,
+    future: {
+        compatibilityVersion: 4,
+    },
     vite: {
     plugins: [
         // @ts-expect-error
