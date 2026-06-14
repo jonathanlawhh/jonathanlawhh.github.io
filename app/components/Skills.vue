@@ -10,27 +10,34 @@
       <v-col cols="12">
         <v-card variant="outlined" rounded="lg">
           <v-card-item>
-            <p>
-              <br />
-              <strong>What I tell people I do:</strong>
-              <br />
-              [
-              <button v-for="s in [
-                'Logistics and supply chain management',
-                'Data analysis and visualization',
-                'Process improvement',
-                'Automation, AI',
-                'System administrator'
-              ]" class="ma-2 hover-motion a-custom-button">{{ s }}
-              </button>
-              ]
-              <br /><br /><br />
-              <strong>What I actually do:</strong><br />
-              I grab cat facts and send them to the company group chat every time
-              someone requests to move something from the warehouse.
-              <br />
-              <br />
-            </p>
+            <v-row>
+              <v-col cols="12" lg="6">
+                <p>
+                  <br />
+                  <span class="font-weight-black" style="color: var(--custom-pink)">What I tell people I
+                    do:</span><br />
+                  [
+                  <button v-for="s in [
+                    'Logistics and supply chain management',
+                    'Data analysis and visualization',
+                    'Process improvement',
+                    'Automation, AI',
+                    'System administrator'
+                  ]" class="ma-2 hover-motion a-custom-button">{{ s }}
+                  </button>
+                  ]
+                </p>
+              </v-col>
+              <v-col cols="12" lg="6">
+                <p>
+                  <br />
+                  <span class="font-weight-black" style="color: var(--custom-green)">What I actually do:</span><br />
+                  I grab cat facts and send them to the company group chat every time
+                  someone requests to move something from the warehouse.
+                </p>
+              </v-col>
+            </v-row>
+
           </v-card-item>
         </v-card>
       </v-col>
