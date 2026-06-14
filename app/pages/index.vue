@@ -19,8 +19,7 @@
           <br /><br />
           No ChatGPT was involved here, just many years of scrolling LinkedIn and Grammarly.
           <br /><br />
-          Anyway, do say hi via the <button type="button" class="a-custom-button" @click="jumpDown">site
-            chatbox</button> below the page or
+          Anyway, do say hi via
           <span class="text-no-wrap"> email
             <a class="a-custom-button" rel="nofollow" href="mailto:me@jonathanlawhh.com">me@jonathanlawhh.com</a>
           </span>
@@ -61,15 +60,6 @@ export default {
       void whackBlock.offsetWidth
       whackBlock.classList.add('whack_intro')
     }, 3000)
-  },
-  methods: {
-    jumpDown() {
-      window.scrollTo({
-        top: 9999,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
   }
 }
 </script>
